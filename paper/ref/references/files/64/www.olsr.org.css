@@ -1,0 +1,211 @@
+
+/* ::::: http://www.olsr.org/modules/node/node.css ::::: */
+
+.node-unpublished { background-color: rgb(255, 244, 244); }
+.preview .node { background-color: rgb(255, 255, 234); }
+#node-admin-filter ul { list-style-type: none; padding: 0px; margin: 0px; width: 100%; }
+#node-admin-buttons { float: left; margin-left: 0.5em; clear: right; }
+td.revision-current { background: none repeat scroll 0% 0% rgb(255, 255, 204); }
+.node-form .form-text { display: block; width: 95%; }
+.node-form .container-inline .form-text { display: inline; width: auto; }
+.node-form .standard { clear: both; }
+.node-form textarea { display: block; width: 95%; }
+.node-form .attachments fieldset { float: none; display: block; }
+
+/* ::::: http://www.olsr.org/modules/system/defaults.css ::::: */
+
+fieldset { margin-bottom: 1em; padding: 0.5em; }
+form { margin: 0px; padding: 0px; }
+hr { height: 1px; border: 1px solid gray; }
+img { border: 0px none; }
+table { border-collapse: collapse; }
+th { text-align: left; padding-right: 1em; border-bottom: 3px solid rgb(204, 204, 204); }
+.clear-block:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+.clear-block { display: inline-block; }
+* html .clear-block { height: 1%; }
+.clear-block { display: block; }
+
+/* ::::: http://www.olsr.org/modules/system/system.css ::::: */
+
+th.active img { display: inline; }
+tr.even, tr.odd { background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(204, 204, 204); padding: 0.1em 0.6em; }
+td.active { background-color: rgb(221, 221, 221); }
+tbody { border-top: 1px solid rgb(204, 204, 204); }
+tbody th { border-bottom: 1px solid rgb(204, 204, 204); }
+thead th { text-align: left; padding-right: 1em; border-bottom: 3px solid rgb(204, 204, 204); }
+.breadcrumb { padding-bottom: 0.5em; }
+.error { color: rgb(255, 0, 0); }
+div.error { border: 1px solid rgb(221, 119, 119); }
+div.error, tr.error { background: none repeat scroll 0% 0% rgb(255, 204, 204); color: rgb(34, 0, 0); }
+div.warning, tr.warning { background: none repeat scroll 0% 0% rgb(255, 255, 221); }
+div.ok, tr.ok { background: none repeat scroll 0% 0% rgb(221, 255, 221); }
+.item-list .icon { color: rgb(85, 85, 85); float: right; padding-left: 0.25em; clear: right; }
+.item-list .title { font-weight: bold; }
+.item-list ul { margin: 0px 0px 0.75em; padding: 0px; }
+.item-list ul li { margin: 0px 0px 0.25em 1.5em; padding: 0px; list-style: disc outside none; }
+.form-item { margin-top: 1em; margin-bottom: 1em; }
+tr.odd .form-item, tr.even .form-item { margin-top: 0px; margin-bottom: 0px; white-space: nowrap; }
+tr.merge-down, tr.merge-down td, tr.merge-down th { border-bottom-width: 0px ! important; }
+tr.merge-up, tr.merge-up td, tr.merge-up th { border-top-width: 0px ! important; }
+.form-item input.error, .form-item textarea.error, .form-item select.error { border: 2px solid red; }
+.form-item .description { font-size: 0.85em; }
+.form-item label { display: block; font-weight: bold; }
+.form-item label.option { display: inline; font-weight: normal; }
+.form-checkboxes, .form-radios { margin: 1em 0px; }
+.form-checkboxes .form-item, .form-radios .form-item { margin-top: 0.4em; margin-bottom: 0.4em; }
+.marker, .form-required { color: rgb(255, 0, 0); }
+.more-link { text-align: right; }
+.more-help-link { font-size: 0.85em; text-align: right; }
+.nowrap { white-space: nowrap; }
+.pager { clear: both; text-align: center; }
+.pager a, .pager strong.pager-current { padding: 0.5em; }
+.tips { margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; font-size: 0.9em; }
+dl.multiselect dd.b, dl.multiselect dd.b .form-item, dl.multiselect dd.b select { font-family: inherit; font-size: inherit; width: 14em; }
+dl.multiselect dd.a, dl.multiselect dd.a .form-item { width: 8em; }
+dl.multiselect dt, dl.multiselect dd { float: left; line-height: 1.75em; padding: 0px; margin: 0px 1em 0px 0px; }
+dl.multiselect .form-item { height: 1.75em; margin: 0px; }
+.container-inline div, .container-inline label { display: inline; }
+ul.menu { list-style: none outside none; border: medium none; text-align: left; }
+ul.menu li { margin: 0px 0px 0px 0.5em; }
+li.expanded { list-style-type: circle; list-style-image: url('menu-expanded.png'); padding: 0.2em 0.5em 0px 0px; margin: 0px; }
+li.collapsed { list-style-type: disc; list-style-image: url('menu-collapsed.png'); padding: 0.2em 0.5em 0px 0px; margin: 0px; }
+li.leaf { list-style-type: square; list-style-image: url('menu-leaf.png'); padding: 0.2em 0.5em 0px 0px; margin: 0px; }
+li a.active { color: rgb(0, 0, 0); }
+td.menu-disabled { background: none repeat scroll 0% 0% rgb(204, 204, 204); }
+ul.links { margin: 0px; padding: 0px; }
+ul.links.inline { display: inline; }
+ul.links li { display: inline; list-style-type: none; padding: 0px 0.5em; }
+.block ul { margin: 0px; padding: 0px 0px 0.25em 1em; }
+ul.primary { border-collapse: collapse; padding: 0px 0px 0px 1em; white-space: nowrap; list-style: none outside none; margin: 5px; height: auto; line-height: normal; border-bottom: 1px solid rgb(187, 187, 187); }
+ul.primary li { display: inline; }
+ul.primary li a { background-color: rgb(221, 221, 221); border-color: rgb(187, 187, 187); border-width: 1px; border-style: solid solid none; height: auto; margin-right: 0.5em; padding: 0px 1em; text-decoration: none; }
+ul.primary li.active a { background-color: rgb(255, 255, 255); border-width: 1px; border-style: solid; border-color: rgb(187, 187, 187) rgb(187, 187, 187) rgb(255, 255, 255); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+ul.primary li a:hover { background-color: rgb(238, 238, 238); border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(238, 238, 238); }
+ul.secondary { border-bottom: 1px solid rgb(187, 187, 187); padding: 0.5em 1em; margin: 5px; }
+ul.secondary li { display: inline; padding: 0px 1em; border-right: 1px solid rgb(204, 204, 204); }
+ul.secondary a { padding: 0px; text-decoration: none; }
+ul.secondary a.active { border-bottom: 4px solid rgb(153, 153, 153); }
+#autocomplete { position: absolute; border: 1px solid; overflow: hidden; z-index: 100; }
+#autocomplete ul { margin: 0px; padding: 0px; list-style: none outside none; }
+#autocomplete li { background: none repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(0, 0, 0); white-space: pre; cursor: default; }
+#autocomplete li.selected { background: none repeat scroll 0% 0% rgb(0, 114, 185); color: rgb(255, 255, 255); }
+html.js input.form-autocomplete { background-image: url('throbber.gif'); background-repeat: no-repeat; background-position: 100% 2px; }
+html.js input.throbbing { background-position: 100% -18px; }
+html.js fieldset.collapsed { border-bottom-width: 0px; border-left-width: 0px; border-right-width: 0px; margin-bottom: 0px; height: 1em; }
+html.js fieldset.collapsed * { display: none; }
+html.js fieldset.collapsed legend { display: block; }
+html.js fieldset.collapsible legend a { padding-left: 15px; background: url('menu-expanded.png') no-repeat scroll 5px 75% transparent; }
+html.js fieldset.collapsed legend a { background-image: url('menu-collapsed.png'); background-position: 5px 50%; }
+* html.js fieldset.collapsed legend, * html.js fieldset.collapsed legend *, * html.js fieldset.collapsed table * { display: inline; }
+html.js fieldset.collapsible legend a { display: block; }
+html.js fieldset.collapsible .fieldset-wrapper { overflow: auto; }
+.resizable-textarea { width: 95%; }
+.resizable-textarea .grippie { height: 9px; overflow: hidden; background: url('grippie.png') no-repeat scroll center 2px rgb(238, 238, 238); border-right: 1px solid rgb(221, 221, 221); border-width: 0px 1px 1px; border-style: solid; border-color: rgb(221, 221, 221); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; cursor: s-resize; }
+html.js .resizable-textarea textarea { margin-bottom: 0px; width: 100%; display: block; }
+.progress { font-weight: bold; }
+.progress .bar { background: url('progress.gif') repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(0, 55, 90); height: 1.5em; margin-top: 0.2em; }
+.progress .filled { background: none repeat scroll 0% 0% rgb(0, 114, 185); height: 1em; border-bottom: 0.5em solid rgb(0, 74, 115); width: 0%; }
+.progress .percentage { float: right; }
+#first-time strong { display: block; padding: 1.5em 0px 0.5em; }
+tr.selected td { background: none repeat scroll 0% 0% rgb(255, 255, 204); }
+
+/* ::::: http://www.olsr.org/modules/user/user.css ::::: */
+
+#permissions td.module { font-weight: bold; }
+#permissions td.permission { padding-left: 1.5em; }
+#access-rules .access-type, #access-rules .rule-type { margin-right: 1em; float: left; }
+#access-rules .access-type .form-item, #access-rules .rule-type .form-item { margin-top: 0px; }
+#access-rules .mask { clear: both; }
+#user-login-form { text-align: center; }
+#user-admin-filter ul { list-style-type: none; padding: 0px; margin: 0px; width: 100%; }
+#user-admin-buttons { float: left; margin-left: 0.5em; clear: right; }
+.profile { clear: both; margin: 1em 0px; }
+.profile .picture { float: right; margin: 0px 1em 1em 0px; }
+.profile dt { margin: 1em 0px 0.2em; font-weight: bold; }
+.profile dd { margin: 0px; }
+
+/* ::::: http://www.olsr.org/themes/olsr/style.css ::::: */
+
+body { margin: 0px; padding: 0px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font: 76% Arial,Verdana,Helvetica,sans-serif; }
+tr.odd td, tr.even td { padding: 0.3em; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.5em; }
+h1 { font-size: 1.3em; }
+h2 { font-size: 1.2em; }
+h3, h4, h5, h6 { font-size: 1.1em; }
+p { margin-top: 0.5em; margin-bottom: 0.9em; }
+a { text-decoration: none; font-weight: bold; }
+a:link { color: rgb(0, 101, 173); }
+a:visited { color: rgb(51, 102, 153); }
+a:hover { color: rgb(51, 153, 204); text-decoration: underline; }
+fieldset { border: 1px solid rgb(204, 204, 204); }
+code { color: rgb(0, 138, 0); background-color: rgb(247, 255, 247); display: block; border: 1px solid rgb(221, 221, 221); }
+pre { background-color: rgb(238, 238, 238); padding: 0.75em 1.5em; font-size: 12px; border: 1px solid rgb(221, 221, 221); }
+table { font-size: 1em; }
+.form-item label { font-size: 1em; color: rgb(34, 34, 34); }
+.item-list .title { font-size: 1em; color: rgb(34, 34, 34); }
+.links { margin-bottom: 0px; }
+.comment .links { margin-bottom: 0px; }
+#header, #content { width: 100%; }
+#header { background-color: rgb(255, 255, 255); }
+#logo { vertical-align: middle; }
+#logo img { float: left; padding: 3px; border: 0px none; }
+#kamelogo { width: 16em; }
+#menu { padding: 0.5em 0.5em 0px; text-align: right; vertical-align: middle; }
+#navlist { font-size: 1em; padding: 0px 0.8em 1.2em 0px; color: rgb(153, 204, 255); }
+#navlist a { font-weight: bold; color: rgb(153, 204, 255); }
+#subnavlist { padding: 0.5em 1.2em 0.4em 0px; font-size: 0.8em; color: rgb(153, 204, 255); }
+#subnavlist a { font-weight: bold; color: rgb(153, 204, 255); }
+ul.links li { border-left: 1px solid rgb(153, 204, 255); }
+ul.links li.first { border: medium none; }
+#search .form-text, #search .form-submit { border: 1px solid rgb(204, 204, 204); font-size: 1.1em; height: 1.5em; vertical-align: middle; }
+#search .form-text { width: 8em; padding: 0px 0.5em; }
+#mission { background-color: rgb(51, 102, 153); padding: 1.5em 2em; color: rgb(255, 255, 255); }
+#mission a, #mission a:visited { color: rgb(153, 204, 255); font-weight: bold; }
+.site-name { margin: 0.6em 0px 0px; padding: 0px; font-size: 2em; }
+.site-name a:link, .site-name a:visited { color: rgb(221, 238, 255); }
+.site-name a:hover { color: rgb(221, 238, 255); text-decoration: none; }
+.site-slogan { font-size: 1em; color: rgb(221, 238, 255); display: block; margin: 0px; font-style: italic; font-weight: bold; }
+#main { padding: 10px; }
+#mission, .node .content, .comment .content { line-height: 1.4em; }
+#help { font-size: 0.9em; margin-bottom: 1em; }
+.breadcrumb { margin-bottom: 0.5em; }
+.messages { background-color: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 0.3em; margin-bottom: 1em; }
+.error { border-color: red; }
+#sidebar-left, #sidebar-right { background-color: rgb(221, 238, 255); border: 0px solid rgb(0, 0, 140); width: 16em; padding: 10px; vertical-align: top; }
+#footer { background-color: rgb(221, 238, 255); color: rgb(0, 101, 173); padding: 10px; font-size: 0.8em; }
+.title, .title a { font-weight: bold; font-size: 1.3em; color: rgb(119, 119, 119); margin: 0px auto; }
+.submitted { color: rgb(153, 153, 153); font-size: 0.8em; }
+.links { color: rgb(153, 153, 153); }
+.links a { font-weight: bold; }
+.block, .box { padding: 0px 0px 1.5em; }
+.block { border-bottom: 1px solid rgb(187, 187, 187); padding-bottom: 0.75em; margin-bottom: 1.5em; }
+.block .title { margin-bottom: 0.25em; }
+.box .title { font-size: 1.1em; }
+.node { margin: 0.5em 0px 2em; }
+.sticky { padding: 0.5em; background-color: rgb(238, 238, 238); border: 1px solid rgb(221, 221, 221); }
+.node .content, .comment .content { margin: 0.5em 0px; }
+.node .taxonomy { color: rgb(153, 153, 153); font-size: 0.8em; padding-left: 1.5em; }
+.node .picture { border: 1px solid rgb(221, 221, 221); float: right; margin: 0.5em; }
+.comment { border: 1px solid rgb(170, 187, 204); padding: 0.5em; margin-bottom: 1em; }
+.comment .title a { font-size: 1.1em; font-weight: normal; }
+.comment .new { text-align: right; font-weight: bold; font-size: 0.8em; float: right; color: red; }
+.comment .picture { border: 1px solid rgb(170, 187, 204); float: right; margin: 0.5em; }
+#aggregator .feed-source { background-color: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 1em; margin: 1em 0px; }
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age { color: rgb(153, 153, 153); font-style: italic; font-size: 0.9em; }
+#aggregator .title { margin-bottom: 0.5em; font-size: 1em; }
+#aggregator h3 { margin-top: 1em; }
+#forum table { width: 100%; }
+#forum td { padding: 0.5em; }
+#forum td.forum, #forum td.posts { background-color: rgb(238, 238, 238); }
+#forum td.topics, #forum td.last-reply { background-color: rgb(221, 221, 221); }
+#forum td.container { background-color: rgb(204, 204, 204); }
+#forum td.container a { color: rgb(85, 85, 85); }
+#forum td.statistics, #forum td.settings, #forum td.pager { height: 1.5em; border: 1px solid rgb(187, 187, 187); }
+#forum td .name { color: rgb(153, 102, 204); }
+#forum td .links { padding-top: 0.7em; font-size: 0.9em; }
+#profile .profile { clear: both; border: 1px solid rgb(170, 187, 204); padding: 0.5em; margin: 1em 0em; }
+#profile .profile .name { padding-bottom: 0.5em; }
+.block-forum h3 { margin-bottom: 0.5em; }
+div.admin-panel .description { color: rgb(153, 153, 153); }
+div.admin-panel .body { background: none repeat scroll 0% 0% rgb(244, 244, 244); }
+div.admin-panel h3 { background-color: rgb(102, 153, 204); color: rgb(255, 255, 255); padding: 5px 8px; margin: 0px; }

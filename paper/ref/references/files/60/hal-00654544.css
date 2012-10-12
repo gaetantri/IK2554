@@ -1,0 +1,562 @@
+
+/* ::::: http://hal.inria.fr/css/style.css.php ::::: */
+
+.prototip { font: 11px Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); }
+.prototip .default { width: 250px; color: rgb(128, 128, 128); }
+.prototip .default .toolbar { background: none repeat scroll 0% 0% rgb(241, 241, 241); font-weight: bold; }
+.prototip .default .title { padding: 5px; }
+.prototip .default .content { padding: 5px; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.prototip .basic { width: 250px; color: rgb(128, 128, 128); }
+.prototip .basic .toolbar { background: none repeat scroll 0% 0% rgb(241, 241, 241); font-weight: bold; }
+.prototip .basic .title { padding: 5px; }
+.prototip .basic .content { padding: 5px; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.prototip .hint { width: 250px; color: rgb(49, 49, 32); background: none repeat scroll 0% 0% rgb(255, 246, 170); }
+.prototip .hint .toolbar { background: none repeat scroll 0% 0% rgb(253, 241, 160); font-weight: bold; }
+.prototip .hint .title, .prototip .hint .content { padding: 5px; }
+.prototip .protoblue { width: 250px; color: rgb(255, 255, 255); }
+.prototip .protoblue .toolbar { background: none repeat scroll 0% 0% rgb(13, 124, 208); font-weight: bold; }
+.prototip .protoblue .title { padding: 5px; }
+.prototip .protoblue .content { background: none repeat scroll 0% 0% rgb(30, 144, 255); padding: 5px; }
+.prototip .creamy { width: 250px; color: rgb(187, 156, 97); }
+.prototip .creamy .toolbar { background: none repeat scroll 0% 0% rgb(243, 237, 194); font-weight: bold; }
+.prototip .creamy .title { padding: 5px; }
+.prototip .creamy .content { background: none repeat scroll 0% 0% rgb(248, 244, 202); padding: 5px; }
+.prototip .darkgrey { width: 250px; color: rgb(255, 255, 255); }
+.prototip .darkgrey .toolbar { background: none repeat scroll 0% 0% rgb(95, 95, 95); font-weight: bold; }
+.prototip .darkgrey .title { padding: 5px; }
+.prototip .darkgrey .content { background: none repeat scroll 0% 0% rgb(128, 128, 128); padding: 5px; }
+.prototip .protogrey { width: 250px; color: rgb(255, 255, 255); background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.prototip .protogrey .toolbar { background: none repeat scroll 0% 0% rgb(150, 156, 146); font-weight: bold; }
+.prototip .protogrey .title { padding: 5px; }
+.prototip .protogrey .content { color: rgb(128, 128, 128); padding: 5px; }
+.prototip .protogrey .toolbar .close { width: 14px; height: 14px; }
+.prototipLoader { position: absolute; top: -1000px; left: -1000px; height: 14px; width: 14px; border: 1px solid rgb(221, 221, 221); overflow: hidden; }
+.prototip { position: absolute; overflow: hidden; }
+.prototip .tooltip, .prototip .toolbar, .prototip .toolbar .title { position: relative; }
+.prototip .content { clear: both; }
+.prototip .toolbar .close { position: relative; text-decoration: none; float: right; width: 19px; height: 15px; display: block; line-height: 0; font-size: 0px; border: 0px none; cursor: pointer; }
+.prototip .tooltip { clear: both; float: left; }
+.prototip .borderLeftWrapper, .prototip .borderRightWrapper { position: absolute; top: 0px; left: 0px; width: 300px; height: 20px; }
+.prototip .borderFrame { height: 100%; width: 100%; float: left; margin: 0px; padding: 0px; position: relative; }
+.prototip .borderTop, .prototip .borderBottom { overflow: hidden; }
+.prototip .borderRow { list-style-type: none; float: left; width: 100%; position: relative; clear: both; margin: 0px; padding: 0px; }
+.prototip_CornerWrapper { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; clear: both; }
+.prototip_Corner { float: left; position: relative; }
+.prototip canvas { position: relative; float: left; }
+.prototip_CornerTr, .prototip_CornerBr { float: right; }
+.prototip_BetweenCorners { position: absolute; top: 0px; left: 0px; width: 100%; overflow: hidden; clear: both; }
+.prototip .borderMiddle { position: relative; float: left; }
+.prototip .borderCenter { position: relative; float: left; height: 100%; }
+.prototip_StemWrapper { position: relative; width: 100%; height: auto; clear: both; }
+.prototip_StemBox { float: left; position: relative; }
+.prototip_Stem { width: 100%; position: absolute; overflow: hidden; }
+.iframeShim { position: absolute; border: 0px none; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; overflow: hidden; }
+.prototip .clearfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+.prototip .clearfix { display: inline-block; }
+.prototip .clearfix { display: block; }
+#menuGraphMycons { border-bottom: thin solid rgb(204, 204, 204); padding: 9px; }
+#menuGraphMycons span[class="visible"] { color: black; background-color: white; cursor: pointer; margin-bottom: 10px; margin-right: 10px; padding: 10px; border-top: thin solid rgb(204, 204, 204); border-left: thin solid rgb(204, 204, 204); border-right: thin solid rgb(204, 204, 204); }
+#menuGraphMycons span[class="hidden"] { color: gray; cursor: pointer; margin-bottom: 10px; margin-right: 10px; padding: 10px; border-top: thin solid rgb(204, 204, 204); border-left: thin solid rgb(204, 204, 204); border-right: thin solid rgb(204, 204, 204); }
+#menuForm { border-bottom: thin solid rgb(204, 204, 204); padding: 9px; }
+#menuGraph { border-top: thin solid rgb(204, 204, 204); padding: 9px; text-align: right; }
+#menuForm span[class="visible"] { color: black; background-color: rgb(234, 239, 240); cursor: pointer; margin-bottom: 10px; margin-right: 10px; padding: 10px; border-top: thin solid rgb(204, 204, 204); border-left: thin solid rgb(204, 204, 204); border-right: thin solid rgb(204, 204, 204); }
+#menuForm span[class="hidden"] { color: gray; cursor: pointer; margin-bottom: 10px; margin-right: 10px; padding: 10px; border-top: thin solid rgb(204, 204, 204); border-left: thin solid rgb(204, 204, 204); border-right: thin solid rgb(204, 204, 204); }
+#menuGraph span[class="visible"] { color: black; background-color: rgb(234, 239, 240); cursor: pointer; margin-bottom: 10px; margin-right: 10px; padding: 10px; border-bottom: thin solid rgb(204, 204, 204); border-left: thin solid rgb(204, 204, 204); border-right: thin solid rgb(204, 204, 204); }
+#menuGraph span[class="hidden"] { color: gray; cursor: pointer; margin-bottom: 10px; margin-right: 10px; padding: 10px; border-bottom: thin solid rgb(204, 204, 204); border-left: thin solid rgb(204, 204, 204); border-right: thin solid rgb(204, 204, 204); }
+#contentForm, #contentGraph { background-color: rgb(234, 239, 240); padding-top: 20px; }
+#autocompleteArticle td { cursor: pointer; }
+#autocompleteArticle td:hover { background-color: rgb(234, 239, 240); }
+#autocompleteAuteur td { cursor: pointer; }
+#autocompleteAuteur td:hover { background-color: rgb(234, 239, 240); }
+#autocompleteLabo td { cursor: pointer; }
+#autocompleteLabo td:hover { background-color: rgb(234, 239, 240); }
+#autocompleteCollection td { cursor: pointer; }
+#autocompleteCollection td:hover { background-color: rgb(234, 239, 240); }
+#div_searchStamp { position: absolute; background-color: white; border: thin solid rgb(204, 204, 204); margin-left: 60px; }
+#listMyConsultations td.title { background: none repeat scroll 0px 0px rgb(227, 55, 41); }
+body { margin: 0px; padding: 0px; font-family: arial,verdana,sans-serif; color: rgb(54, 56, 66); font-size: 0.75em; background: url('inria_bkgd_body.png') no-repeat scroll center top rgb(255, 255, 255); }
+body * { border: medium none; }
+a { text-decoration: none; color: rgb(227, 55, 41); }
+a:hover, a:focus { text-decoration: underline; }
+a.lien_vue { color: rgb(54, 56, 66); font-weight: bold; }
+ul { list-style: none outside none; }
+ol { list-style-type: decimal; list-style-position: inside; }
+em, i { font-style: normal; }
+p { margin: 0px; }
+.logo { position: relative; top: auto; height: 80px; width: 930px; margin: 0px auto; padding-top: 50px; background: none repeat scroll 0% 0% transparent; }
+.logo td:first-child { text-align: left; }
+.logo .titlehead { color: rgb(93, 94, 96); font-size: 20px; text-align: center; }
+#halmenu { position: relative; z-index: 90; top: auto; width: 930px; height: 30px; margin: 0px auto; background: none repeat scroll 0% 0% rgb(54, 56, 66); }
+#halmenu ul { margin-left: 5px; padding: 0px; background: none repeat scroll 0% 0% rgb(54, 56, 66); color: rgb(255, 255, 255); }
+#halmenu ul li { position: relative; float: left; list-style-position: outside; height: 30px; }
+#halmenu li a { display: block; color: rgb(255, 255, 255); font-weight: normal; text-decoration: none; }
+#halmenu a.niveau1 { width: auto; padding: 5px 10px; font-size: 1.3em; font-weight: bold; }
+#halmenu .current a.niveau1, #halmenu a.niveau1:hover, #halmenu a.niveau1:focus { background: none repeat scroll 0% 0% rgb(57, 81, 99); }
+#halmenu ul.niveau1 li:first-child a.niveau1, #halmenu ul.niveau1 li:first-child a.niveau2 { background: url('inria_picto_home.png') no-repeat scroll center center transparent; width: 13px; height: 16px; padding-right: 0px; font-size: 1px; color: rgb(54, 56, 66); }
+#halmenu ul.niveau1 li li:first-child a.niveau2 { width: auto; height: auto; padding: 5px 12px; background-image: none; font-size: 12px; color: rgb(255, 255, 255); }
+#halmenu ul ul { display: none; position: absolute; z-index: 90; top: 30px; left: 0px; width: 200px; margin: 0px; border: 0px none; text-align: left; }
+#halmenu ul ul li { float: none; border: 0px none; height: auto; }
+#halmenu ul ul li a { width: auto; padding: 5px 12px; border-top: 1px solid rgb(38, 40, 47); border-right: 1px solid rgb(38, 40, 47); }
+div#halmenu li.open, div#halmenu li.open:hover { background-image: url('open_tab_blanc.gif'); background-position: right center; background-repeat: no-repeat; }
+#halmenu ul ul li a:hover, #halmenu ul ul li a:focus, #halmenu ul.niveau1 li li:first-child a.niveau2:hover, #halmenu ul.niveau1 li li:first-child a.niveau2:focus { background: none repeat scroll 0% 0% rgb(227, 55, 41); }
+#halmenu ul.niveau3 { left: 200px; top: -1px; }
+#halmenu ul.niveau1 li:hover ul.niveau2, #halmenu ul.niveau2 li.open:hover ul.niveau3, #halmenu ul.niveau2 li:hover ul.niveau3 { display: block; }
+#halmenu .fulltext { position: absolute; right: 50px; margin-top: 4px; padding-right: 10px; }
+#halmenu .fulltext input { padding: 3px; vertical-align: middle; }
+#halmenu .fulltext .formulaire { width: 10em; border: 0px none; color: rgb(54, 56, 66); }
+#halmenu .connected { position: absolute; right: 20px; padding: 7px; }
+.lien { position: absolute; top: 0px; left: 0px; width: 100%; height: 30px; line-height: 25px; background: none repeat scroll 0% 0% rgb(54, 56, 66); color: rgb(204, 204, 204); text-align: right; }
+td .lien { position: static; display: inline; top: auto; width: auto; height: auto; line-height: inherit; background: none repeat scroll 0% 0% transparent; color: rgb(54, 56, 66); text-align: inherit; }
+.lien a { color: rgb(204, 204, 204); }
+.lien .langue { margin: 0px 1em; font-size: 0.9em; color: rgb(54, 56, 66); }
+.lien .langue option { background-position: left center; background-repeat: no-repeat; padding: 1px 10px 1px 24px; }
+.lien .connected_as { margin-right: 3em; font-style: italic; }
+.lien .rss { margin-right: 9%; }
+.corps { position: relative; width: 940px; margin: 0px auto 2em; padding: 20px; background: none repeat scroll 0% 0% rgb(245, 245, 245); }
+.corps td td { background: none repeat scroll 0% 0% transparent; }
+.action_head, a.action_head, .popuphead { color: rgb(227, 55, 41); font-size: 20px; font-weight: bold; }
+span.action_head br { display: none; }
+span.action_head span.action_head br { display: inline; }
+form td.action_head { color: inherit; font-size: 15px; }
+.titlehead { margin: 1em 0px 0.5em; color: rgb(227, 55, 41); font-size: 17px; font-weight: bold; display: block; text-align: left; }
+#divtypeGraph .titlehead { color: rgb(54, 56, 66); display: inline; font-size: 12px; font-weight: bold; margin: 0px; text-align: left; }
+td.title { background: none repeat scroll 0% 0% rgb(227, 55, 41); border-right: 1px solid rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; padding: 4px; text-align: center; }
+td.with_border { color: rgb(227, 55, 41); font-size: 17px; padding: 15px 0px; }
+.blabla_large { margin-top: 1em; font-size: 15px; text-align: left; font-weight: bold; }
+.corps a.etape_link, .corps .etape_on, .corps .etape_off { display: block; float: left; padding: 5px 15px 5px 20px; min-width: 100px; border-left: 2px solid rgb(255, 255, 255); background: url('inria_puce_chevron_blanc.png') no-repeat scroll 10px 11px rgb(227, 55, 41); text-align: left; color: rgb(255, 255, 255); font-size: 1.2em; font-weight: bold; }
+.corps a.etape_link, .corps .etape_on { background-color: rgb(54, 56, 66); text-decoration: none; }
+.corps a.etape_link:hover, .corps a.etape_link:focus { background-color: rgb(227, 55, 41); }
+.corps .etape_link img, .corps .etape_on img, .corps .etape_off img { display: none; }
+.corps li.menu_action { margin-bottom: 0.5em; padding-left: 14px; background: url('inria_puce_plus_nat.png') no-repeat scroll left 4px transparent; list-style: none outside none; color: rgb(227, 55, 41); font-size: 14px; font-weight: bold; }
+.corps li.menu_action a { color: rgb(227, 55, 41); }
+.corps ul ul li.menu_action { margin-left: 30px; font-size: 12px; background: url('inria_puce_carre_nat.png') no-repeat scroll left center transparent; }
+.corps .navigate_tampon { color: rgb(227, 55, 41); }
+.corps .navigate_tampon b { font-weight: normal; }
+.corps span.navigate_in_page { font-size: 12px; color: rgb(54, 56, 66); }
+.corps .navigate_in_page a { padding: 0px 3px; color: rgb(54, 56, 66); text-decoration: none; }
+.corps .navigate_in_page a:hover, .corps .navigate_in_page a:focus { text-decoration: underline; }
+.corps .navigate_in_page b { padding: 0px 3px; text-decoration: underline; }
+.corps ul, .corps ol { margin: 1em 0px 1em 15px; padding: 0px; }
+.corps ul li { margin-bottom: 0.2em; padding-left: 10px; background: url('inria_puce_triangle_nat_medium.png') no-repeat scroll left 0.3em transparent; }
+.corps table table .lienpage, .corps .metadata, .corps div.refBiblio a { display: block; padding: 10px; text-decoration: none; color: inherit; }
+.corps div.refBiblio { background-color: rgb(255, 255, 255); }
+.corps table table .lienpage b i, .corps .metadata b i, .corps div.refBiblio b i { font-size: 13px; color: rgb(227, 55, 41); font-weight: bold; font-style: normal; }
+.corps .metadata i, .bloc i { font-style: italic; }
+.corps table table .lienpage:hover b i, .corps table table .lienpage:focus b i, .corps .metadata:hover b i, .corps .metadata:focus b i, .corps div.refBiblio a:hover b i, .corps div.refBiblio a:focus b i { text-decoration: underline; }
+.corps #depot_document .displayArticle { padding-top: 10px; }
+.corps .displayArticle td { background: none repeat scroll 0% 0% transparent; }
+.corps .displayArticle div { background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); margin: 1.5em 0px; }
+.corps .displayArticle .nom_metadata { font-weight: bold; padding: 2px 2px 3px 0px; }
+.corps .displayArticle .nom_meta { margin: 0px; padding-bottom: 0.5em; color: rgb(227, 55, 41); font-size: 14px; font-weight: bold; text-align: left; }
+.corps #depot_document .displayArticle .meta { font-weight: normal; }
+.apropos { background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); font-size: 12px; font-weight: bold; width: 400px; }
+.apropos .lien { background: none repeat scroll 0% 0% transparent; color: inherit; height: auto; position: static; text-align: center; top: auto; width: auto; }
+.corps form hr { border: 1px solid rgb(204, 204, 204); margin: 10px 0px; }
+.corps form td { vertical-align: top; }
+.corps .modify_document .corps form td { padding: 0px; }
+.corps td.formulaire { font-weight: bold; }
+.corps .formulaire_small, .corps .formulaire_large { font-size: 12px; vertical-align: middle; }
+.corps .formulaire_large { font-weight: bold; }
+.corps input, .corps select, .corps textarea { vertical-align: middle; font-size: 12px; font-style: normal; font-weight: normal; color: rgb(54, 56, 66); font-family: arial,verdana,sans-serif; }
+.corps input[type="text"], .corps input[type="password"], .corps input[type="file"], .corps select, .corps textarea { border: 1px solid rgb(204, 204, 204); vertical-align: middle; }
+.corps input, .corps option, .corps textarea { padding: 1px 5px; }
+.corps #mydoc { padding: 0px; border: 0px none; background: none repeat scroll 0% 0% transparent; }
+.corps fieldset { margin: 2em 0px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 0px none ! important; }
+.corps fieldset legend.action_head { font-weight: bold; font-size: 17px; padding-bottom: 10px; text-align: left; color: rgb(227, 55, 41); }
+.corps .tdata { padding: 5px; margin-bottom: 5px; }
+.corps fieldset td { padding: 5px 5px 15px 0px; }
+.corps fieldset .tdata .selected { font-weight: bold; }
+.corps input.button, .corps input.button_red, .corps input.button_inactif { margin-right: 7px; border: 1px solid rgb(227, 55, 41); background: url('inria_bkgd_btn_nat.png') repeat-x scroll left top rgb(227, 55, 41); color: rgb(255, 255, 255); cursor: pointer; font-size: 12px; font-weight: bold; text-align: center; text-decoration: none; }
+.corps input.button_inactif { background: none repeat scroll 0% 0% rgb(160, 160, 160); border: 1px solid rgb(160, 160, 160); }
+.corps input.button_plus { padding: 0px; font-size: 12px; width: 20px; text-align: center; }
+.corps a.file_link { font-weight: bold; }
+.corps .action { padding: 3px; background: none repeat scroll 0% 0% rgb(227, 55, 41); color: rgb(255, 255, 255); font-size: 11px; text-align: center; text-decoration: none; font-style: normal; }
+.corps .action:hover, .corps .action:focus { text-decoration: underline; }
+.corps .error { color: red; font-size: 12px; font-weight: bold; }
+.corps .help { display: block; padding: 1em 0px; font-weight: bold; font-size: 12px; text-align: left; }
+.corps .help_bold { font-weight: bold; }
+.corps div td .help, .corps form .help, .corps fieldset .help { display: inline; margin: 0px; padding: 0px 0px 0px 5px; border: 0px none; font-weight: normal; font-size: inherit; text-align: inherit; }
+.corps form td.help, .corps fieldset td.help { padding: 0px; }
+.corps form select.help, .corps fieldset select.help { padding: inherit; border: 1px solid rgb(204, 204, 204); font-weight: normal; font-size: 12px; font-style: normal; }
+.corps form .help_italic { font-size: 11px; }
+.corps .search_help { padding: 1em; border: 1px solid rgb(204, 204, 204); background: none repeat scroll 0% 0% rgb(245, 211, 210); text-align: right; }
+.corps .helptoolcontent, .corps .helptooltitle { color: rgb(54, 56, 66); }
+.corps form #verif_uid * { font-size: 12px; }
+.corps form#form_orderby { padding: 0px; background: none repeat scroll 0% 0% transparent; text-align: right; }
+.corps form td.tab_mult { padding: 5px 15px 0px; background: none repeat scroll 0% 0% rgb(227, 55, 41); color: rgb(255, 255, 255); font-weight: bold; }
+.corps form td.tab_mult a { color: rgb(255, 255, 255); text-decoration: none; }
+.corps form td.tab_mult .tab_up, .corps form td.tab_mult .tab_down { float: left; margin: 0px 2px; padding: 2px 10px; }
+.corps form td.tab_mult .tab_up { background: none repeat scroll 0% 0% rgb(238, 238, 238); }
+.corps form td.tab_mult .tab_up a { color: rgb(227, 55, 41); }
+.corps form .tabs { float: right; }
+.corps form td.mult { padding: 0px 15px; border-right: 1px solid rgb(204, 204, 204); border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(204, 204, 204) rgb(204, 204, 204); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background: none repeat scroll 0% 0% rgb(238, 238, 238); }
+.corps form td.mult tr td:first-child img { height: 10px; width: 5px; margin-right: 10px; }
+.corps .tabs input { font-size: 12px; }
+.corps form#search_form, .corps form#search_export_form, .corps form#export_form { margin: 10px 0px; padding-bottom: 20px; border-bottom: 1px solid rgb(204, 204, 204); }
+.corps form#search_form hr, .corps form#search_export_form hr, .corps form#export_form hr { display: none; }
+.corps form#search_form .button, .corps form#search_form .button_red, .corps form#search_export_form .button, .corps form#search_export_form .button_red, .corps form#export_form .button, .corps form#export_form .button_red { margin-bottom: 2em; }
+.corps form#search_form table, .corps form#search_export_form table, .corps form#export_form table { max-width: 940px; border: 0px none ! important; }
+.corps form#search_export_form .export_tab { background: none repeat scroll 0% 0% transparent; }
+.corps form#search_export_form .export_tab td { padding: 5px 10px; }
+.corps form#myaccount_form hr, .corps form#register_form hr { display: none; }
+.corps form#login_form { text-align: left; }
+.corps form#login_form a { color: rgb(227, 55, 41); }
+.corps form#register_form #submit { float: right; margin: 2em 0px 1em; min-width: 8em; }
+.corps form#register_form #reset { float: left; margin: 2em 0px 1em; min-width: 8em; }
+.corps form#subscribe_form #submit { float: right; margin: 0px 0px 1em; }
+.corps form#subscribe_form #reset { float: left; margin: 0px 0px 1em; }
+.corps div.divStat { background: none repeat scroll 0% 0% rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 10px; margin: 0px; }
+.corps form#admin_form hr { display: none; }
+.corps form#tamponnate .button { border-color: rgb(227, 55, 41); background: url('inria_bkgd_btn_nat.png') repeat-x scroll left top rgb(227, 55, 41); }
+.corps form#tamponnate tr.formulaire { background: none repeat scroll 0% 0% rgb(204, 204, 204); text-align: center; font-weight: bold; }
+.corps form#depot_document { overflow: hidden; }
+.corps form#depot_document table { width: auto; }
+.corps form#depot_document .top_border { padding: 15px 0px; border-top: 1px solid rgb(204, 204, 204); }
+.corps #divAuthors, .corps .divAuthor, .corps div.divTitle { width: 550px; margin-bottom: 1.5em; padding: 0.5em 15px; border: 0px none; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.corps #divAuthors .divAuthor { margin-bottom: 0px; padding: 0px; }
+.corps #divAuthors ul { margin: 0px; }
+.corps #divAuthors li { margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; }
+.corps .divAuthor img { margin-right: 10px; }
+.corps .divAuthor img.helptool { height: auto; margin-right: 0px; }
+.corps span.spanLaboText { cursor: url('copy.cur'), auto; font-size: 11px; }
+.corps #file_right .action_head, .corps div.divTitle, .corps .divSubTitle { margin: 0px; padding-bottom: 0.5em; color: rgb(227, 55, 41); font-size: 14px; font-weight: bold; text-align: left; }
+.corps .divSubTitle { font-size: 14px; margin: 1em 0px 0px; }
+.corps div.divAuthorForm, .corps div.divLaboForm { border: 1px solid rgb(204, 204, 204); margin-left: 20px; padding: 5px; width: 500px; }
+.corps div.divAuthorList { background-color: rgb(245, 211, 210); height: 200px; overflow: auto; }
+.corps div.divAuthorListSmall { background-color: rgb(245, 211, 210); }
+.corps #file_right .action_head { display: inline; margin: 0px; padding-bottom: 0.5em; background: none repeat scroll 0% 0% transparent; color: rgb(227, 55, 41); font-size: 14px; font-weight: bold; text-align: left; }
+.corps .divLegend { float: right; width: 300px; margin-bottom: 1.5em; padding: 0.5em 15px; background: none repeat scroll 0% 0% rgb(238, 238, 238); font-size: 11px; }
+.corps .divLegend table { background: none repeat scroll 0% 0% transparent; }
+.corps .divLegend .help_italic { padding: 5px; }
+.corps #file_right, .corps #formListAut, .corps #formMyAut, .corps .divAuthorForm { margin: 15px 0px; padding: 5px; border: 1px solid rgb(204, 204, 204); text-align: left; }
+.corps #file_right, .corps .divAuthorForm { margin: 0px; }
+.corps li #file_right { border: 0px none; }
+.corps #formListAut td, .corps #formMyAut td { background: none repeat scroll 0% 0% transparent; padding: 0px 5px 5px 0px; }
+.corps #formListAut textarea { width: 400px; }
+.corps #formListAut #need_hal_old_association, .corps #formMyAut #need_hal_old_association { margin: 0px 0px 0px 5px; }
+.corps #file_right p { margin-top: 1.5em; }
+.corps #file_right li { padding-left: 0px; background: none repeat scroll 0% 0% transparent; }
+.corps form .next { float: right; }
+.corps form .previous { float: left; }
+.corps #form_subscription td { vertical-align: middle; }
+.corps div.divMetaPrec { display: none; margin-top: -1px; border: 1px solid rgb(204, 204, 204); background-color: rgb(255, 255, 255); font-size: 12px; }
+.corps .sherpa_res { margin: 5px; }
+.corps .sherpa_res td { background: none repeat scroll 0% 0% rgb(238, 238, 238); font-size: 11px; }
+.corps form #titleen, .corps form #titlefr { width: 350px; }
+.corps #form_tamponner .formulaire { vertical-align: middle; }
+.corps .editor_field { color: rgb(227, 55, 41); font-size: 12px; margin-right: 2px; }
+.corps table.tableForm td { font-size: 12px; }
+.corps div.docVieComment { color: rgb(227, 55, 41); font-size: 12px; padding: 0px 20px 10px; }
+.corps div.vieArticleTitle { background: none repeat scroll 0% 0% rgb(227, 55, 41); color: rgb(255, 255, 255); font-size: 15px; font-weight: bold; text-align: center; }
+.corps div.docVieElem { background: none repeat scroll 0% 0% rgb(255, 255, 255); border-right: 1px solid rgb(227, 55, 41); border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(227, 55, 41) rgb(227, 55, 41); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; }
+.corps .docVieUser { color: rgb(227, 55, 41); font-size: 12px; font-weight: bold; }
+.corps .docVieTitle { font-size: 12px; }
+.corps .docVieDate { font-size: 12px; font-style: italic; padding-right: 10px; }
+.corps .accueil, .corps .accueil_small, .corps .graph { overflow: hidden; margin: 0px 30px 15px 0px; }
+.popuphead { margin-bottom: 1em; color: rgb(227, 55, 41); font-size: 20px; font-weight: bold; }
+.corps .graph a { display: block; float: left; width: 49%; height: 49%; }
+.corps .graph a img { width: 100%; }
+.corps #homeBox .tabTitleBar, .corps #divConnect, .corps #divNbArtHeader, .corps #divNewsHeader, .corps #divContactHeader { padding: 4px 0px 4px 5px; background: none repeat scroll 0% 0% rgb(132, 130, 135); color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; }
+.corps #homeBox .tabTitleBar img, .corps #divConnect img, .corps #divNbArtHeader img, .corps #divNewsHeader img, .corps #divContactHeader img { vertical-align: middle; }
+.corps #divConnectContent, .corps #divNbArtContent, .corps #divNewsContent, .corps #divContactContent, .corps .accordionTabContentBox { margin: 0px 0px 15px; padding: 10px 5px; border-right: 1px solid rgb(204, 204, 204); border-width: 0px 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(204, 204, 204) rgb(204, 204, 204); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background-color: rgb(255, 255, 255); }
+.corps .accordionTabTitleBarOpen, .corps .accordionTabTitleBarClose { margin: 0.5em 0px; padding-left: 20px; background: url('inria_picto_replie_n2_nat.png') no-repeat scroll left 2px transparent; color: rgb(227, 55, 41); font-size: 13px; font-weight: bold; cursor: pointer; }
+.corps #accordionNews .accordionTabTitleBarClose { background-image: url('inria_picto_deplie_n2_nat.png'); }
+.corps #accordionNews .accordionTabContentBox { margin: 0px 0px 20px 20px; padding: 0px; border: 0px none; }
+#homeBox #divConnectContent td { vertical-align: middle; }
+#homeBox #login_form .accueil { margin: 0px; }
+#content { overflow: hidden; }
+#center { float: left; clear: left; width: 620px; }
+#right { width: 300px; float: right; }
+.corps .tampon { border: 0px none; }
+#content .bloc { margin-bottom: 1.5em; overflow: hidden; }
+#content .bloc .intro { font-size: 1.2em; line-height: 1.2em; overflow: hidden; }
+#center .bloc .list_tag { margin: 0px; overflow: hidden; line-height: 1.2em; }
+#center .bloc .list_tag li { background: none repeat scroll 0% 0% transparent; margin: 0.5em 0px; padding: 0px; }
+.corps .cartouche { background: none repeat scroll 0% 0% rgb(227, 55, 41); color: rgb(255, 255, 255); float: left; font-size: 1em; font-weight: bold; margin: 0px 0px 20px; padding: 0.2em 0.5em; }
+.corps .lien_arxiv, .corps .passwd { float: left; padding: 3px 0px 0px 15px; color: rgb(136, 136, 136); }
+.corps .passwd { float: right; }
+#content .bloc h2 { clear: both; margin: 0px 0px 0.7em; padding: 0px; color: rgb(54, 56, 66); font-weight: normal; font-size: 1.7em; }
+#content .bloc h3 { color: rgb(227, 55, 41); font-size: 1.4em; margin: 1.5em 0px 0.5em; }
+#content .bloc h4 { font-size: 1.2em; margin: 1em 0px 0.5em; }
+#content .bloc h5 { font-size: 1.1em; margin: 1em 0px 0.5em; color: rgb(136, 136, 136); }
+#content .bloc h6 { font-size: 1em; margin: 1em 0px 0.5em; color: rgb(136, 136, 136); }
+#content .bloc p { margin-bottom: 1em; }
+#content .bloc ul { margin-left: 0px; }
+#content .bloc .separateur { height: 1px; margin: 1.5em 0px; border-bottom: 1px solid rgb(204, 204, 204); }
+#content .bloc.btn { background: none repeat scroll 0% 0% rgb(54, 56, 66); font-size: 14px; font-weight: bold; border: medium none; }
+#content .bloc.btn p { margin: 0px; }
+#content .bloc.btn a { text-decoration: none; color: rgb(227, 55, 41); background: url('inria_picto_plus_nat.png') no-repeat scroll left top transparent; }
+#content .bloc.btn a:hover, #content .bloc.btn a:focus { text-decoration: underline; }
+#content .bloc .file { padding: 3px 0px 3px 27px; background: url('inria_picto_pdf.png') no-repeat scroll left top transparent; font-weight: bold; }
+#content .bloc .file a { color: inherit; text-decoration: none; }
+#content .bloc .file img { vertical-align: middle; }
+#content .bloc .export a { display: inline; padding: 0px 0.5em; border-left: 1px solid rgb(54, 56, 66); background: none repeat scroll 0% 0% transparent; font-weight: bold; }
+#content .bloc .export a:first-child { padding-left: 0px; border-left: 0px none; }
+#content .bloc .export a { text-decoration: none; color: inherit; }
+#content .bloc .export a:hover, #content .bloc .export a:focus { text-decoration: underline; }
+.corps a.version_dispo_on { color: rgb(54, 56, 66); }
+#content .bloc .imgMovies { overflow: hidden; margin: 1.5em 0px; }
+#content .bloc .imgMovies li { float: left; margin: 0px 0px 7px; padding: 0px 5px; background: none repeat scroll 0% 0% transparent; }
+#content .bloc .imgMovies a { display: table-cell; width: 76px; height: 76px; border: 1px solid rgb(204, 204, 204); background: none repeat scroll 0% 0% rgb(255, 255, 255); vertical-align: middle; text-align: center; }
+#content .bloc .highlight_box { border: 1px solid rgb(204, 204, 204); padding: 2px; margin: 1.5em 0px 2em; }
+#content .bloc .highlight_content { background: none repeat scroll 0% 0% rgb(245, 211, 210); padding: 0.5em 1em; overflow: hidden; }
+#content .bloc .highlight_content h3 { color: rgb(0, 82, 105); text-align: center; font-size: 1.5em; margin: 0.5em 0px; }
+#content .bloc ol { padding-left: 20px; }
+#content .bloc ol li { list-style-position: outside; }
+#content .bloc .notes li { background: none repeat scroll 0% 0% transparent; padding: 0px; }
+#content .bloc .notes .labo_affiliation { margin: 0px 0px 0.5em 20px; font-size: 11px; }
+#depot_document .notes li { background: none repeat scroll 0% 0% transparent; padding: 0px; }
+#content .bloc .notes .meta_labo { color: rgb(227, 55, 41); }
+#content .bloc .ref * { font-size: 11px; color: rgb(54, 56, 66); }
+#content .bloc .ref li { padding: 0px; background: none repeat scroll 0% 0% transparent; }
+#right .bloc { background: none repeat scroll 0% 0% rgb(238, 238, 238); position: relative; overflow: visible; padding: 10px; border: 1px solid rgb(204, 204, 204); }
+#right .bloc h2 { margin-bottom: 0.5em; padding-bottom: 0.2em; border-bottom: 1px solid rgb(204, 204, 204); color: rgb(227, 55, 41); font-size: 16px; font-weight: bold; }
+#right .bloc h2 img { float: right; margin-top: 3px; }
+#right .bloc h3 { font-size: 1.1em; color: inherit; margin: 1em 0px 0.2em; }
+#right .bloc ul, #right .bloc p { margin-bottom: 0.5em; }
+.bloc_home { clear: both; margin: 0px 0px 1.5em; min-height: 275px; }
+.bloc_home h2 { background: none repeat scroll 0% 0% rgb(227, 55, 41); color: rgb(255, 255, 255); font-size: 1.7em; font-weight: normal; margin: 0em 0px 1em; padding: 0.1em 40px 0.1em 10px; clear: both; float: left; }
+.bloc_home a { clear: both; color: rgb(227, 55, 41); }
+.bloc_home h3 { font-size: 1.3em; font-weight: bold; color: rgb(227, 55, 41); margin: 0em 0px 1em; padding: 0.1em 40px 0.1em 10px; clear: both; float: left; }
+.sous_bloc_home_left { float: left; clear: both; margin: 0px 1em 0px 0px; }
+.sous_bloc_home { float: left; margin-right: 1em; }
+.blockquote { text-align: center; margin: 1em 0px; font-style: italic; font-size: 1.5em; padding: 0px 1em; }
+.signature { text-align: left; font-size: 0.75em; margin-top: 1em; }
+#iframe_script { background-color: rgb(245, 245, 245); }
+.news { background: url('inria_puce_triangle_nat_medium.png') no-repeat scroll left 0.3em transparent; padding-left: 10px; }
+#res_script { border: 0px none; background-color: rgb(245, 245, 245); color: rgb(54, 56, 66); }
+#res_script dt { display: none; }
+#res_script { font-size: 12px; font-family: arial,verdana,sans-serif; color: rgb(54, 56, 66); }
+#res_script .Rubrique { border-bottom: 1px solid rgb(204, 204, 204); padding-bottom: 0.2em; font-weight: bold; color: rgb(227, 55, 41); font-size: 1.4em; margin: 0px 0px 1.5em; }
+#res_script .SousRubrique { color: rgb(54, 56, 66); font-weight: bold; font-size: 1.2em; margin: 1.5em 0px; background: url('inria_puce_triangle_nat_medium.png') no-repeat scroll left 6px transparent; padding-left: 12px; }
+#res_script dl { clear: both; margin: 0px 0px 1em 15px; overflow: hidden; }
+#res_script dt { display: none; }
+#res_script dd { margin-left: 0px; }
+#res_script .Vignette { float: left; clear: left; padding-right: 0em; margin-left: 0.5em; }
+#res_script .Vignette img { background: none repeat scroll 0px 0px rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); padding: 2px; }
+#res_script .NoticeResAvecVignette { border: 0px none; padding-bottom: 0.5em; min-height: 100px; }
+#res_script .ChampResAvecVignette { display: none; width: 15%; text-align: left; font-size: 0.75em; color: rgb(88, 82, 159); font-weight: bold; margin-bottom: 0em; margin-top: 0em; padding: 0em; margin-left: 120px; }
+#res_script .ValeurResAvecVignette { margin-left: 120px; margin-bottom: 0em; margin-top: 0em; padding: 0em; text-align: left; font-size: 1em; }
+#res_script .ValeurResAvecVignette a { color: black; text-decoration: underline; font-size: 1em; }
+#res_script .Titre { font-weight: bold; color: rgb(227, 55, 41); font-size: 1.1em; margin-bottom: 0.1em; }
+#res_script .Titre a { color: rgb(227, 55, 41); text-decoration: none; }
+#res_script .Titre a:hover, #res_script .Titre a:focus { text-decoration: underline; }
+#res_script .Auteurs { color: rgb(136, 136, 136); margin-bottom: 0.1em; }
+#res_script .Detail { margin-bottom: 0.5em; }
+#res_script .Fichier_joint a { text-decoration: none; padding: 0px 0.5em 0px 0px; display: none; }
+.LienBibtexACoteFulltext { display: none; }
+.ValeurRes { margin-left: 25%; margin-bottom: 0em; margin-top: 0em; padding: 0em; text-align: left; font-size: 0.9em; }
+.ValeurRes a { color: rgb(227, 55, 41); text-decoration: none; }
+.in_validate_process { background-color: rgb(242, 220, 219); }
+.lastDepots { color: rgb(54, 56, 66); font-weight: normal; text-decoration: none; }
+.lastDepots td { font-size: 1em; }
+#divNbArtContent hr { background-color: rgb(217, 219, 231); border: 0px none; color: rgb(217, 219, 231); height: 1px; }
+.formulaire_unselected { color: rgb(153, 153, 153); vertical-align: middle; }
+.formulaire_roll, .formulaire_on { background-color: rgb(68, 255, 255); cursor: pointer; }
+.formulaire_bg { background-color: rgb(234, 239, 240); font-size: 12px; font-weight: bold; vertical-align: middle; }
+.presentation, a.presentation, .presentation_large, .presentation_italique { color: rgb(54, 56, 66); font-size: 12px; font-weight: normal; text-decoration: none; }
+.presentation_large { font-size: 12px; font-weight: bold; }
+a.presentation, a.presentation:hover { font-size: 12px; text-decoration: underline; }
+.invers_video { background-color: rgb(54, 56, 66); color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; padding: 2px; text-decoration: none; }
+a.invers_video:hover { text-decoration: underline; }
+.repertoire { color: rgb(54, 56, 66); font-size: 12px; font-weight: bold; text-decoration: none; }
+.metadata, .metadata, .small_metadata, a.small_metadata, .small_metadata_italic, .large_metadata, a.large_metadata, .meta_title, .meta_abstract, .meta_auteur, .meta_labo, .meta_refBiblio, .nom_meta, .nom_fichier, .meta, .labo_id .labo_orga { font-size: 12px; font-style: normal; font-weight: normal; text-decoration: none; }
+.small_metadata, a.small_metadata, .small_metadata_italic { font-size: 12px; }
+.large_metadata, a.large_metadata { font-size: 15px; }
+.meta_title { color: rgb(227, 55, 41); font-size: 17px; font-weight: bold; }
+.meta_abstract { padding: 0px 25px; }
+.meta_domain { color: rgb(68, 112, 169); font-size: 12px; font-weight: normal; }
+.meta_refBiblio { background-color: rgb(234, 239, 240); padding: 5px; text-align: left; }
+.nom_meta, .nom_fichier { font-size: 12px; text-align: left; vertical-align: top; }
+.calendar, .calendar:hover { color: rgb(227, 55, 41); font-size: 12px; font-weight: normal; text-decoration: none; }
+a.urlCourt, a.urlCourt:hover { color: rgb(54, 56, 66); font-size: 12px; font-weight: bold; text-decoration: none; }
+.licence { background-color: rgb(255, 255, 238); color: rgb(54, 56, 66); font-family: Georgia,Verdana; font-size: 12px; font-weight: normal; padding: 0px 25px; text-align: justify; text-decoration: none; }
+#file_right { background-color: rgb(245, 211, 210); margin: 0px; padding: 1px 10px; }
+#file_right li { list-style-type: none; }
+.tampon { border-color: rgb(110, 145, 191) rgb(227, 55, 41) rgb(227, 55, 41) rgb(110, 145, 191); border-style: solid; border-width: 2px; }
+form#form_labo { text-align: left; }
+.moderate { border: 1px solid rgb(110, 145, 191); }
+.moderate_portail, .moderate_portail_arxiv { background: url('hal_tab_off.gif') repeat scroll 0px 0px transparent; color: rgb(255, 255, 255); font-size: 12px; font-weight: bold; }
+.moderate_portail_arxiv { background: url('hal_tab_on.gif') repeat scroll 0px 0px transparent; }
+.moderate_head { background-color: rgb(196, 210, 230); color: rgb(54, 56, 66); font-size: 12px; font-weight: bold; }
+.paire { background-color: rgb(255, 255, 255); }
+.impaire { background-color: rgb(234, 239, 240); }
+.msg_moderator { border: 1px solid rgb(110, 145, 191); font-weight: bold; padding: 5px; }
+.msg_moderator div.text { border-left: 1px solid rgb(110, 145, 191); font-weight: normal; padding-left: 5px; }
+.msg_moderator .date { color: rgb(227, 55, 41); }
+.msg_moderator .to { color: rgb(227, 55, 41); }
+#img_action_doc { float: right; position: relative; }
+#action_doc, #action_doc_autre { margin-top: 4px; padding: 4px; }
+#action_doc { border: 1px solid rgb(110, 145, 191); text-align: center; width: 80%; }
+.tableFormObli { color: red; font-size: 12px; font-weight: bold; }
+div.divLabo, div.divNewLabo, div.divLaboInfo { margin-left: 1px; margin-top: 0px; min-height: 25px; }
+div.divLaboAdd { margin-left: 1px; margin-top: 0px; min-height: 10px; }
+input.auto_complete { background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); }
+div.auto_complete { background-color: white; border: 1px solid rgb(54, 56, 66); margin: 0px; padding: 0px; z-index: 1000; }
+ul.liste_ajax, ul.affi_list { list-style-type: none; margin: 0px; padding: 0px; }
+ul.liste_ajax li.selected { background-color: rgb(255, 255, 187); }
+li.elem_ajax { display: block; font-size: 12px; list-style-type: none; margin: 0px; padding: 2px; }
+li.elem_ajax_new { background-color: rgb(238, 238, 238); border-bottom: 1px solid rgb(110, 145, 191); display: block; font-size: 12px; font-weight: bold; list-style-type: none; margin: 0px; padding: 2px; }
+li.elem_ajax_msg { background-color: rgb(255, 255, 187); background-image: url('warning.gif'); background-position: left center; background-repeat: no-repeat; display: block; font-size: 12px; font-weight: bold; margin: 0px; padding: 5px 20px; }
+li.ref_biblio { background-color: rgb(238, 238, 238); border-top: 1px solid rgb(153, 153, 153); display: block; list-style-type: none; margin: 0px; padding: 2px; }
+ul.liste_ajax a { color: rgb(54, 56, 66); font-size: 12px; }
+ul.boxy { list-style-type: none; margin: 0px; padding: 0px; }
+ul.boxy li { width: auto; }
+span.handle, a.handle { cursor: move; }
+span.pointer { cursor: pointer; }
+div.notification { background-image: url('fond_load.png'); bottom: 0px; color: rgb(54, 56, 66); display: block; font-size: 12px; font-weight: bold; height: 20px; left: 0px; margin: 0px; padding: 5px 0px 0px; position: fixed; text-align: center; width: 100%; z-index: 10000; }
+.hand { cursor: pointer; }
+div.menu_n1, div.conf_logo { background-color: rgb(239, 239, 239); border: 1px solid rgb(204, 204, 204); margin: 5px 0px; padding: 0px 0px 10px; width: 300px; }
+div.menu_n1 span.title, div.conf_logo span.title { background-color: rgb(204, 204, 204); cursor: move; display: block; font-size: 12px; font-weight: bold; margin: 0px 0px 2px; padding: 2px 5px; }
+.handle { cursor: move; }
+div.menu_n2 { background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); width: 299px; }
+#sherpa_green { background-color: rgb(208, 249, 210); }
+#sherpa_blue { background-color: rgb(211, 236, 250); }
+#sherpa_yellow { background-color: rgb(255, 255, 223); }
+#sherpa_white { background-color: rgb(245, 245, 245); }
+.sherpa { background: none repeat scroll 0px 0px rgb(255, 255, 255); border: 1px solid rgb(54, 56, 66); font-family: arial; font-size: 12px; width: 400px; }
+.valid1 { background-color: rgb(234, 241, 221); }
+.valid99 { background-color: rgb(218, 238, 243); }
+.valid0 { background-color: rgb(242, 219, 219); }
+div#halhelp { left: 920px; position: absolute; top: 0px; }
+div#halhelp ul { border: 0px none; margin: 0px; padding: 0px; width: 15px; }
+div#halhelp ul li { border: 0px none; display: block; margin: 0px; padding: 0px; width: 15px; }
+div#halhelp ul li:hover { background: none repeat scroll 0px 0px transparent; }
+div#halhelp ul li a { width: 15px; }
+div#halhelp ul ul { left: -157px; }
+div#halhelp ul ul li { background: none repeat scroll 0px 0px rgb(75, 92, 206); border-right: 1px solid rgb(122, 149, 229); border-top: 1px solid rgb(122, 149, 229); height: auto; width: 200px; }
+div#halhelp ul ul li:hover { background: none repeat scroll 0px 0px rgb(96, 131, 233); }
+div#halhelp ul ul li a { width: 200px; }
+div#halhelp ul li:hover ul { display: block; }
+.tdata tbody tr:hover { background: none repeat scroll 0px 0px rgb(234, 231, 222); }
+.odd { background: none repeat scroll 0px 0px rgb(255, 255, 255); }
+.even { background: none repeat scroll 0px 0px rgb(234, 239, 240); }
+.selected { background: none repeat scroll 0px 0px rgb(255, 255, 187); }
+.navigation { text-align: right; width: 100%; }
+.helptool { cursor: pointer; }
+.mydoc_help, .autlab_help { background-color: rgb(255, 255, 204); color: rgb(227, 55, 41); text-align: center; }
+.prototip { font: 11px Arial,Helvetica,sans-serif; color: rgb(0, 0, 0); }
+.prototip .default { width: 250px; color: rgb(128, 128, 128); }
+.prototip .default .toolbar { background: none repeat scroll 0% 0% rgb(241, 241, 241); font-weight: bold; }
+.prototip .default .title { padding: 5px; }
+.prototip .default .content { padding: 5px; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.prototip .basic { width: 250px; color: rgb(128, 128, 128); }
+.prototip .basic .toolbar { background: none repeat scroll 0% 0% rgb(241, 241, 241); font-weight: bold; }
+.prototip .basic .title { padding: 5px; }
+.prototip .basic .content { padding: 5px; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.prototip .hint { width: 250px; color: rgb(49, 49, 32); background: none repeat scroll 0% 0% rgb(255, 246, 170); }
+.prototip .hint .toolbar { background: none repeat scroll 0% 0% rgb(253, 241, 160); font-weight: bold; }
+.prototip .hint .title, .prototip .hint .content { padding: 5px; }
+.prototip .protoblue { width: 250px; color: rgb(255, 255, 255); }
+.prototip .protoblue .toolbar { background: none repeat scroll 0% 0% rgb(13, 124, 208); font-weight: bold; }
+.prototip .protoblue .title { padding: 5px; }
+.prototip .protoblue .content { background: none repeat scroll 0% 0% rgb(30, 144, 255); padding: 5px; }
+.prototip .creamy { width: 250px; color: rgb(187, 156, 97); }
+.prototip .creamy .toolbar { background: none repeat scroll 0% 0% rgb(243, 237, 194); font-weight: bold; }
+.prototip .creamy .title { padding: 5px; }
+.prototip .creamy .content { background: none repeat scroll 0% 0% rgb(248, 244, 202); padding: 5px; }
+.prototip .darkgrey { width: 250px; color: rgb(255, 255, 255); }
+.prototip .darkgrey .toolbar { background: none repeat scroll 0% 0% rgb(95, 95, 95); font-weight: bold; }
+.prototip .darkgrey .title { padding: 5px; }
+.prototip .darkgrey .content { background: none repeat scroll 0% 0% rgb(128, 128, 128); padding: 5px; }
+.prototip .protogrey { width: 250px; color: rgb(255, 255, 255); background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.prototip .protogrey .toolbar { background: none repeat scroll 0% 0% rgb(150, 156, 146); font-weight: bold; }
+.prototip .protogrey .title { padding: 5px; }
+.prototip .protogrey .content { color: rgb(128, 128, 128); padding: 5px; }
+.prototip .protogrey .toolbar .close { width: 14px; height: 14px; }
+.prototipLoader { position: absolute; top: -1000px; left: -1000px; height: 14px; width: 14px; border: 1px solid rgb(221, 221, 221); overflow: hidden; }
+.prototip { position: absolute; overflow: hidden; }
+.prototip .tooltip, .prototip .toolbar, .prototip .toolbar .title { position: relative; }
+.prototip .content { clear: both; }
+.prototip .toolbar .close { position: relative; text-decoration: none; float: right; width: 19px; height: 15px; display: block; line-height: 0; font-size: 0px; border: 0px none; cursor: pointer; }
+.prototip .tooltip { clear: both; float: left; }
+.prototip .borderLeftWrapper, .prototip .borderRightWrapper { position: absolute; top: 0px; left: 0px; width: 300px; height: 20px; }
+.prototip .borderFrame { height: 100%; width: 100%; float: left; margin: 0px; padding: 0px; position: relative; }
+.prototip .borderTop, .prototip .borderBottom { overflow: hidden; }
+.prototip .borderRow { list-style-type: none; float: left; width: 100%; position: relative; clear: both; margin: 0px; padding: 0px; }
+.prototip_CornerWrapper { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; clear: both; }
+.prototip_Corner { float: left; position: relative; }
+.prototip canvas { position: relative; float: left; }
+.prototip_CornerTr, .prototip_CornerBr { float: right; }
+.prototip_BetweenCorners { position: absolute; top: 0px; left: 0px; width: 100%; overflow: hidden; clear: both; }
+.prototip .borderMiddle { position: relative; float: left; }
+.prototip .borderCenter { position: relative; float: left; height: 100%; }
+.prototip_StemWrapper { position: relative; width: 100%; height: auto; clear: both; }
+.prototip_StemBox { float: left; position: relative; }
+.prototip_Stem { width: 100%; position: absolute; overflow: hidden; }
+.iframeShim { position: absolute; border: 0px none; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; overflow: hidden; }
+.prototip .clearfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }
+.prototip .clearfix { display: inline-block; }
+.prototip .clearfix { display: block; }
+div.divTitle { border: 1px solid rgb(88, 82, 159); background-color: rgb(88, 82, 159); font-size: 10px; font-weight: bold; color: rgb(230, 224, 239); width: 300px; margin: 0px; height: auto; }
+div.divSubTitle { border: 0px none; font-size: 12px; font-weight: bold; width: auto; margin-left: 5px; color: rgb(88, 82, 159); }
+div.divAuthor { border: 1px solid rgb(88, 82, 159); background-color: rgb(230, 224, 239); width: 600px; margin-bottom: 10px; }
+div.divAuthorForm { margin-left: 13px; margin-bottom: 0px; padding: 0px; border-left: 1px solid rgb(88, 82, 159); width: 550px; }
+div.divLaboForm { margin-left: 20px; margin-bottom: 0px; padding: 0px; border: 1px dashed rgb(88, 82, 159); width: 550px; }
+table.tableForm td { font-size: 10px; }
+.tableFormObli { font-size: 10px; font-weight: bold; color: red; }
+div.divLabo, div.divNewLabo, div.divLaboInfo { margin-top: 0px; margin-left: 1px; min-height: 25px; }
+div.divLaboAdd { min-height: 10px; margin-top: 0px; margin-left: 1px; }
+input.auto_complete { border: 1px dashed rgb(88, 82, 159); background-color: rgb(230, 224, 239); }
+div.auto_complete { z-index: 1000; background-color: white; border: 1px solid rgb(136, 136, 136); margin: 0px; padding: 0px; }
+ul.liste_ajax, ul.affi_list { list-style-type: none; margin: 0px; padding: 0px; }
+ul.liste_ajax li.selected { background-color: rgb(255, 255, 187); }
+li.elem_ajax { list-style-type: none; display: block; margin: 0px; padding: 2px; font-size: 10px; }
+li.elem_ajax_new { list-style-type: none; display: block; margin: 0px; padding: 2px; font-size: 11px; font-weight: bold; font-style: italic; border-bottom: 1px solid rgb(88, 82, 159); background-color: rgb(238, 238, 238); }
+li.elem_ajax_msg { background-image: url('warning.gif'); background-repeat: no-repeat; background-position: left center; display: block; margin: 0px; padding: 5px 20px; font-size: 11px; font-weight: bold; font-style: italic; background-color: rgb(255, 255, 187); }
+li.ref_biblio { list-style-type: none; display: block; margin: 0px; padding: 2px; background-color: rgb(238, 238, 238); border-top: 1px solid rgb(153, 153, 153); }
+ul.liste_ajax a { font-size: 9px; color: rgb(0, 0, 0); }
+ul.boxy { list-style-type: none; padding: 0px; margin: 0px; }
+ul.boxy li { width: auto; }
+span.handle, a.handle { cursor: move; }
+span.pointer { cursor: pointer; }
+span.spanLaboText { cursor: url('copy.cur'), auto; font-size: 10px; }
+.formulaire_auto { color: rgb(136, 136, 136); font-style: italic; font-size: 11px; vertical-align: middle; }
+div.divAuthorList { height: 200px; overflow: auto; border: 1px dashed rgb(230, 224, 239); background-color: rgb(230, 224, 239); }
+div.divAuthorListSmall { border: 1px dashed rgb(230, 224, 239); background-color: rgb(230, 224, 239); }
+div.notification { position: fixed; z-index: 10000; bottom: 0px; left: 0px; padding: 5px 0px 0px; height: 20px; margin: 0px; width: 100%; background-image: url('fond_load.png'); display: block; color: rgb(68, 68, 68); text-align: center; font-weight: bold; font-size: 12px; font-family: Verdana,Arial,Helvetica,sans-serif; }
+.hand { cursor: pointer; }
+div.divStat { border: 1px solid rgb(88, 82, 159); background-color: rgb(230, 224, 239); width: 700px; margin-bottom: 10px; }
+div.divMetaPrec { border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255) rgb(171, 173, 179) rgb(171, 173, 179); background-color: rgb(255, 255, 255); font-size: 10px; display: none; }
+#sherpa_green { background-color: rgb(208, 249, 210); }
+#sherpa_blue { background-color: rgb(211, 236, 250); }
+#sherpa_yellow { background-color: rgb(255, 255, 223); }
+#sherpa_white { background-color: rgb(245, 245, 245); }
+.sherpa { background: none repeat scroll 0% 0% rgb(255, 255, 255); font-family: arial; font-size: 10px; border: 1px solid rgb(0, 0, 0); width: 400px; }
+.sherpa_res td { background: none repeat scroll 0% 0% rgb(245, 245, 245); font-family: arial; font-size: 10px; font-weight: normal; }
+.tdata tbody tr:hover { background: none repeat scroll 0% 0% rgb(255, 255, 187); }
+.odd { background: none repeat scroll 0% 0% rgb(245, 245, 245); }
+.even { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.selected { background: none repeat scroll 0% 0% rgb(255, 255, 187); }
+.navigation { text-align: right; width: 100%; }
+.helptoolcontent { color: rgb(52, 96, 153); }
+.helptooltitle { color: rgb(243, 118, 39); }
+.helptool { cursor: pointer; }
+.mydoc_help, .autlab_help { background-color: rgb(255, 255, 204); text-align: center; color: rgb(52, 96, 153); }
+.search_help { background-color: rgb(255, 255, 204); text-align: center; padding: 5px; color: rgb(52, 96, 153); }
+.divLegend table { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.export_tab { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+
+/* ::::: http://static.archives-ouvertes.fr/css/lightbox.css ::::: */
+
+#lightbox { position: absolute; left: 0px; width: 100%; z-index: 100; text-align: center; line-height: 0; }
+#lightbox img { width: auto; height: auto; }
+#lightbox a img { border: medium none; }
+#outerImageContainer { position: relative; background-color: rgb(255, 255, 255); width: 250px; height: 250px; margin: 0px auto; }
+#imageContainer { padding: 10px; }
+#loading { position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav { position: absolute; top: 0px; left: 0px; height: 100%; width: 100%; z-index: 10; }
+#imageContainer > #hoverNav { left: 0px; }
+#hoverNav a { outline: medium none; }
+#prevLink, #nextLink { width: 49%; height: 100%; background-image: url('gif-base64,aaaa'); display: block; }
+#prevLink { left: 0px; float: left; }
+#nextLink { right: 0px; float: right; }
+#prevLink:hover, #prevLink:visited:hover { background: url('prevlabel.gif') no-repeat scroll left 15% transparent; }
+#nextLink:hover, #nextLink:visited:hover { background: url('nextlabel.gif') no-repeat scroll right 15% transparent; }
+#imageDataContainer { font: 10px/1.4em Verdana,Helvetica,sans-serif; background-color: rgb(255, 255, 255); margin: 0px auto; overflow: auto; width: 100%; }
+#imageData { padding: 0px 10px; color: rgb(102, 102, 102); }
+#imageData #imageDetails { width: 70%; float: left; text-align: left; }
+#imageData #caption { font-weight: bold; }
+#imageData #numberDisplay { display: block; clear: left; padding-bottom: 1em; }
+#imageData #bottomNavClose { width: 66px; float: right; padding-bottom: 0.7em; outline: medium none; }
+#overlay { position: absolute; top: 0px; left: 0px; z-index: 90; width: 100%; height: 100%; background-color: rgb(0, 0, 0); }

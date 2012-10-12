@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://wiki.laptop.org/go/Mesh_Network_Details#Design_goals">
+<meta name="wpd_url" content="http://wiki.laptop.org/go/Mesh_Network_Details#Design_goals">
+<meta name="wpd_date" content="2012-09-12T02:30Z">
+
+		
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="generator" content="MediaWiki 1.15.2">
+		<meta name="keywords" content="Mesh Network Details,OLPC/Mesh Network Details,Mesh Network Details/translations,Developer Console,Establishing a Mesh Portal,Libertas,Mesh Network Details/lang-ko,Mesh Network FAQ,Mesh Security,Mesh and WDS,Networking">
+		<link rel="alternate" type="application/x-wiki" title="Edit" href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit">
+		<link rel="edit" title="Edit" href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit">
+		<link rel="shortcut icon" href="about:blank?xo-favicon.png">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://wiki.laptop.org/opensearch_desc.php" title="OLPC (en)">
+		<link rel="copyright" href="http://wiki.laptop.org/go/OLPC:License">
+		<link rel="alternate" type="application/rss+xml" title="OLPC RSS Feed" href="http://wiki.laptop.org/index.php?title=Special:RecentChanges&feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="OLPC Atom Feed" href="http://wiki.laptop.org/index.php?title=Special:RecentChanges&feed=atom">
+		<title>Mesh Network Details - OLPC</title>
+		
+		
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins/shikiwiki/IE50Fixes.css";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins/shikiwiki/IE55Fixes.css";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins/shikiwiki/IE60Fixes.css";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins/shikiwiki/IE70Fixes.css?1";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins/common/IEFixes.js"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		<script type="text/javascript">/*<![CDATA[*/
+		var skin = "shikiwiki";
+		var stylepath = "/skins";
+		var wgArticlePath = "/go/$1";
+		var wgScriptPath = "";
+		var wgScript = "/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://wiki.laptop.org";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Mesh_Network_Details";
+		var wgTitle = "Mesh Network Details";
+		var wgAction = "view";
+		var wgArticleId = "4855";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 269517;
+		var wgVersion = "1.15.2";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+		<script type="text/javascript" src="wikibits.js"><!-- wikibits js --></script>
+		<script type="text/javascript" src="index.php"><!-- site js --></script><script type="text/javascript" src="index_002.php"></script><script src="ga.js" type="text/javascript"></script>
+		<!-- Head Scripts -->
+				<script type="text/javascript">
+
+		addOnloadHook(function() { 
+			var i = 1;
+			while ( true ) {
+				var btn = document.getElementById("languageselector-commit-"+i);
+				var sel = document.getElementById("languageselector-select-"+i);
+				var idx = i;
+
+				if (!btn) break;
+
+				btn.style.display = "none";
+				sel.onchange = function() { this.parentNode.submit(); };
+
+				i++;
+			}
+		});
+	</script>		<script type="text/javascript" src="ajax.js"></script>
+		<link rel="alternate" type="application/rdf+xml" title="Mesh Network Details" href="http://wiki.laptop.org/index.php?title=Special:ExportRDF/Mesh_Network_Details&xmlmime=rdf">
+	<script src="untitled" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="Mesh_Network_Details.css" media="all">
+</head>
+<body class=" ltr">
+	<div id="globalWrapper">
+
+<!------ start of main column  ------>
+<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+		<div id="siteNotice"><div style="border: 1px solid rgb(252, 252, 252); padding: 4px 0px; margin: 1px;"><a href="http://one.laptop.org/action/donate" class="external text" title="http://one.laptop.org/action/donate" rel="nofollow"><span style="font-size: 100%; color: rgb(153, 85, 153);">help support olpc</span></a></div>
+</div>		<h1 class="firstHeading">Mesh Network Details</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From OLPC</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<div style="background: none repeat ; 0% rgb(106, 190, 69); color: white;">&nbsp;&nbsp;This page is monitored by the OLPC team.</div><div style="border-top: 1px solid rgb(136, 136, 136); border-bottom: 1px solid rgb(136, 136, 136); margin: 0px;">
+<table style="background-color: rgb(208, 230, 249); color: grey;" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+ <td>&nbsp;&nbsp;<strong class="selflink">english</strong> | <a href="http://wiki.laptop.org/go/Mesh_Network_Details/lang-ko" title="Mesh Network Details/lang-ko">한국어</a></td>
+ <td style="font-size: 80%;" align="right"><a href="http://wiki.laptop.org/go/Translating/HowTo" title="Translating/HowTo">HowTo</a>&nbsp;<b>[ID#&nbsp;269517]</b>&nbsp;&nbsp;<span class="plainlinks"><a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details/translations&action=edit" class="external text" title="http://wiki.laptop.org/index.php?title=Mesh_Network_Details/translations&action=edit" rel="nofollow"><tt><b>+/-</b></tt></a>&nbsp;&nbsp;</span></td></tr></tbody></table>
+</div>
+<table style="clear: right; margin-bottom: 0.5em; float: right; padding: 0.5em 0px 0.8em 1.4em; background: none repeat ; 0% transparent; width: auto;" class="toclimit-12" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td><table id="toc" class="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Design_goals"><span class="tocnumber">1.1</span> <span class="toctext">Design goals</span></a></li>
+<li class="toclevel-2"><a href="#Standards_Compliance"><span class="tocnumber">1.2</span> <span class="toctext">Standards Compliance</span></a></li>
+<li class="toclevel-2"><a href="#Backward_Compatibility"><span class="tocnumber">1.3</span> <span class="toctext">Backward Compatibility</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Mesh_Points"><span class="tocnumber">2</span> <span class="toctext">Mesh Points</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Mesh_Path_Selection_and_Forwarding"><span class="tocnumber">2.1</span> <span class="toctext">Mesh Path Selection and Forwarding</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Route_Tear-down_and_Recovery"><span class="tocnumber">2.1.1</span> <span class="toctext">Route Tear-down and Recovery</span></a></li>
+<li class="toclevel-3"><a href="#Limited_Broadcast"><span class="tocnumber">2.1.2</span> <span class="toctext">Limited Broadcast</span></a></li>
+<li class="toclevel-3"><a href="#Multicast"><span class="tocnumber">2.1.3</span> <span class="toctext">Multicast</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Mesh_Networking_Security_Implications"><span class="tocnumber">2.2</span> <span class="toctext">Mesh Networking Security Implications</span></a></li>
+<li class="toclevel-2"><a href="#OLPC-Mesh_Association_Algorithm"><span class="tocnumber">2.3</span> <span class="toctext">OLPC-Mesh Association Algorithm</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Mesh_Portals"><span class="tocnumber">3</span> <span class="toctext">Mesh Portals</span></a></li>
+<li class="toclevel-1"><a href="#Driver_Interface"><span class="tocnumber">4</span> <span class="toctext">Driver Interface</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Userspace_Controls"><span class="tocnumber">4.1</span> <span class="toctext">Userspace Controls</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Usage"><span class="tocnumber">5</span> <span class="toctext">Usage</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Disabling_the_mesh_network"><span class="tocnumber">5.1</span> <span class="toctext">Disabling the mesh network</span></a></li>
+<li class="toclevel-2"><a href="#Mesh_in_linear_layout"><span class="tocnumber">5.2</span> <span class="toctext">Mesh in linear layout</span></a></li>
+<li class="toclevel-2"><a href="#Mesh_in_separate_groups"><span class="tocnumber">5.3</span> <span class="toctext">Mesh in separate groups</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Experimenting"><span class="tocnumber">6</span> <span class="toctext">Experimenting</span></a></li>
+<li class="toclevel-1"><a href="#Interactions_With_Wireless_Equipment"><span class="tocnumber">7</span> <span class="toctext">Interactions With Wireless Equipment</span></a></li>
+<li class="toclevel-1"><a href="#Footnotes"><span class="tocnumber">8</span> <span class="toctext">Footnotes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#See_also"><span class="tocnumber">8.1</span> <span class="toctext">See also</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+</td></tr></tbody></table>
+<a name="Introduction" id="Introduction"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=1" title="Edit section: Introduction">edit</a>]</span> <span class="mw-headline">Introduction</span></h1>
+<p>Details of the <a href="http://wiki.laptop.org/go/Networking" title="Networking">mesh networking</a> provided by the XO laptop and <a href="http://wiki.laptop.org/go/School_server" title="School server">School server</a> are provided here.  See also a related <a href="http://wiki.laptop.org/go/Mesh_Network_FAQ" title="Mesh Network FAQ">Mesh Network FAQ</a>.
+</p>
+<a name="Design_goals" id="Design_goals"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=2" title="Edit section: Design goals">edit</a>]</span> <span class="mw-headline"> Design goals </span></h2>
+<ul><li>  Ability to act as a mesh point when laptop's main CPU is off. (Small enough to run autonomously on Marvell's 88W8388 802.11 wireless module)
+</li><li>  Minimize power consumption in autonomous mode.
+</li><li>  Support for asymmetric links/paths.
+</li><li>  Incremental releases -- mesh networking is needed immediately on XO.  Upgrades will continue to improve functionality and adherence with standards.
+</li><li>  Simultaneously act as a Mesh Point as well as an infrastructure node.
+</li><li>  Follow 802.11s draft when possible.
+</li></ul>
+<a name="Standards_Compliance" id="Standards_Compliance"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=3" title="Edit section: Standards Compliance">edit</a>]</span> <span class="mw-headline"> Standards Compliance </span></h2>
+<p>The Mesh Routing Protocol used in the OLPC laptop (OLPC-Mesh) is based on the 802.11s standard being developed by the 802.11 Task Group S <a href="http://www.ieee802.org/11/Reports/tgs_update.htm" class="external autonumber" title="http://www.ieee802.org/11/Reports/tgs_update.htm" rel="nofollow">[1]</a>.  
+</p><p>OLPC-Mesh was based on the first draft produced by TGs, version 0.1.  Currently (Oct, 2008) TGs is working on version 2.0 of the draft.
+</p><p>More information on the differences between OLPC-Mesh and the 802.11s mesh can be found <a href="http://wiki.laptop.org/go/Path_Discovery_Mechanism/Differences_from_80211s" title="Path Discovery Mechanism/Differences from 80211s"> here</a>.
+</p>
+<a name="Backward_Compatibility" id="Backward_Compatibility"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=4" title="Edit section: Backward Compatibility">edit</a>]</span> <span class="mw-headline"> Backward Compatibility </span></h2>
+<p>In order to avoid forced obsolescence of XO laptops already deployed in a school, limited backwards compatibility should be an important feature of future firmware revisions.  Laptops issued in previous years should mesh network peacefully with laptops issued to new classes.   This compatibility may take a form similar to 802.11b/g operation --- if a single laptop requiring extended <a href="http://en.wikipedia.org/wiki/Wireless_Distribution_System" class="extiw" title="wikipedia:Wireless Distribution System">WDS</a> frames is present on a mesh, all mesh points and portals should revert to extended WDS frames in order to support it and its brethren.
+</p>
+<a name="Mesh_Points" id="Mesh_Points"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=5" title="Edit section: Mesh Points">edit</a>]</span> <span class="mw-headline"> Mesh Points </span></h1>
+<p>In typical operation, the XO laptop is operating as a mesh point.  It uses its WiFi interface to both access the network itself and to relay traffic from other mesh points.  A mesh network requires a more dynamic path selection (routing) protocol than that utilized in wired networks.  Even the decision of which wireless channel to use is more difficult in the mesh case. 
+</p>
+<a name="Mesh_Path_Selection_and_Forwarding" id="Mesh_Path_Selection_and_Forwarding"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=6" title="Edit section: Mesh Path Selection and Forwarding">edit</a>]</span> <span class="mw-headline"> Mesh Path Selection and Forwarding </span></h2>
+<p>The path selection mechanism is based on a simplified version of the Hybrid Wireless Mesh Protocol (HWMP) proposed in the 802.11s draft.  HWMP combines on-demand route discovery with support for proactive routing.
+</p><p>Proactive routing requires the formation of a tree topology under a root node.  OLPC-Mesh does not support proactive routing at this time.  
+</p><p>On-demand path discovery is largely based on Ad-Hoc On-demand Distance Vector (AODV) routing.  
+</p><p>Paths are built using a route request / route reply management frames. When a source node needs to transmit a frame to a destination for which no path exists, a broadcast route request (RREQ) is broadcast through the mesh.  As these requests are propagated, nodes receiving them will create routes to the source node in their routing tables.  These routes are termed <b>reverse routes</b> and are only used to forward mesh management frames.  When a node receives a RREQ destined to itself, it will respond with a unicast route reply (RREP), which will be sent back to the source via <b>reverse routes</b>.  The intermediate nodes that forward RREPs back to the source will create routes to the destination node.  This routes are termed <b>forward routes</b>, and are the routes used to forward data frames.
+</p><p><a href="http://wiki.laptop.org/go/Path_Discovery_Mechanism" title="Path Discovery Mechanism"> A comprehensive discussion on the Path Selection Mechanism</a>, is also available.
+</p>
+<a name="Route_Tear-down_and_Recovery" id="Route_Tear-down_and_Recovery"></a><h3><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=7" title="Edit section: Route Tear-down and Recovery">edit</a>]</span> <span class="mw-headline"> Route Tear-down and Recovery </span></h3>
+<p>If a frame cannot be transmitted to the next hop (i.e. when the maximum number of retries is exceeded), the route that was used for the frame is marked as invalid.  If the failed route has predecessors, route error (RERR) management frames are transmitted to the source of the route.  This improves the route recovery time after a mesh node leaves the coverage area of a neighbor.
+</p>
+<a name="Limited_Broadcast" id="Limited_Broadcast"></a><h3><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=8" title="Edit section: Limited Broadcast">edit</a>]</span> <span class="mw-headline"> Limited Broadcast </span></h3>
+<p>The RREQ/RREP mechanism only works for unicast traffic.  Broadcast traffic is propagated through the mesh through limited flooding.  Each mesh data frame contains a unique end-to-end sequence number that is set at the source.  Intermediate nodes maintain a list of <b>recently broadcast</b> frames indexed by this sequence number and the address of the source.  This table ensures that broadcast frames are retransmitted only once.
+</p>
+<a name="Multicast" id="Multicast"></a><h3><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=9" title="Edit section: Multicast">edit</a>]</span> <span class="mw-headline"> Multicast </span></h3>
+<p>Multicast is supported in firmware versions 5.220.9.p9 and above.
+</p>
+<a name="Mesh_Networking_Security_Implications" id="Mesh_Networking_Security_Implications"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=10" title="Edit section: Mesh Networking Security Implications">edit</a>]</span> <span class="mw-headline"> Mesh Networking Security Implications </span></h2>
+<p>Mesh Point operation has some additional <a href="http://wiki.laptop.org/go/Mesh_Security" title="Mesh Security"> security implications</a> compared to WiFi station or Ad-Hoc modes.
+</p>
+<a name="OLPC-Mesh_Association_Algorithm" id="OLPC-Mesh_Association_Algorithm"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=11" title="Edit section: OLPC-Mesh Association Algorithm">edit</a>]</span> <span class="mw-headline"> OLPC-Mesh Association Algorithm </span></h2>
+<p>Under HWMP, a Mesh Point should use active or passive scanning to discover neighbors and establish peer links.  OLPC-Mesh does not use this mechanism.  Neighbors are discovered only via the RREQ/RREP cycle.
+</p><p>Upon power-up (resume as well?), an XO laptop will associate itself with a mesh network in the following manner:
+</p>
+<ol><li> The laptop will issue a DHCP request, followed by a RREQ for a Mesh Portal anycast address and wait for RREP replies, on all three channels being proposed for OLPC meshes (1, 6, and 11) before making any decisions.
+</li><li> If any channel provides a lower hop count to a Mesh Portal, it is selected unless its signal strength is significantly lower.
+</li><li> If all channels provide the same hop count to a Mesh Portal, random selection is used.
+</li></ol>
+<p>As no authentication of neighboring mesh points is performed, the mesh is not protected against route disruption or node isolation attacks.  It is unclear if such an authentication mechanism could be successfully implemented within the guidelines of OLPC.
+</p>
+<a name="Mesh_Portals" id="Mesh_Portals"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=12" title="Edit section: Mesh Portals">edit</a>]</span> <span class="mw-headline"> Mesh Portals </span></h1>
+<p>Up to now we have described the operation of Mesh Points.  Mesh Points that are connected to an external network, and that forward traffic in and out of the mesh are referred to as Mesh Portals (MPP).  
+</p><p>Mesh Points must find paths to a Mesh Portal in order to access the Internet.  When multiple Mesh Portals exist in the mesh, the Mesh Point must select one of them.  The way the OLPC Mesh resolves this problem is by defining a layer 2 ANYCAST MAC address (0xC027C027C027) that will be claimed by all the MPPs in the mesh.  When a Mesh Point needs to find an MPP, a RREQ is sent for that special ANYCAST address.  Each Mesh Portal receiving the RREQ will generate a RREP.
+The path selection method in the firmware will assign higher precedence to those MPPs that can be reached through lower cost routes. 
+</p><p>The Mesh Point then sends a UDP datagram to the selected mesh portal, which also replies with a datagram.  In order to generate the ANYCAST message, a static binding is made in the Mesh Point ARP table between an arbitrary MPP IP address (172.31.255.254 is currently used) and the ANYCAST MAC address.  Then a UDP message is composed to the MPP IP address and MPP service port (currently 16), containing the contents "MPPREQ".
+</p><p>Mesh Portals must bind the MPP IP address (172.31.255.254) to one of their network interfaces, and listen for configuration requests sent by Mesh Points to that address on the MPP service port (16).  In reply to these requests, Mesh Portals will send to the Mesh Points all the information required to access outside the mesh network.  At this time this configuration information is composed of the IP address of the selected Mesh Portal and the addresses of DNS servers.
+</p><p>More information about this configuration daemon can be found:
+</p>
+<ul><li> <a href="http://wiki.laptop.org/go/Establishing_a_Mesh_Portal" title="Establishing a Mesh Portal">Establishing a Mesh Portal</a>
+</li><li> <a href="http://wiki.laptop.org/go/Trial1_Server_Software#Mesh_Portal" title="Trial1 Server Software">Trial1 School Server Software</a>
+</li><li> <a href="http://www.cozybit.com/projects/mpp-utils" class="external text" title="http://www.cozybit.com/projects/mpp-utils" rel="nofollow">Cozybit's MPP Utils</a>
+</li></ul>
+<p>Traffic forwarding in and out of the mesh is done at layer 3 via Network Address Translation (NAT) at the host.  This gives the flexibility to use any other network connection to connect the mesh to the world (e.g. PPP, GPRS, etc.).
+</p>
+<a name="Driver_Interface" id="Driver_Interface"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=13" title="Edit section: Driver Interface">edit</a>]</span> <span class="mw-headline"> Driver Interface </span></h1>
+<p>The wireless driver creates a virtual network interface just for mesh traffic (msh0 on the laptop).  The main interface (usually eth0 on the laptop) is used for infrastructure traffic when the laptop is associated to an AP.  It is also used for some control operations that aren't currently supported by the mesh interface, such as assigning a MAC address.
+</p>
+<a name="Userspace_Controls" id="Userspace_Controls"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=14" title="Edit section: Userspace Controls">edit</a>]</span> <span class="mw-headline"> Userspace Controls </span></h2>
+<p>There are several system calls available to examine and modify the behavior of the OLPC-Mesh.  This calls are implemented as ioctls, and can be invoked via iwpriv commands.
+</p><p>The first of such tools are the <code>iwpriv fwt_*</code> family of commands.  With these commands one can examine and modify the routing table.  See the <a href="http://wiki.laptop.org/go/Wireless_Driver_README" title="Wireless Driver README">Wireless Driver README</a> file in the libertas driver directory for details.
+</p><p>Another useful feature for debugging and testing is the blinding table.  Incoming traffic from any address that exists in the blinding table will be silently discarded by the firmware.  This is useful to test specific mesh topologies that would otherwise be hard to setup.  The blinding table can be accessed using <code>iwpriv bt_{add,del,reset,list}</code>.
+</p><p>There is also one ioctl call that will change the maximum TTL of outgoing mesh traffic.  The TTL determines the maximum number of hops that a frame will cross before being dropped.  This is used to minimize the consequences of routing loops but it also limits the number of neighbors that can be reached in the mesh.  The mesh TTL can be modified via <code>iwpriv mesh_{get,set}_ttl</code>. 
+</p><p>Finally, there are mesh specific statistics available through <code>ethtool -S</code>
+Currently the following counters are implemented:
+</p>
+<pre> drop_duplicate_bcast
+ drop_ttl_zero
+ drop_no_fwd_route
+ drop_no_buffers
+ fwded_unicast_cnt
+ fwded_bcast_cnt
+ drop_blind_table
+ tx_failed_cnt
+</pre>
+<a name="Usage" id="Usage"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=15" title="Edit section: Usage">edit</a>]</span> <span class="mw-headline"> Usage </span></h1>
+<p>These are the steps to start the mesh manually.  
+</p><p>1. Bring up a console (click Terminal on the <a href="http://wiki.laptop.org/go/Developer_Console" title="Developer Console">Developer Console</a>)
+</p><p>2. Type:
+</p>
+<pre>su -                                # enter root password if needed
+iwconfig msh0 mode ad-hoc channel &lt;channel&gt; essid &lt;any name&gt;
+ifconfig msh0 &lt;IP address&gt;
+</pre>
+<p><i>channel:</i>  Pick the same for all the nodes in the mesh.  If in doubt, pick 6 <br>
+<i>IP address:</i>  Pick a unique IP address in the mesh.  If in doubt, pick 10.X.Y.Z, and replace  X.Y.Z with <a href="http://www.random.org/integers/?num=3&min=0&max=254&col=5&format=html&rnd=new&base=10" class="external text" title="http://www.random.org/integers/?num=3&min=0&max=254&col=5&format=html&rnd=new&base=10" rel="nofollow">these 3 numbers</a> <br>
+<i>any name:</i>  Literally, any name will work.  If in doubt, pick "olpc-mesh".
+</p><p>Soon turning on the mesh and IP address assignment will happen automatically.  But these steps will allow you to start using the mesh as of build 368.
+</p>
+<a name="Disabling_the_mesh_network" id="Disabling_the_mesh_network"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=16" title="Edit section: Disabling the mesh network">edit</a>]</span> <span class="mw-headline"> Disabling the mesh network </span></h2>
+<p>Before connecting to a conventional access point, the XO attempts to connect on each mesh channel, then repeats a second time.
+This slows connection to a conventional AP.
+To disable mesh networking, from <a href="http://en.forum.laptop.org/viewtopic.php?f=6&t=162394" class="external free" title="http://en.forum.laptop.org/viewtopic.php?f=6&t=162394" rel="nofollow">http://en.forum.laptop.org/viewtopic.php?f=6&t=162394</a>  , in <a href="http://wiki.laptop.org/go/Terminal_activity" title="Terminal activity" class="mw-redirect">Terminal activity</a> as <a href="http://wiki.laptop.org/go/Root" title="Root">root</a>, enter the command
+</p>
+<pre>echo 0 &gt; /sys/class/net/eth0/lbs_mesh
+</pre>
+<p>To make this happen automatically, you could add the line to a startup file, e.g. enter the command
+</p>
+<pre>echo "echo 0 &gt; /sys/class/net/eth0/lbs_mesh" &gt;&gt; /etc/rc.local
+</pre>
+<p>You can also disable mesh networking in a post-resume script for <a href="http://wiki.laptop.org/go/Powerd" title="Powerd">powerd</a>, as the <a href="http://wiki.sugarlabs.org/go/Dextrose" class="external text" title="http://wiki.sugarlabs.org/go/Dextrose" rel="nofollow">Sugar Labs Dextrose</a> distribution for XO's does (<a href="http://lists.laptop.org/pipermail/devel/2012-March/034710.html" class="external text" title="http://lists.laptop.org/pipermail/devel/2012-March/034710.html" rel="nofollow">mailing list message</a>).
+</p>
+<a name="Mesh_in_linear_layout" id="Mesh_in_linear_layout"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=17" title="Edit section: Mesh in linear layout">edit</a>]</span> <span class="mw-headline"> Mesh in linear layout </span></h2>
+<p><a href="http://video.google.com/videoplay?docid=-3339545498848597316" class="external free" title="http://video.google.com/videoplay?docid=-3339545498848597316" rel="nofollow">http://video.google.com/videoplay?docid=-3339545498848597316</a>
+</p>
+<a name="Mesh_in_separate_groups" id="Mesh_in_separate_groups"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=18" title="Edit section: Mesh in separate groups">edit</a>]</span> <span class="mw-headline"> Mesh in separate groups </span></h2>
+<p><a href="http://video.google.com/videoplay?docid=-5598928296852168708" class="external free" title="http://video.google.com/videoplay?docid=-5598928296852168708" rel="nofollow">http://video.google.com/videoplay?docid=-5598928296852168708</a>
+</p>
+<a name="Experimenting" id="Experimenting"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=19" title="Edit section: Experimenting">edit</a>]</span> <span class="mw-headline"> Experimenting </span></h1>
+<p>Want to run a simple experiment to see the mesh in action?  You will need 3 laptops, xoa, xob and xoc, with IP addresses IPa and IPc (xob does not need an IP for this experiment):
+</p><p>1. Bring all three xo's together.
+</p>
+<pre>xoa, xob, xoc ------------------------------------------------
+</pre>
+<p>2. At the terminal of laptop C type
+</p>
+<pre>ping IPa
+</pre>
+<p>3. Move xoc away from xoa and xob, until pings start failing.  Mark that location (L1):  that will indicate the direct range limit.  
+</p>
+<pre>                                          L1
+xoa, xob -------------------------------- xoc ------------------------------------
+</pre>
+<p>4. Move xoc closer to xoa and xob.  As soon as pings restart, mark that location (L2).
+</p>
+<pre>                              L2          L1
+xoa, xob -------------------- xoc ----------------------------
+</pre>
+<p>5. Pick up xob and move it to L2.
+</p>
+<pre>                              L2          L1
+xoa ------------------------- xob, xoc -----------------------
+</pre>
+<p>6. Move xoc to L1, you should now be able go substantially beyond L1 and successfully ping xoa.
+</p>
+<pre>                              L2          L1
+xoa ------------------------- xob ------------------------ xoc
+</pre>
+<p>7. Move xob back to xoa, you should find that xoc will no longer be able to ping xoa.
+</p>
+<pre>                              L2          L1
+xoa, xob ------------------------------------------------- xoc
+</pre>
+<p><br>
+</p><p>That's the beauty of the mesh:  you can extend the range just by inviting more people over to your party.
+</p>
+<a name="Interactions_With_Wireless_Equipment" id="Interactions_With_Wireless_Equipment"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=20" title="Edit section: Interactions With Wireless Equipment">edit</a>]</span> <span class="mw-headline"> Interactions With Wireless Equipment </span></h1>
+<p>The mesh may be affected by <a href="http://wiki.laptop.org/go/Mesh_and_WDS" title="Mesh and WDS"> legacy wireless equipment</a>.
+</p>
+<a name="Footnotes" id="Footnotes"></a><h1><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=21" title="Edit section: Footnotes">edit</a>]</span> <span class="mw-headline"> Footnotes </span></h1>
+<p>[1] Note that although the frame is discarded, it will still be acknowledged by the MAC layer.
+</p>
+<a name="See_also" id="See_also"></a><h2><span class="editsection">[<a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit&section=22" title="Edit section: See also">edit</a>]</span> <span class="mw-headline"> See also </span></h2>
+<ul><li> <a href="http://wiki.laptop.org/go/Libertas" title="Libertas">Libertas</a> - the Marvel 88w838X series of wireless chipsets
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 73/1000000
+Post-expand include size: 1507/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 2/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:4855-0!1!0!!en!2 and timestamp 20121009192445 -->
+<div class="printfooter">
+
+Retrieved from "<a href="http://wiki.laptop.org/go/Mesh_Network_Details">http://wiki.laptop.org/go/Mesh_Network_Details</a>"</div>
+			<div id="catlinks"><div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://wiki.laptop.org/go/Special:Categories" title="Special:Categories">Categories</a>: <span dir="ltr"><a href="http://wiki.laptop.org/go/Category:Pages_monitored_by_OLPC" title="Category:Pages monitored by OLPC">Pages monitored by OLPC</a></span> | <span dir="ltr"><a href="http://wiki.laptop.org/go/Category:Translated_Pages" title="Category:Translated Pages">Translated Pages</a></span> | <span dir="ltr"><a href="http://wiki.laptop.org/go/Category:Software" title="Category:Software">Software</a></span> | <span dir="ltr"><a href="http://wiki.laptop.org/go/Category:Network" title="Category:Network">Network</a></span></div><br><hr><a href="http://wiki.laptop.org/go/Category:Language_support" title="Category:Language support">Language support</a> &gt; <a href="http://wiki.laptop.org/go/Category:Translated_Pages" title="Category:Translated Pages">Translated Pages</a><br>
+<a href="http://wiki.laptop.org/go/Category:Pages_monitored_by_OLPC" title="Category:Pages monitored by OLPC">Pages monitored by OLPC</a><br>
+<a href="http://wiki.laptop.org/go/Category:Projects" title="Category:Projects">Projects</a> &gt; <a href="http://wiki.laptop.org/go/Category:Hardware" title="Category:Hardware">Hardware</a><br>
+<a href="http://wiki.laptop.org/go/Category:Projects" title="Category:Projects">Projects</a> &gt; <a href="http://wiki.laptop.org/go/Category:Software" title="Category:Software">Software</a><br>
+<a href="http://wiki.laptop.org/index.php?title=Category:Features&action=edit&redlink=1" class="new" title="Category:Features (page does not exist)">Features</a> &gt; <a href="http://wiki.laptop.org/go/Category:Software_features" title="Category:Software features">Software features</a> &gt; <a href="http://wiki.laptop.org/go/Category:Network" title="Category:Network">Network</a></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+</div>
+<!------  end of main column  ------>
+
+<!------  start of sidebar column  ------>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<ul>
+				 <li id="ca-nstab-main" class="selected"><a href="http://wiki.laptop.org/go/Mesh_Network_Details">Page</a></li>
+				 <li id="ca-talk"><a href="http://wiki.laptop.org/go/Talk:Mesh_Network_Details">Discussion</a></li>
+				 <li id="ca-edit"><a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=edit">Edit</a></li>
+				 <li id="ca-history"><a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&action=history">History</a></li>
+		</ul>
+	</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+			<li id="pt-search" class="active"> 
+ <script> function clearText(f){ if (f.defaultValue==f.value) f.value = "" } </script>
+			<div id="top-forms" style="float: left; padding: 0px 0px 0px 11.3em;">
+                <table style="background-color: transparent;" cellpadding="0" cellspacing="0"><tbody><tr><td style="float: left; background-color: rgb(255, 255, 238);" valign="top"><form action="http://www.google.com/translate" method="POST" name="translate"><select name="langpair" style="border: 0px none; font-size: 11px; font-style: normal; width: 6.8em; background: none repeat ; 0% rgb(255, 255, 238);" onchange="document.translate.submit();"><option value="" style="text-align: center; font-style: normal; font-weight: bold;"> translate</option><option value="en|es">English to Spanish</option><option value="en|pt">English to Portuguese</option><option value="en|ko">English to Korean</option><option value="en|ar">English to Arabic</option><option value="en|fr">English to French</option><option value="en|ru">English to Russian</option><option value="en|zh-CN">English to Chinese (Simplified)</option><option value="en|zh-TW">English to Chinese (Traditional)</option><option value="en|de">English to German</option><option value="en|it">English to Italian</option><option value="en|ja">English to Japanese</option><option value="es|en">Spanish to English</option><option value="pt|en">Portuguese to English</option><option value="ko|en">Korean to English</option><option value="fr|en">French to English</option>
+</select>
+		<input name="u" id="url" value="http://wiki.laptop.org/go//index.php?title=Mesh_Network_Details&oldid=269517" dir="ltr" type="hidden">
+<!-- value="http://wiki.laptop.org/go/" -->
+		<input name="hl" value="en" type="hidden">
+		<input name="ie" value="UTF8" type="hidden">
+		</form></td>
+<!--  hypothesis: most new wiki users never edit; really want to subscribe.  
+      (find a way to show only once per anon session) 
+                <td style="padding:0px 0px 0px 10px; background-color:transparent;" valign="top"><form 
+action="http://visitor.constantcontact.com/d.jsp" id="subscribewiki" method="post" name="ccoptin" 
+target="_blank" style="border:0; padding:0px 2px 0px 2px; margin-bottom:16px;"><input 
+type="text" size="80px" id="email" name="ea2" onfocus="clearText(this)" value="enter your email" style="border:0; margin-bottom:10px; padding:1px 2px 0px 2px; font-size: 11px; font-style:normal; width:100px; height:18px; background:#ffffee; color:#999;" /><button 
+type="submit" id="subscribeSubmit" name="go" style="border:1px solid #ccc; padding:0px 0px 8px 0px; height:18px; font-size:10px; color:#666;" value="Join">subscribe</button>
+                <input type="hidden" name="m" value="1102296509992" />
+                <input type="hidden" name="p" value="oi" />
+            </form></td> 
+-->
+			</tr></tbody></table>
+			</div>
+			</li>
+				<li id="pt-login"><a href="http://wiki.laptop.org/index.php?title=Special:UserLogin&returnto=Mesh_Network_Details">Log in / create account</a></li>
+				<li id="pt-openidlogin"><a href="http://wiki.laptop.org/index.php?title=Special:OpenIDLogin&returnto=Mesh_Network_Details">Login with OpenID</a></li>
+			</ul>
+
+		</div>
+	</div>
+	<div id="p-logo" class="portlet">
+		<a style="padding: 5px 20px 0px 0px; background-image: url('olpc_wiki_logo.png');" href="http://wiki.laptop.org/go/The_OLPC_Wiki" title="The OLPC Wiki"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div id="p-search" class="portlet">
+		<h5 id="p-search"><label for="searchInput">Search</label></h5>
+<!--
+	 	<form action="http://google.com/custom" id="googlesearchform"><div>
+		 <input style="font-style:normal; padding-left:4px; color:blue; background:#ffffcc;" id="searchInput" name="q" type="text" onfocus="clearText(this)" value="Google search" />
+		 <input type="hidden" name="hl" value="en">
+		 <input type="hidden" name="domains" value="wiki.laptop.org">
+		 <input type="hidden" name="sitesearch" value="wiki.laptop.org">
+			</div></form>
+-->
+                <div id="searchBody-G" class="pBody">
+                        <div id="cse-search-form" style="width: 115%; padding-left: 7px;"><div dir="ltr" class="gsc-control-searchbox-only gsc-control-searchbox-only-en"><form action="http://wiki.laptop.org/go/Mesh_Network_Details" accept-charset="utf-8" class="gsc-search-box"><table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-input"><input style="outline: medium none; background: url('google_custom_search_watermark.gif') no-repeat scroll left center rgb(255, 255, 255);" spellcheck="false" dir="ltr" id="gsc-i-id1" title="search" name="search" class=" gsc-input" size="10" autocomplete="off" type="text"></td><td class="gsc-search-button"><input title="search" class="gsc-search-button" value="Search" type="button"></td><td class="gsc-clear-button"><div title="clear results" class="gsc-clear-button">&nbsp;</div></td></tr></tbody></table><table class="gsc-branding" cellpadding="0" cellspacing="0"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td><td class="gsc-branding-img"><img class="gsc-branding-img" src="small-logo.png"></td></tr></tbody></table></form></div></div>
+                        <script src="jsapi" type="text/javascript"></script>
+                        <script type="text/javascript">
+ 
+                          google.load('search', '1', {language : 'en'});
+                            google.setOnLoadCallback(function() {
+                                    var customSearchControl = new google.search.CustomSearchControl('011382939614944835298:qbypfcvcgvi');
+                                        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+                                        var options = new google.search.DrawOptions();
+                                            options.enableSearchboxOnly("http://www.google.com/cse?cx=011382939614944835298:qbypfcvcgvi");    
+                                            customSearchControl.draw('cse-search-form', options);
+                                              }, true);
+                        </script><script src="untitled_002.dat" type="text/javascript"></script><script src="default+en.i.js" type="text/javascript"></script>
+                    
+                    
+	        </div>
+		<div id="searchBody" class="pBody">
+			<form action="http://wiki.laptop.org/go/Special:Search" id="searchform"><div>
+			 <input id="searchInput" name="search" style="padding-left: 4px; color: blue;" onfocus="clearText(this)" value="Wiki search" accesskey="f" type="text">
+			 <input name="fulltext" value="y" type="hidden">
+			</div></form>
+                </div>
+        </div> <!-- close p-search -->
+		<div class="portlet" id="p-About OLPC">
+		<h5>About OLPC</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Main-Page"><a href="http://wiki.laptop.org/go/The_OLPC_Wiki">Main Page</a></li>
+				<li id="n-Contact-us"><a href="http://wiki.laptop.org/go/OLPC:Contact_us">Contact us</a></li>
+				<li id="n-Recent-changes"><a href="http://wiki.laptop.org/go/Special:RecentChanges">Recent changes</a></li>
+				<li id="n-Blog-and-Planet"><a href="http://wiki.laptop.org/go/OLPC:Blogs">Blog and Planet</a></li>
+				<li id="n-Email-lists-and-IRC"><a href="http://wiki.laptop.org/go/Communication_channels">Email lists and IRC</a></li>
+				<li id="n-Ways-to-participate"><a href="http://wiki.laptop.org/go/Participate">Ways to participate</a></li>
+				<li id="n-Current-events"><a href="http://wiki.laptop.org/go/OLPC:News">Current events</a></li>
+				<li id="n-Laptop.org"><a href="http://laptop.org/">Laptop.org</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-About the XO">
+		<h5>About the XO</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Help-using-the-XO"><a href="http://wiki.laptop.org/go/Getting_started">Help using the XO</a></li>
+				<li id="n-Support-for-the-XO"><a href="http://wiki.laptop.org/go/Support">Support for the XO</a></li>
+				<li id="n-Repairing-an-XO"><a href="http://wiki.laptop.org/go/Repair">Repairing an XO</a></li>
+				<li id="n-Disassembly-Instructions"><a href="http://wiki.laptop.org/go/Disassembly">Disassembly Instructions</a></li>
+				<li id="n-UPLOAD-FILE-:)"><a href="http://wiki.laptop.org/go/Special:Upload">UPLOAD FILE :)</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-Projects">
+		<h5>Projects</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-for-Educators"><a href="http://wiki.laptop.org/go/Educators">for Educators</a></li>
+				<li id="n-for-Developers"><a href="http://wiki.laptop.org/go/Developers">for Developers</a></li>
+				<li id="n-Software,-LiveCDs"><a href="http://wiki.laptop.org/go/Software_components">Software, LiveCDs</a></li>
+				<li id="n-Hardware,-Periphs"><a href="http://wiki.laptop.org/go/Hardware">Hardware, Periphs</a></li>
+				<li id="n-Activities,-Content"><a href="http://wiki.laptop.org/go/Activities">Activities, Content</a></li>
+				<li id="n-Testing"><a href="http://wiki.laptop.org/go/Testing">Testing</a></li>
+				<li id="n-Deployment-guide"><a href="http://wiki.laptop.org/go/Deployment_Guide">Deployment guide</a></li>
+				<li id="n-School-server"><a href="http://wiki.laptop.org/go/School_server">School server</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-OLPC wiki">
+		<h5>OLPC wiki</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Glossary"><a href="http://wiki.laptop.org/go/Glossary">Glossary</a></li>
+				<li id="n-Random-page"><a href="http://wiki.laptop.org/go/Special:Random">Random page</a></li>
+				<li id="n-Help-using-the-wiki"><a href="http://wiki.laptop.org/go/Help:Contents">Help using the wiki</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://wiki.laptop.org/go/Special:WhatLinksHere/Mesh_Network_Details">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://wiki.laptop.org/go/Special:RecentChangesLinked/Mesh_Network_Details">Related changes</a></li>
+<li id="t-specialpages"><a href="http://wiki.laptop.org/go/Special:SpecialPages">Special pages</a></li>
+				<li id="t-print"><a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&printable=yes">Printable version</a></li>				<li id="t-permalink"><a href="http://wiki.laptop.org/index.php?title=Mesh_Network_Details&oldid=269517">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+<!--	<div id="googleads" class="portlet">
+	  <h5></h5>
+	<div class="pBody">
+  <script type="text/javascript">
+google_ad_client = "pub-4880598326964493";
+google_ad_width = 120;
+google_ad_height = 300;
+google_ad_format = "120x300_as";
+google_ad_language = "english";
+google_ad_type = "text_image";
+google_ad_channel = "5528187734";
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>	</div>
+ 	</div> 
+-->
+</div>
+<!------ end of the left (by default at least) column ------>
+
+
+
+	<div class="visualClear"></div> 
+<!------  start of footer  ------>
+<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a><!--
+				<div id="f-poweredbyico"><a href="http://laptop.org/xo"><img src="http://wiki.laptop.org/images/4/40/G1G1thin_badge.gif" alt="Give One, Get One" /></a>
+				<div id="f-poweredbyico"><a href="http://laptop.org/xo"><img src="http://wiki.laptop.org/images/2/24/G1G1Logo-crop_badge.gif" alt="Give One, Get One" /></a> 
+-->
+</div>
+				<div id="f-copyrightico"><a href="http://wiki.laptop.org/go/OLPC:License"><img src="88x31.png" alt="Creative Commons Attribution 2.5"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> Last edited on 00:35, 12 April 2012.</li>
+				<li id="viewcount">&gt;38,054 views of this page.  &nbsp; <i>One Laptop per Child</i> and the OLPC logos are trademarks of OLPC.</li>
+				<li id="numberofwatchingusers">[10&nbsp;watching&nbsp;users]</li>
+				<li id="copyright">Content is licensed under <a href="http://wiki.laptop.org/go/OLPC:License" class="external " title="http://wiki.laptop.org/go/OLPC:License">Creative Commons Attribution 2.5</a></li>
+				<li id="privacy"><a href="http://wiki.laptop.org/go/OLPC:Privacy_policy" title="OLPC:Privacy policy">Privacy</a></li>
+				<li id="about"><a href="http://wiki.laptop.org/go/OLPC:About" title="OLPC:About">About OLPC</a></li>
+				<li id="disclaimer"><a href="http://wiki.laptop.org/go/OLPC:General_disclaimer" title="OLPC:General disclaimer">Disclaimers</a></li>
+<br>
+<li style="color: rgb(68, 68, 68);">OLPC Foundation, P.O. Box 425087, Cambridge MA 02142</li>
+<li style="color: rgb(68, 68, 68);"> &nbsp; &nbsp; </li>
+<li style="color: rgb(68, 68, 68);"> Hosted by <a href="http://www.gossamer-threads.com/about/">Gossamer Threads</a> </li>
+<li style="color: rgb(68, 68, 68);"> &nbsp; &nbsp; </li>
+<li style="color: rgb(68, 68, 68);">Contact us: <b>help@laptop.org</b> </li>
+			</ul>
+</div>  
+
+<script type="text/javascript"> if (window.runOnloadHook) runOnloadHook();</script>
+
+<!-- Served in 1.058 secs. --><script src="urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+
+_uacct = "UA-4975748-1";
+urchinTracker();
+</script>
+
+<table class="gstl_0 gssb_c" style="width: 90px; display: none; top: 210px; left: 18px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table></body>
+</html>

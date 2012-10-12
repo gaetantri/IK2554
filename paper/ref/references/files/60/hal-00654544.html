@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://hal.inria.fr/hal-00654544">
+<meta name="wpd_url" content="http://hal.inria.fr/hal-00654544">
+<meta name="wpd_date" content="2012-09-12T14:08Z">
+
+<link rel="shortcut icon" href="about:blank?inria.ico">
+<link rel="Top" href="http://hal.inria.fr/">
+<link rel="Search" href="http://hal.inria.fr/?action_todo=search">
+<link rel="alternate" type="application/rss+xml" title="Canaux RSS" href="http://hal.inria.fr/rss.php">
+<title>HAL - INRIA :: [hal-00654544, version 1] Fish Eye OLSR Scaling Properties</title>
+
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Pragma" content="NO-CACHE">
+<meta name="CACHE-CONTROL" content="NO-CACHE">
+<meta name="GOOGLEBOT" content="NOARCHIVE">
+<meta name="verify-v1" content="QdMIp5yiooXHBt9w0MHkwgLkLwDe3CPJw1Bmko8Rb1w=">
+<meta name="google-site-verification" content="QdMIp5yiooXHBt9w0MHkwgLkLwDe3CPJw1Bmko8Rb1w=">
+<meta name="Copyright" content="HAL/CCSD">
+<meta name="Publisher" content="HAL - INRIA">
+<meta name="Generator" content="HAL">
+<meta name="Author" content="Adjih, Cédric et al">
+<meta name="Description" content="Scalability is one of the toughest challenges in ad hoc networking. Recent work outlines theoretical bounds on how well routing protocols could scale in this environment. However, none of the popular routing solutions really scales to large networks, by coming close enough to these bounds. In this paper, we study the case of link state routing and OLSR, one of the strongest candidate for standardization. We analyze how these bounds are not reached in this case, and we study how much the scalability is enhanced with the use of Fish Eye techniques in addition to the link state routing framework. We show that with this enhancement, the theoretical scalability bounds are reached.">
+<meta name="Keywords" content="">
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/">
+<meta name="DC.identifier" content="hal-00654544, version 1">
+<meta name="DC.identifier" content="http://hal.inria.fr/hal-00654544">
+<meta name="DC.title" content="Fish Eye OLSR Scaling Properties">
+<meta name="DC.creator" content="Adjih, Cédric">
+<meta name="DC.creator" content="Baccelli, Emmanuel">
+<meta name="DC.creator" content="Clausen, Thomas Heide">
+<meta name="DC.creator" content="Jacquet, Philippe">
+<meta name="DC.creator" content="Rodolakis, Georgios">
+<meta name="DC.description" content="Scalability is one of the toughest challenges in ad hoc networking. Recent work outlines theoretical bounds on how well routing protocols could scale in this environment. However, none of the popular routing solutions really scales to large networks, by coming close enough to these bounds. In this paper, we study the case of link state routing and OLSR, one of the strongest candidate for standardization. We analyze how these bounds are not reached in this case, and we study how much the scalability is enhanced with the use of Fish Eye techniques in addition to the link state routing framework. We show that with this enhancement, the theoretical scalability bounds are reached.">
+<meta name="DC.subject" content="">
+<meta name="DC.date" content="2004-12-01">
+<meta name="DC.relation" content="http://hal.inria.fr/hal-00654544">
+<meta name="citation_title" content="Fish Eye OLSR Scaling Properties">
+<meta name="citation_author" content="Cédric Adjih">
+<meta name="citation_author_institution" content="INRIA Rocquencourt, HIPERCOM, , FRInria">
+<meta name="citation_author" content="Emmanuel Baccelli">
+<meta name="citation_author_institution" content="INRIA Saclay - Ile de France, HIPERCOM, LIX École Polytechnique, Route de Saclay, 91128 Palaiseau Cedex, FRANCE, FRInria, Université Paris XI - Paris Sud, CNRS : UMR, Polytechnique - X">
+<meta name="citation_author" content="Thomas Heide Clausen">
+<meta name="citation_author_institution" content="INRIA Saclay - Ile de France, HIPERCOM, LIX École Polytechnique, Route de Saclay, 91128 Palaiseau Cedex, FRANCE, FRInria, Université Paris XI - Paris Sud, CNRS : UMR, Polytechnique - X">
+<meta name="citation_author_institution" content="LIX, Laboratoire d'informatique de l'école polytechnique, Route de Saclay 91128 PALAISEAU CEDEX, FRCNRS : UMR7161, Polytechnique - X">
+<meta name="citation_author" content="Philippe Jacquet">
+<meta name="citation_author_institution" content="INRIA Rocquencourt, HIPERCOM, , FRInria">
+<meta name="citation_author" content="Georgios Rodolakis">
+<meta name="citation_author_institution" content="INRIA Rocquencourt, HIPERCOM, , FRInria">
+<meta name="citation_author_institution" content=", Macquarie University, NSW 2006 Australia, AUUniversity of Sydney">
+<meta name="citation_publication_date" content="2004/12/01">
+<meta name="citation_online_date" content="2011/12/22">
+<meta name="citation_journal_title" content="Journal of Communications and Networks">
+<meta name="citation_volume" content="6">
+<meta name="citation_issue" content="4">
+<meta name="citation_firstpage" content="352">
+<meta name="citation_lastpage" content="361">
+<meta name="citation_abstract_html_url" content="http://hal.inria.fr/hal-00654544">
+<meta name="citation_pdf_url" content="http://hal.inria.fr/docs/00/65/45/44/PDF/jcn_journal_paper-reviewed-HAL.pdf">
+
+
+<script type="text/javascript" language="javascript" src="swfobject.js"></script>
+<script type="text/javascript" language="javascript" src="prototype.js"></script>
+<script type="text/javascript" language="javascript" src="scriptaculous.js"></script><script type="text/javascript" src="builder.js"></script><script type="text/javascript" src="effects.js"></script><script type="text/javascript" src="dragdrop.js"></script><script type="text/javascript" src="controls.js"></script><script type="text/javascript" src="slider.js"></script><script type="text/javascript" src="sound.js"></script>
+<script type="text/javascript" language="javascript" src="utile.js"></script>
+<script type="text/javascript" language="javascript" src="forms.js"></script>
+<script type="text/javascript" language="javascript" src="default_value.js"></script>
+<script type="text/javascript" language="javascript" src="boxover.js"></script>
+<script type="text/javascript" language="javascript" src="lightbox.js"></script>
+<script type="text/javascript" language="javascript" src="js.php"></script>
+
+<link rel="stylesheet" type="text/css" href="hal-00654544.css" media="all">
+</head>
+<body>
+<div id="logo" class="logo">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center" nowrap="nowrap" width="25%"><a href="http://www.inria.fr/" target="_top"><img src="logo_inria.png" alt="logo Inria" title="logo Inria" border="0"></a></td>
+<td align="center" nowrap="nowrap" width="25%"><img src="logo_hal_inria.png" alt="Logo HAL-Inria" title="Logo HAL-Inria" border="0" height="72" width="71"></td>
+<td align="center" nowrap="nowrap" width="25%"><img src="inria_bandeau_hal.png" alt="HAL-Inria archive ouverte/open archive" title="HAL-Inria archive ouverte/open archive" border="0" height="59" width="350"></td>
+<td align="right" nowrap="nowrap" width="25%"><a href="http://hal.archives-ouvertes.fr/" target="_top"><img src="tamponhal.gif" alt="HAL - hal.archives-ouvertes.fr" title="HAL - hal.archives-ouvertes.fr" border="0" height="72" width="71"></a></td>
+</tr>
+</tbody></table>
+</div>
+<div class="onglet" id="halmenu">
+<ul class="niveau1">
+<li>
+<a class="niveau1" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=home" target="_self">Accueil</a>
+</li>
+<li>
+<a class="niveau1" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=menu&to_open=deposed" target="_self">D&eacute;poser</a>
+<ul class="niveau2">
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=login" target="_self">S'authentifier</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=register" target="_self">S'inscrire</a>
+</li>
+</ul>
+</li>
+<li class="current">
+<a class="niveau1" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=menu&to_open=browse" target="_self">Consulter</a>
+<ul class="niveau2">
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=browse&b_type=browse_domain" target="_self">Par domaine</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=browse&submit=1&b_type=browse_new" target="_self">Les 30 derniers d&eacute;p&ocirc;ts</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=browse&b_type=browse_date" target="_self">Par date de publication/r&eacute;daction</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=browse&b_type=browse_typdoc" target="_self">Par type de publication</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=browse&b_type=browse_tampon" target="_self">Par collection</a>
+</li>
+<li><a href="http://fr.arxiv.org/" target="_top">ArXiv</a></li>
+</ul>
+</li>
+<li>
+<a class="niveau1" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=menu&to_open=search" target="_self">Rechercher</a>
+<ul class="niveau2">
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=search&s_type=simple" target="_self">Recherche simple</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=search&s_type=advanced" target="_self">Recherche avanc&eacute;e</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=search&s_type=byid" target="_self">Recherche par identifiant</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="niveau1" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=menu&to_open=services_not_logged" target="_self">Services</a>
+<ul class="niveau2">
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=subscribe" target="_self">S'abonner</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=export" target="_self">Exporter une liste de publication</a>
+</li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=search_known_labo" target="_self">Consulter les laboratoires connus de HAL</a>
+</li>
+<li><a href="http://haltools.inria.fr/?action=aide_bib2hal&lang=" target="_top">HalTools : Bib2Hal</a></li>
+<li><a href="https://haltools.inria.fr/?action=exportXML&annee_publi=2012&format_export=raweb&lang=" target="_top">HalTools : Export raweb</a></li>
+<li><a href="http://haltools.inria.fr/?action=export&lang=" target="_top">HalTools : cr&eacute;er sa page web</a></li>
+<li><a href="http://seism.inria.fr/hal/aide/spip.php?rubrique67&lang=" target="_top">Ajout de vignette, video ou annexe</a></li>
+</ul>
+</li>
+<li>
+<a class="niveau1" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=menu&to_open=service_help" target="_self">Aide</a>
+<ul class="niveau2">
+<li><a href="http://seism.inria.fr/hal/aide/spip.php?lang=" target="_top">Aide</a></li>
+<li><a href="http://seism.inria.fr/hal/aide/spip.php?rubrique50&lang=" target="_top">FAQ</a></li>
+<li>
+<a href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=apropos" target="_self">A propos</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class="fulltext">
+<form action="http://hal.inria.fr/index.php" method="post" name="search_full_form" id="search_full_form" target="_self" enctype="application/x-www-form-urlencoded">
+<input name="action_todo" id="action_todo" value="search" type="hidden">
+<input name="s_type" id="s_type" value="simple" type="hidden">
+<input name="f[]" id="f" value="@*" type="hidden">
+<input name="submit" id="submit" value="1" type="hidden">
+<input name="halsid" id="halsid" value="4jsfn0vc2436adb7g58341gai2" type="hidden">
+<input name="v[]" id="v" class="formulaire" value="" size="15" maxlength="255" type="text">
+<input src="search.gif" title="Rechercher" align="absmiddle" type="image">
+</form>
+</div>
+<div class="connected">
+<a accesskey="C" href="http://hal.inria.fr/index.php?action_todo=login&halsid=4jsfn0vc2436adb7g58341gai2"><img alt="s'authentifier" title="s'authentifier" src="connect.png" border="0"></a>
+</div>
+</div>
+<div class="lien">
+<img src="fr.png" alt="version française" title="version française" align="absmiddle" border="0">
+<select name="language" id="language" class="langue" style="Array" onchange="self.location.href='http://hal.inria.fr/index.php?langue='+$F(this)+'&halsid=4jsfn0vc2436adb7g58341gai2';">
+<option value="fr" style="background-image: url('fr_002.png');" selected="">version fran&ccedil;aise</option>
+<option value="en" style="background-image: url('en.png');">english version</option>
+</select>
+<a class="rss" href="http://hal.inria.fr/index.php?halsid=4jsfn0vc2436adb7g58341gai2&action_todo=rss"><img alt="rss feed" src="rss.gif" align="absmiddle" border="0"></a>
+</div>
+<div class="corps">
+<div id="content">
+<div id="center">
+<div class="bloc notice">
+<p>
+<span class="cartouche">hal-00654544, version 1</span>
+</p>
+<h2>Fish Eye OLSR Scaling Properties</h2>
+<p class="auteurs">
+<a class="meta_auteur" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&search_without_file=YES&f_0=LASTNAME&p_0=is_exactly&f_1=FIRSTNAME&p_1=is_exactly&l_0=and&halsid=4jsfn0vc2436adb7g58341gai2&v_0=Adjih&v_1=C%C3%A9dric">C&eacute;dric&nbsp;Adjih</a><span class="meta_auteur"> (</span><script type="text/javascript" language="javascript">str_unrot('<a href="', 'OCKNVQ:EGFTKEACFLKJzKPTKCAHT', '">');</script><a href="mailto:cedric.adjih@inria.fr"><img src="mail.gif" alt="" title="courriel" align="absmiddle" border="0"></a><span class="meta_auteur">)</span>&nbsp;<sup class="labo_id"><a href="#labo_id1">1</a></sup><span class="meta_auteur">, </span><a class="meta_auteur" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&search_without_file=YES&f_0=LASTNAME&p_0=is_exactly&f_1=FIRSTNAME&p_1=is_exactly&l_0=and&halsid=4jsfn0vc2436adb7g58341gai2&v_0=Baccelli&v_1=Emmanuel">Emmanuel&nbsp;Baccelli</a><span class="meta_auteur"> (</span><script type="text/javascript" language="javascript">str_unrot('<a href="', 'THPS0V:.TTHU1LSF8HJJLSSPEPUYPHFMY', '">');</script><a href="mailto:Emmanuel.Baccelli@inria.fr"><img src="mail.gif" alt="" title="courriel" align="absmiddle" border="0"></a><span class="meta_auteur">)</span>&nbsp;<sup class="labo_id"><a href="#labo_id2">2</a></sup><span class="meta_auteur">, </span><a class="meta_auteur" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&search_without_file=YES&f_0=LASTNAME&p_0=is_exactly&f_1=FIRSTNAME&p_1=is_exactly&l_0=and&halsid=4jsfn0vc2436adb7g58341gai2&v_0=Clausen&v_1=Thomas+Heide">Thomas Heide&nbsp;Clausen</a><span class="meta_auteur"> (</span><script type="text/javascript" language="javascript">str_unrot('<a href="', 'PDLOWR:jB5ODXVHQAFRPSXWHUBRUJ', '">');</script><a href="mailto:T.Clausen@computer.org"><img src="mail.gif" alt="" title="courriel" align="absmiddle" border="0"></a><span class="meta_auteur">)</span><sup class="labo_orga" title="Établissement d'appartenance">&nbsp;<a href="#labo_orgaa">a</a></sup><sup class="labo_id" title="Équipe de recherche (sauf Inria)">,&nbsp;<a href="#labo_id2">2</a>,&nbsp;<a href="#labo_id3">3</a></sup><span class="meta_auteur">, </span><a class="meta_auteur" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&search_without_file=YES&f_0=LASTNAME&p_0=is_exactly&f_1=FIRSTNAME&p_1=is_exactly&l_0=and&halsid=4jsfn0vc2436adb7g58341gai2&v_0=Jacquet&v_1=Philippe">Philippe&nbsp;Jacquet</a><span class="meta_auteur"> (</span><script type="text/javascript" language="javascript">str_unrot('<a href="', 'SGORZU:VNOROVVKEPGIW0KZDOTXOGELX', '">');</script><a href="mailto:philippe.jacquet@inria.fr"><img src="mail.gif" alt="" title="courriel" align="absmiddle" border="0"></a><span class="meta_auteur">)</span>&nbsp;<sup class="labo_id"><a href="#labo_id1">1</a></sup><span class="meta_auteur">, </span><a class="meta_auteur" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&search_without_file=YES&f_0=LASTNAME&p_0=is_exactly&f_1=FIRSTNAME&p_1=is_exactly&l_0=and&halsid=4jsfn0vc2436adb7g58341gai2&v_0=Rodolakis&v_1=Georgios">Georgios&nbsp;Rodolakis</a><sup class="labo_orga" title="Établissement d'appartenance">&nbsp;<a href="#labo_orgab">b</a></sup><sup class="labo_id" title="Équipe de recherche (sauf Inria)">,&nbsp;<a href="#labo_id1">1</a>,&nbsp;<a href="#labo_id4">4</a></sup>
+</p>
+<p><em><i>Journal of Communications and Networks</i> 6, 4 (2004) 352-361</em></p>
+<div class="highlight_box">
+<div class="highlight_content">
+<p><strong>R&eacute;sum&eacute;</strong>&nbsp;:&nbsp;Scalability is one of the toughest challenges in ad hoc networking. Recent work outlines theoretical bounds on how well routing protocols could scale in this environment. However, none of the popular routing solutions really scales to large networks, by coming close enough to these bounds. In this paper, we study the case of link state routing and OLSR, one of the strongest candidate for standardization. We analyze how these bounds are not reached in this case, and we study how much the scalability is enhanced with the use of Fish Eye techniques in addition to the link state routing framework. We show that with this enhancement, the theoretical scalability bounds are reached.</p>
+</div>
+</div>
+<ul class="notes">
+<li> <span class="orga_num" id="labo_orgaa">a&nbsp;&ndash;&nbsp;</span>
+<span class="orga_libelle">Polytechnique - X</span></li>
+<li> <span class="orga_num" id="labo_orgab">b&nbsp;&ndash;&nbsp;</span>
+<span class="orga_libelle">Macquarie University</span></li>
+<li>
+<span class="labo_id" id="labo_id1">1&nbsp;:&nbsp;</span>
+<a class="meta_labo" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&p_0=is_exactly&f_0=LABID&halsid=4jsfn0vc2436adb7g58341gai2&v_0=2422"><span class="name">HIPERCOM</span> <span class="sigle"> (INRIA Rocquencourt)</span></a></li>
+<li class="labo_affiliation">Inria</li>
+<li>
+<span class="labo_id" id="labo_id2">2&nbsp;:&nbsp;</span>
+<a class="meta_labo" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&p_0=is_exactly&f_0=LABID&halsid=4jsfn0vc2436adb7g58341gai2&v_0=70767"><span class="name">HIPERCOM</span> <span class="sigle"> (INRIA Saclay - Ile de France)</span></a></li>
+<li class="labo_affiliation">Inria&nbsp;&ndash;&nbsp;Universit&eacute; Paris XI - Paris Sud&nbsp;&ndash;&nbsp;CNRS : UMR&nbsp;&ndash;&nbsp;Polytechnique - X</li>
+<li>
+<span class="labo_id" id="labo_id3">3&nbsp;:&nbsp;</span>
+<a class="meta_labo" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&p_0=is_exactly&f_0=LABID&halsid=4jsfn0vc2436adb7g58341gai2&v_0=2071"><span class="name">Laboratoire d'informatique de l'&eacute;cole polytechnique</span> <span class="sigle"> (LIX)</span></a></li>
+<li class="labo_affiliation">CNRS : UMR7161&nbsp;&ndash;&nbsp;Polytechnique - X</li>
+<li>
+<span class="labo_id" id="labo_id4">4&nbsp;:&nbsp;</span>
+<a class="meta_labo" href="http://hal.inria.fr/index.php?action_todo=search&submit=1&s_type=advanced&p_0=is_exactly&f_0=LABID&halsid=4jsfn0vc2436adb7g58341gai2&v_0=93216"><span class="name">Macquarie University</span></a></li>
+<li class="labo_affiliation">University of Sydney</li>
+</ul>
+<ul class="list_tag">
+<li><strong>Domaine&nbsp;:&nbsp;</strong>Informatique/R&eacute;seaux et t&eacute;l&eacute;communications</li>
+</ul>
+<div class="separateur">&nbsp;</div>
+<ul class="ref">
+<li>hal-00654544, version 1</li>
+<li><a class="small_metadata" href="http://hal.inria.fr/hal-00654544">http://hal.inria.fr/hal-00654544</a></li>
+<li>oai:hal.inria.fr:hal-00654544</li>
+<li>Contributeur&nbsp;:&nbsp;<a href="http://hal.inria.fr/action/user_view.php?uid=ebaccell&halsid=4jsfn0vc2436adb7g58341gai2" class="small_metadata">Emmanuel Baccelli</a><span class="small_metadata">&nbsp;&lt;</span><script type="text/javascript" language="javascript">str_unrot('<a class="small_metadata" href="', 'THPS0V:.TTHU1LSF8HJJLSSPEPUYPHFMY', '">');</script><a class="small_metadata" href="mailto:Emmanuel.Baccelli@inria.fr"><script type="text/javascript" language="javascript">str_unrot('','4MMANUELy1ACCELLIxINRIAyFR','');</script>Emmanuel.Baccelli@inria.fr</a><span class="small_metadata">&gt;</span></li>
+<li>Soumis le&nbsp;:&nbsp;Jeudi 22 D&eacute;cembre 2011, 11:21:39</li>
+<li>Derni&egrave;re modification le&nbsp;:&nbsp;Lundi 20 F&eacute;vrier 2012, 12:13:24</li>
+</ul>
+</div>
+</div>
+<div id="right">
+<div class="bloc btn">
+<p><a href="http://hal.inria.fr/index.php?view_this_doc=hal-00654544&extended_view=1&version=1&halsid=4jsfn0vc2436adb7g58341gai2" target="_self">Voir la fiche d&eacute;taill&eacute;e</a></p>
+</div>
+<div class="bloc">
+<h2><img src="hal_news_doc.png" alt="">Documents associ&eacute;s</h2>
+<p><strong>PDF : </strong><a target="_top" onclick="jsRequestMajCptConsult(654544);" href="http://hal.inria.fr/docs/00/65/45/44/PDF/jcn_journal_paper-reviewed-HAL.pdf"><img title="jcn_journal_paper-reviewed-HAL.pdf" src="pdf.png" alt="Icone de jcn_journal_paper-reviewed-HAL.pdf" border="0"></a>&nbsp;</p>
+</div>
+<div class="bloc">
+<h2><img src="inria_picto_exporter.png" alt="" onclick="
+		document.getElementById('div_export_bibtex').style.display='none';
+		document.getElementById('div_export_endnote').style.display='none';
+		document.getElementById('div_export_tei').style.display='none';
+		return false;">Exporter</h2>
+<div class="export">
+<a class="lien_vue" href="#" onclick="var el=document.getElementById('div_export_bibtex');
+		var st = el.style.display; 
+		document.getElementById('div_export_bibtex').style.display='none';
+		document.getElementById('div_export_endnote').style.display='none';
+		document.getElementById('div_export_tei').style.display='none';
+		if (st=='none') el.style.display='block';
+		else el.style.display='none';return false;">Bibtex</a>&nbsp;&nbsp;<a class="lien_vue" href="#" onclick="var el=document.getElementById('div_export_endnote');
+		var st = el.style.display; 
+		document.getElementById('div_export_bibtex').style.display='none';
+		document.getElementById('div_export_endnote').style.display='none';
+		document.getElementById('div_export_tei').style.display='none';
+		if (st=='none') el.style.display='block';
+		else el.style.display='none';return false;">EndNote</a>&nbsp;&nbsp;<a class="lien_vue" href="#" onclick="var el=document.getElementById('div_export_tei');
+		var st = el.style.display; 
+		document.getElementById('div_export_bibtex').style.display='none';
+		document.getElementById('div_export_endnote').style.display='none';
+		document.getElementById('div_export_tei').style.display='none';
+		if (st=='none') el.style.display='block';
+		else el.style.display='none';return false;">TEI</a>&nbsp;&nbsp;<a class="lien_vue" href="http://www.refworks.com/express/ExpressImport.asp?vendor=HAL&filter=RefWorks+Tagged+Format&encoding=65001&url=http%3A%2F%2Fhal.inria.fr%2F%2Fexport%2Frefworks.php%3Fdocid%3D654544%26halsid%3D463ddb75fdf24a874b6177e23ee719f4" onclick="var el=document.getElementById('div_export_refworks');
+		var st = el.style.display; 
+		document.getElementById('div_export_bibtex').style.display='none';
+		document.getElementById('div_export_endnote').style.display='none';
+		document.getElementById('div_export_tei').style.display='none';
+		if (st=='none') el.style.display='block';
+		else el.style.display='none';return false;">RefWorks</a><div id="div_export_bibtex" style="border-right: 1px solid rgb(52, 96, 153); overflow: visible; background-color: rgb(234, 239, 240); opacity: 0.9; position: absolute; right: 10px; display: none;"><textarea class="formulaire" rows="10" cols="50">%% hal-00654544, version 1
+%% http://hal.inria.fr/hal-00654544
+@article{adjih:hal-00654544,
+    hal_id = {hal-00654544},
+    url = {http://hal.inria.fr/hal-00654544},
+    title = {{Fish Eye OLSR Scaling Properties}},
+    author = {Adjih, C{\'e}dric and Baccelli, Emmanuel and Clausen, Thomas Heide and Jacquet, Philippe and Rodolakis, Georgios},
+    abstract = {{Scalability is one of the toughest challenges in ad hoc networking. Recent work outlines theoretical bounds on how well routing protocols could scale in this environment. However, none of the popular routing solutions really scales to large networks, by coming close enough to these bounds. In this paper, we study the case of link state routing and OLSR, one of the strongest candidate for standardization. We analyze how these bounds are not reached in this case, and we study how much the scalability is enhanced with the use of Fish Eye techniques in addition to the link state routing framework. We show that with this enhancement, the theoretical scalability bounds are reached.}},
+    language = {Anglais},
+    affiliation = {HIPERCOM - INRIA Rocquencourt , HIPERCOM - INRIA Saclay - Ile de France , Laboratoire d'informatique de l'{\'e}cole polytechnique - LIX , Macquarie University},
+    publisher = {IEEE \& Korea Information and Communications Society},
+    pages = {352-361},
+    journal = {Journal of Communications and Networks},
+    volume = {6},
+    number = {4 },
+    audience = {internationale },
+    year = {2004},
+    month = Dec,
+    pdf = {http://hal.inria.fr/hal-00654544/PDF/jcn\_journal\_paper-reviewed-HAL.pdf},
+}
+</textarea></div><div id="div_export_endnote" style="border-right: 1px solid rgb(52, 96, 153); overflow: visible; background-color: rgb(234, 239, 240); opacity: 0.9; position: absolute; right: 10px; display: none;"><textarea class="formulaire" rows="10" cols="50">%F hal-00654544, version 1
+%0 Journal Article
+%U http://hal.inria.fr/hal-00654544
+%2 INFO:INFO_NI
+%T Fish Eye OLSR Scaling Properties
+%A Adjih, C&eacute;dric
+%A Baccelli, Emmanuel
+%A Clausen, Thomas Heide
+%A Jacquet, Philippe
+%A Rodolakis, Georgios
+%+ HIPERCOM - INRIA Rocquencourt , HIPERCOM - INRIA Saclay - Ile de France , Laboratoire d'informatique de l'&eacute;cole polytechnique - LIX , Macquarie University
+%X Scalability is one of the toughest challenges in ad hoc networking. Recent work outlines theoretical bounds on how well routing protocols could scale in this environment. However, none of the popular routing solutions really scales to large networks, by coming close enough to these bounds. In this paper, we study the case of link state routing and OLSR, one of the strongest candidate for standardization. We analyze how these bounds are not reached in this case, and we study how much the scalability is enhanced with the use of Fish Eye techniques in addition to the link state routing framework. We show that with this enhancement, the theoretical scalability bounds are reached.
+%G Anglais
+%J Journal of Communications and Networks
+%8 2004-12-01
+%2 internationale
+%I IEEE & Korea Information and Communications Society
+%V 6
+%N 4
+%P 352-361
+</textarea></div><div id="div_export_tei" style="border-right: 1px solid rgb(52, 96, 153); overflow: visible; background-color: rgb(234, 239, 240); opacity: 0.9; position: absolute; right: 10px; display: none;"><textarea class="formulaire" rows="10" cols="50">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;listBibl xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;
+&lt;listBibl type="article"&gt;&lt;head&gt;Articles dans des revues avec comit&eacute; de lecture&lt;/head&gt;
+&lt;biblStruct type="article" xml:id="hal-00654544"&gt;&lt;analytic&gt;
+&lt;author&gt;&lt;persName&gt;&lt;forename&gt;C&eacute;dric&lt;/forename&gt;&lt;surname&gt;Adjih&lt;/surname&gt;&lt;/persName&gt;
+&lt;affiliation&gt;
+&lt;orgName type="laboratory"&gt;INRIA Rocquencourt&lt;/orgName&gt;
+&lt;orgName type="team"&gt;HIPERCOM&lt;/orgName&gt;
+&lt;country&gt;FR&lt;/country&gt;
+&lt;orgName type="institution"&gt;Inria&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;/author&gt;
+&lt;author&gt;&lt;persName&gt;&lt;forename&gt;Emmanuel&lt;/forename&gt;&lt;surname&gt;Baccelli&lt;/surname&gt;&lt;/persName&gt;
+&lt;affiliation&gt;
+&lt;orgName type="laboratory"&gt;INRIA Saclay - Ile de France&lt;/orgName&gt;
+&lt;orgName type="team"&gt;HIPERCOM&lt;/orgName&gt;
+&lt;country&gt;FR&lt;/country&gt;
+&lt;orgName type="institution"&gt;Inria&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;Universit&eacute; Paris XI - Paris Sud&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;CNRS : UMR&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;Polytechnique - X&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;/author&gt;
+&lt;author&gt;&lt;persName&gt;&lt;forename&gt;Thomas Heide&lt;/forename&gt;&lt;surname&gt;Clausen&lt;/surname&gt;&lt;/persName&gt;
+&lt;affiliation&gt;
+&lt;orgName type="laboratory"&gt;INRIA Saclay - Ile de France&lt;/orgName&gt;
+&lt;orgName type="team"&gt;HIPERCOM&lt;/orgName&gt;
+&lt;country&gt;FR&lt;/country&gt;
+&lt;orgName type="institution"&gt;Inria&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;Universit&eacute; Paris XI - Paris Sud&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;CNRS : UMR&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;Polytechnique - X&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;affiliation&gt;
+&lt;orgName type="laboratory"&gt;LIX&lt;/orgName&gt;
+&lt;orgName type="team"&gt;Laboratoire d'informatique de l'&eacute;cole polytechnique&lt;/orgName&gt;
+&lt;country&gt;FR&lt;/country&gt;
+&lt;orgName type="institution"&gt;CNRS : UMR7161&lt;/orgName&gt;
+&lt;orgName type="institution"&gt;Polytechnique - X&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;/author&gt;
+&lt;author&gt;&lt;persName&gt;&lt;forename&gt;Philippe&lt;/forename&gt;&lt;surname&gt;Jacquet&lt;/surname&gt;&lt;/persName&gt;
+&lt;affiliation&gt;
+&lt;orgName type="laboratory"&gt;INRIA Rocquencourt&lt;/orgName&gt;
+&lt;orgName type="team"&gt;HIPERCOM&lt;/orgName&gt;
+&lt;country&gt;FR&lt;/country&gt;
+&lt;orgName type="institution"&gt;Inria&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;/author&gt;
+&lt;author&gt;&lt;persName&gt;&lt;forename&gt;Georgios&lt;/forename&gt;&lt;surname&gt;Rodolakis&lt;/surname&gt;&lt;/persName&gt;
+&lt;affiliation&gt;
+&lt;orgName type="laboratory"&gt;INRIA Rocquencourt&lt;/orgName&gt;
+&lt;orgName type="team"&gt;HIPERCOM&lt;/orgName&gt;
+&lt;country&gt;FR&lt;/country&gt;
+&lt;orgName type="institution"&gt;Inria&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;affiliation&gt;
+&lt;orgName type="team"&gt;Macquarie University&lt;/orgName&gt;
+&lt;country&gt;AU&lt;/country&gt;
+&lt;orgName type="institution"&gt;University of Sydney&lt;/orgName&gt;
+&lt;/affiliation&gt;
+&lt;/author&gt;
+&lt;title type="main" level="a"&gt;Fish Eye OLSR Scaling Properties&lt;/title&gt;&lt;/analytic&gt;&lt;monogr&gt;&lt;title level="j" type="main"&gt;Journal of Communications and Networks&lt;/title&gt;&lt;imprint&gt;&lt;publisher&gt;IEEE & Korea Information and Communications Society&lt;/publisher&gt;&lt;biblScope type="publicationDate"&gt;2004-12-01&lt;/biblScope&gt;&lt;biblScope type="vol"&gt;6&lt;/biblScope&gt;&lt;biblScope type="issue"&gt;4&lt;/biblScope&gt;&lt;biblScope type="pp"&gt;352-361&lt;/biblScope&gt;&lt;/imprint&gt;&lt;/monogr&gt;&lt;idno type="HALid"&gt;http://hal.inria.fr/hal-00654544&lt;/idno&gt;&lt;idno type="HALFile"&gt;http://hal.inria.fr/hal-00654544/PDF/jcn_journal_paper-reviewed-HAL.pdf&lt;/idno&gt;&lt;/biblStruct&gt;
+&lt;/listBibl&gt;
+&lt;/listBibl&gt;
+</textarea></div>
+</div><!--  /export   -->
+</div>
+</div><!--  /right   -->
+</div>
+</div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_1.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_2.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_3.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_4.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_5.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_6.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_7.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_8.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_9.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_10.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_11.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_12.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_13.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_14.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_15.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_16.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_17.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_18.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_19.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_20.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://hal.inria.fr/robot/article_inria_21.html">tous les articles de la base du CCSd...</a></div>
+<script type="text/javascript">
+
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik-hal.ccsd.cnrs.fr/" : "http://piwik-hal.ccsd.cnrs.fr/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="piwik.js" type="text/javascript"></script><script type="text/javascript">
+
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 27);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 92);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik-hal.ccsd.cnrs.fr/piwik.php?idsite=27" style="border:0" alt="" /></p></noscript>
+
+
+<div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div style="width: 250px; height: 250px;" id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="lb_loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="lb_close.gif"></a></div></div></div></div><div style="position: absolute; z-index: 1000; visibility: hidden;"><div></div><div></div></div></body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html">
+<meta name="wpd_url" content="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html">
+<meta name="wpd_date" content="2012-09-12T18:58Z">
+
+
+<script async="" src="cb=gapi.loaded_1"></script><script async="" src="cb=gapi.loaded_0"></script><script type="text/javascript">(function() { var a=window,b="jstiming",d="tick";var e=function(c){this.t={};this.tick=function(c,p,h){h=void 0!=h?h:(new Date).getTime();this.t[c]=[h,p]};this[d]("start",null,c)},f=new e;a.jstiming={Timer:e,load:f};if(a.performance&&a.performance.timing){var g=a.performance.timing,j=a[b].load,k=g.navigationStart,l=g.responseStart;0<k&&l>=k&&(j[d]("_wtsrt",void 0,k),j[d]("wtsrt_","_wtsrt",l),j[d]("tbsd_","wtsrt_"))}
+try{var m=null;a.chrome&&a.chrome.csi&&(m=Math.floor(a.chrome.csi().pageT),j&&0<k&&(j[d]("_tbnd",void 0,a.chrome.csi().startE),j[d]("tbnd_","_tbnd",k)));null==m&&a.gtbExternal&&(m=a.gtbExternal.pageT());null==m&&a.external&&(m=a.external.pageT,j&&0<k&&(j[d]("_tbnd",void 0,a.external.startE),j[d]("tbnd_","_tbnd",k)));m&&(a[b].pt=m)}catch(n){};a.tickAboveFold=function(c){var i=0;if(c.offsetParent){do i+=c.offsetTop;while(c=c.offsetParent)}c=i;750>=c&&a[b].load[d]("aft")};var q=!1;function r(){q||(q=!0,a[b].load[d]("firstScrollTime"))}a.addEventListener?a.addEventListener("scroll",r,!1):a.attachEvent("onscroll",r);
+ })();</script>
+<meta content="true" name="MSSmartTagsPreventParsing">
+<meta content="blogger" name="generator">
+<link href="about:blank?favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://p2p-sip.blogspot.com/2009/10/security-in-p2p-sip.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="P2P-SIP - Atom" href="http://p2p-sip.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="P2P-SIP - RSS" href="http://p2p-sip.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="P2P-SIP - Atom" href="http://www.blogger.com/feeds/13033340/posts/default">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.blogger.com/rsd.g?blogID=13033340">
+<link rel="alternate" type="application/atom+xml" title="P2P-SIP - Atom" href="http://p2p-sip.blogspot.com/feeds/958417136312176720/comments/default">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>P2P-SIP: Security in P2P-SIP</title>
+
+
+
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",i="?m=1";function j(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+i;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var k=j();k&&window.location.replace(k)};
+</script><script type="text/javascript">
+
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script><script src="google_top_exp.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="security-in-p2p-sip.css" media="all">
+</head>
+<body>
+<div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1"><script type="text/javascript">
+
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe allowtransparency="true" hspace="0" marginheight="0" marginwidth="0" style="" tabindex="0" vspace="0" id="navbar-iframe" name="navbar-iframe" src="security-in-p2p-sip_1.html" frameborder="0" scrolling="no" width="100%"></iframe></div>
+<script gapi_processed="true" type="text/javascript" src="plusone.js"></script>
+<script type="text/javascript">
+
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                '//www.blogger.com/navbar.g?targetBlogID\07513033340\46blogName\75P2P-SIP\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75BLUE\46layoutType\75LAYOUTS\46searchRoot\75http://p2p-sip.blogspot.com/search\46blogLocale\75en_US\46v\0752\46homepageUrl\75http://p2p-sip.blogspot.com/\46targetPostID\75958417136312176720\46blogPostOrPageUrl\75http://p2p-sip.blogspot.com/2009/10/security-in-p2p-sip.html\46vt\0756106734017968406322',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div id="outer-wrapper"><div id="wrap2">
+<!-- skip links for text browsers -->
+<span id="skiplinks" style="display: none;">
+<a href="#main">skip to main </a> |
+      <a href="#sidebar">skip to sidebar</a>
+</span>
+<div id="header-wrapper">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://p2p-sip.blogspot.se/">P2P-SIP</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>Peer-to-peer Internet telephony using SIP</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id="content-wrapper">
+<div id="crosscol-wrapper" style="text-align: center;">
+<div class="crosscol section" id="crosscol"></div>
+</div>
+<div id="main-wrapper">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>Friday, October 23, 2009</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<a name="958417136312176720"></a>
+<h3 class="post-title entry-title" itemprop="name">
+
+Security in P2P-SIP
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-958417136312176720" itemprop="description articleBody">
+
+I frequently receive questions on security in P2P-SIP, mostly from researchers looking for a new topic to explore. Security in P2P-SIP (and in P2P in general) is a challenging problem. In this article I summarize my understanding of the challenges and open problems.<br><br>The <a href="http://kundansingh.com/papers/nyman04.pdf">first</a> literature on P2P-SIP mentions that P2P-SIP needs to solve the challenges of client-server Internet telephony as well as privacy, confidentiality, malicious node behavior and "free riding" problems of P2P. For example, a malicious node may not forward the call requests correctly or may log all call requests for future misuse. A later <a href="http://www.jcbroadband.com/Library/jcbvoip5.pdf">publication</a> formally identifies the key security challenges and potential solutions. The <a href="http://www.cs.vu.nl/~steen/papers/2009.acm-cs.pdf">paper</a> on survey of DHT security techniques presents a comprehensive listing of challenges, solutions and problems. Let us classify the challenges:<br><br>User Authentication: Similar to client-server SIP, authentication is essential. A receiver need to verify that a sender posing as sip:bob@example.net is actually the owner of that identifier. If the user identity is based off some other information or identity owned by the user, e.g., email address, phone number, postal address, social-security number, credit card number, PKI, X.509 certificate. etc., then it is possible to delegate the identity to that mechanism, e.g., by sending email or phone caller ID verification. The challenge can be further divided into: whether the user owns the identity? whether the user can randomly pick his identity to anything? whether a user can be made to believe that he has (wrong) ID or password? whether a malicious user can get password from another user in the pretext of authentication so that the malicious user can later assume the other user's identity?<br><br>Node Authentication: Additionally, since a number of P2P algorithms use the node identity to locate a node or define data storage criteria, the node ID is also a candidate for spoofing. A receiver must verify that the sender owns the node ID that it is posing as. The problem can be divided into sub-problems: whether the node ID are randomly picked or self generated by (malicious) nodes or assigned securely by some authority? whether the node ID can be spoofed in the protocol messages or data storage? whether a node can be made to believe by other nodes that it has (wrong) ID?  whether a malicious node can get the authentication credentials of another node and later assume other node's identity? These problems if not addressed can result in other problems such as man-in-middle or denial-of-service (DoS) attacks. The most important question is: Can authentication be done in P2P without relying on central trusted authority? <br><br>Overlay Routing: A malicious node in a P2P network can drop, alter or wrongly forward a message intentionally manipulating the correct routing algorithm to disrupt the network and hence availability. This partly depends on node ID assignment mechanism, whether a node can intentionally place itself in the topology at a particular place? Further questions to ask: what fraction of malicious nodes affect what fraction of P2P network? What is the relationship between performance (availability, routing and data storage) of P2P and the fraction of malicious nodes or users?<br><br>Overlay Maintenance: A malicious node may invite more malicious nodes or copies of itself in the P2P network. A malicious node may partition the P2P network so that one part can not reach the other. A malicious node may reject join requests from other good nodes to prevent them from joining the network. The questions: what fraction of malicious nodes can affect what fraction of P2P network availability? Can a malicious node eventually affect the whole network given enough time? Can a malicious node affect the discovery of bootstrap node by other nodes that affects the joining process of other nodes? Can a malicious node intentionally place itself in the topology at a particular place (e.g., as super peer), so that it affects more number of overlay messages?<br><br>Free riding: A P2P network works because the peers do. If a node refuses to serve as a peer, but just use the service of the other peers, how do you handle this? Can the system enforce or give incentive to a particular node to become part of the overlay? What fraction of the nodes must be part of the P2P overlay for the overlay to work? <br><br>Privacy, Confidentiality, Anonymity: Unlike the client-server telephony, in P2P-SIP the call signaling and media messages may traverse through other nodes in the system. Can other nodes know who is calling whom and hence infringe on user's privacy? Worse, can a malicious peer listen to the conversation (audio, video, text, etc.) between two other peers? Can the system allow you to make anonymous calls so that the receiver does not know who is calling? Can the system allow you to receive calls (e.g., any-cast calls to call centers) without divulging your identity to the caller?<br><br>SIP services: The client server SIP implements several new features and services, but those have limited use in P2P-SIP because of the trust model. For example, programmable services using SIP-CGI or SIP Servlet are difficult, e.g., unless the receiving peer can completely trust the calling peer's CGI. Emergency services, spam prevention and lawful interception that have been researched in client-server SIP are  pretty challenging in P2P-SIP.<br><br>Cost of security: Most of the existing protocols on the Internet suffer because people don't implement or deploy enough security. For examples, the front web page of many banks do not use HTTPS/TLS but have login forms. The reason is that system and operations engineers see security as an overhead, and do not use unless really needed. P2P takes this to extreme because the (in)security of one node can affect several in the network. The questions: What is the cost of security? How much does performance suffer in terms of number of messages, overhead, delay, for a particular security mechanism?<br><br>Given these problem there are several approaches the researcher are taking in solving. However, the core of some of these problems still remain unsolved. The general approach is to define a sub-set of the P2P-SIP system which works for the given security mechanism. For example, the P2P authentication is very challenging -- hence most implementations use a central certificate authority (CA) and everyone trusts that -- similar to the web browser model which comes installed with some root CA. The other approach is to build a closed P2P network of trusted implementations and provide the service to the rest of the untrusted users, e.g., OpenDHT and Dynamo. This works similar to the server farm model, except that the server farm is built using sub-set of P2P features -- self adjusting, less configuration, distributed data storage, geographically distributed. Another approach is to build the closed and proprietary system and protocol which prevents (to some extent) others from injecting the malicious node in the system, e.g., Skype. Unfortunately, sooner or later the protocol gets reverse engineered and the security is not longer present. The research on distributed trust, reward, or credit/debit system works well for file sharing but has not be successfully proven for P2P-SIP. Finally, some researchers focus on the statistics and availability of the whole network, with the theory that a small fraction of malicious nodes do not disrupt the whole network. If there is enough incentive for the nodes to remain good, this may work well. <br><br>If you are interested, please read the <a href="http://www.eecs.harvard.edu/%7Emema/publications/iptps2004.pdf">article</a> on when P2P makes sense? In particular, if (1) most of the peers do not trust each other AND (2) there is not much incentive to store the resources then P2P does not work well because the system does not evolve naturally to work. Think of it as people who do not trust each other and they do not have much incentive to help others or to store information for other people, will a person be able to get information he needs that another person has? The subset of problems I listed in the previous paragraph all try to twist the problem such that peers trust each other, i.e., (1) and the system tends to evolve naturally to work. Still more research is needed in (2) to identify and develop the incentive model for P2P-SIP use case.
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1"><span class="post-author vcard">
+
+Posted by
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="http://www.blogger.com/profile/10408946176930869078" itemprop="url">
+<meta content="13033340" itemprop="articleBody/aiaBlogId">
+<meta content="958417136312176720" itemprop="articleBody/aiaPostId">
+<a href="http://www.blogger.com/profile/10408946176930869078" rel="author" title="author profile">
+<span itemprop="name">Kundan Singh</span>
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+
+at
+<meta content="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html" itemprop="url">
+<a class="timestamp-link" href="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2009-10-23T14:02:00-04:00">2:02 PM</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-1025380517">
+<a href="http://www.blogger.com/post-edit.g?blogID=13033340&postID=958417136312176720&from=pencil" title="Edit Post">
+<img alt="" class="icon-action" src="icon18_edit_allbkg.gif" height="18" width="18">
+</a>
+</span>
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+</div>
+<div class="post-footer-line post-footer-line-2"><span class="post-labels">
+
+Labels:
+<a href="http://p2p-sip.blogspot.se/search/label/authentication" rel="tag">authentication</a>,
+<a href="http://p2p-sip.blogspot.se/search/label/P2P-SIP" rel="tag">P2P-SIP</a>,
+<a href="http://p2p-sip.blogspot.se/search/label/security" rel="tag">security</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"><span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>1 comment:</h4>
+<div id="Blog1_comments-block-wrapper">
+<dl class="avatar-comment-indent" id="comments-block">
+<dt class="comment-author " id="c7353912454408183974">
+<a name="c7353912454408183974"></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a href="http://www.blogger.com/profile/14290237548471298603" rel="nofollow" onclick="" class="avatar-hovercard" id="av-0-14290237548471298603"><img src="15547321@40n00.jpg@3f1167747016" alt="" class="delayLoad" style="" longdesc="http://2.bp.blogspot.com/_AEm5YjLPk9c/SaB4ZaLeSdI/AAAAAAAAAp0/ipUwbuI5D9Q/S45/15547321%40N00.jpg%3F1167747016" title="elias" height="35" width="35">
+
+<noscript><img src="http://2.bp.blogspot.com/_AEm5YjLPk9c/SaB4ZaLeSdI/AAAAAAAAAp0/ipUwbuI5D9Q/S45/15547321%40N00.jpg%3F1167747016" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href="http://www.blogger.com/profile/14290237548471298603" rel="nofollow">elias</a>
+said...
+</dt>
+<dd class="comment-body" id="Blog1_cmt-7353912454408183974">
+<p>
+
+Thanks for this great summary on p2psip security issues. keep up with the good work, I like your blog !<br><br>regards,<br><br>Elias
+</p>
+</dd>
+<dd class="comment-footer">
+<span class="comment-timestamp">
+<a href="http://p2p-sip.blogspot.com/2009/10/security-in-p2p-sip.html?showComment=1256571730217#c7353912454408183974" title="comment permalink">
+
+11:42 AM
+</a>
+<span class="item-control blog-admin pid-1110968006">
+<a class="comment-delete" href="http://www.blogger.com/delete-comment.g?blogID=13033340&postID=7353912454408183974" title="Delete Comment">
+<img src="icon_delete13.gif">
+</a>
+</span>
+</span>
+</dd>
+</dl>
+</div>
+<p class="comment-footer">
+<a href="http://www.blogger.com/comment.g?blogID=13033340&postID=958417136312176720" onclick="">Post a Comment</a>
+</p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container"><a name="links"></a><h4>Links to this post</h4>
+<p class="comment-footer">
+<a class="comment-link" href="http://www.blogger.com/blog-this.g" id="Blog1_backlinks-create-link" target="_top">Create a Link</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://p2p-sip.blogspot.se/2009/10/reliability-and-scalability-in-p2p-sip.html" id="Blog1_blog-pager-newer-link" title="Newer Post">Newer Post</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://p2p-sip.blogspot.se/2009/10/insecurity-of-flash-players-crossdomain.html" id="Blog1_blog-pager-older-link" title="Older Post">Older Post</a>
+</span>
+<a class="home-link" href="http://p2p-sip.blogspot.se/">Home</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+
+Subscribe to:
+<a class="feed-link" href="http://p2p-sip.blogspot.com/feeds/958417136312176720/comments/default" target="_top" type="application/atom+xml">Post Comments (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+<div id="sidebar-wrapper">
+<div class="sidebar section" id="sidebar"><div class="widget BlogArchive" id="BlogArchive1">
+<h2>Blog Archive</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2012-01-01T00:00:00-05:00&updated-max=2013-01-01T00:00:00-05:00&max-results=3">2012</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2012_08_01_archive.html">August</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2012_03_01_archive.html">March</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2012_01_01_archive.html">January</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2011-01-01T00:00:00-05:00&updated-max=2012-01-01T00:00:00-05:00&max-results=10">2011</a>
+<span class="post-count" dir="ltr">(10)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2011_12_01_archive.html">December</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2011_08_01_archive.html">August</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2011_06_01_archive.html">June</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2011_04_01_archive.html">April</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2010-01-01T00:00:00-05:00&updated-max=2011-01-01T00:00:00-05:00&max-results=14">2010</a>
+<span class="post-count" dir="ltr">(14)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_12_01_archive.html">December</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_11_01_archive.html">November</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_10_01_archive.html">October</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_09_01_archive.html">September</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_08_01_archive.html">August</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_03_01_archive.html">March</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_02_01_archive.html">February</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2010_01_01_archive.html">January</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">▼&nbsp;</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2009-01-01T00:00:00-05:00&updated-max=2010-01-01T00:00:00-05:00&max-results=24">2009</a>
+<span class="post-count" dir="ltr">(24)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_12_01_archive.html">December</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_11_01_archive.html">November</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">▼&nbsp;</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_10_01_archive.html">October</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="posts">
+<li><a href="http://p2p-sip.blogspot.se/2009/10/reliability-and-scalability-in-p2p-sip.html">Reliability and scalability in P2P-SIP</a></li>
+<li><a href="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html">Security in P2P-SIP</a></li>
+<li><a href="http://p2p-sip.blogspot.se/2009/10/insecurity-of-flash-players-crossdomain.html">The (in)security of Flash Player's crossdomain</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_09_01_archive.html">September</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_08_01_archive.html">August</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_07_01_archive.html">July</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_06_01_archive.html">June</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_05_01_archive.html">May</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_02_01_archive.html">February</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2009_01_01_archive.html">January</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2008-01-01T00:00:00-05:00&updated-max=2009-01-01T00:00:00-05:00&max-results=3">2008</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2008_09_01_archive.html">September</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2008_06_01_archive.html">June</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2008_01_01_archive.html">January</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2006-01-01T00:00:00-05:00&updated-max=2007-01-01T00:00:00-05:00&max-results=6">2006</a>
+<span class="post-count" dir="ltr">(6)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2006_06_01_archive.html">June</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2006_03_01_archive.html">March</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2006_02_01_archive.html">February</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/search?updated-min=2005-01-01T00:00:00-05:00&updated-max=2006-01-01T00:00:00-05:00&max-results=3">2005</a>
+<span class="post-count" dir="ltr">(3)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+
+          ►&nbsp;
+        
+</span>
+</a>
+<a class="post-count-link" href="http://p2p-sip.blogspot.se/2005_12_01_archive.html">December</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=13033340&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogArchive1&quot;));" target="configBlogArchive1" title="Edit">
+<img alt="" src="icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget LinkList" id="LinkList1">
+<h2>External Links</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://www.39peers.net/">39 Peers Project</a></li>
+<li><a href="http://kundansingh.com/#papers">My P2P-SIP research</a></li>
+<li><a href="http://code.google.com/u/kundan10/">My open source projects</a></li>
+<li><a href="http://tools.ietf.org/wg/p2psip/">IETF p2psip</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=13033340&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;LinkList1&quot;));" target="configLinkList1" title="Edit">
+<img alt="" src="icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Profile" id="Profile1">
+<h2>About Me</h2>
+<div class="widget-content">
+<a href="http://www.blogger.com/profile/10408946176930869078"><img alt="My Photo" class="profile-img" src="kundansingh.jpg" height="80" width="64"></a>
+<dl class="profile-datablock">
+<dt class="profile-data">
+<a class="profile-name-link" href="http://www.blogger.com/profile/10408946176930869078" rel="author" style="background-image: url('logo-16.png');">
+
+Kundan Singh
+</a>
+</dt>
+<dd class="profile-data">San Francisco, United States</dd>
+<dd class="profile-textblock"><a href="http://kundansingh.com/">http://kundansingh.com</a></dd>
+</dl>
+<a class="profile-link" href="http://www.blogger.com/profile/10408946176930869078" rel="author">View my complete profile</a>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=13033340&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Profile1&quot;));" target="configProfile1" title="Edit">
+<img alt="" src="icon18_wrench_allbkg.png" height="18" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class="clear">&nbsp;</div>
+</div>
+<!-- end content-wrapper -->
+<div id="footer-wrapper">
+<div class="footer section" id="footer"></div>
+</div>
+</div></div>
+<!-- end outer-wrapper -->
+<script type="text/javascript">
+
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="130042055-widgets.js"></script>
+<script type="text/javascript">
+
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '13033340';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d13033340','//p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html','13033340');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '13033340', 'bloggerUrl': 'http://www.blogger.com', 'title': 'P2P-SIP', 'pageType': 'item', 'url': 'http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html', 'canonicalUrl': 'http://p2p-sip.blogspot.com/2009/10/security-in-p2p-sip.html', 'canonicalHomepageUrl': 'http://p2p-sip.blogspot.com/', 'homepageUrl': 'http://p2p-sip.blogspot.se/', 'blogspotFaviconUrl': 'http://p2p-sip.blogspot.se/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Security in P2P-SIP', 'pageTitle': 'P2P-SIP: Security in P2P-SIP', 'encoding': 'UTF-8', 'locale': 'en-US', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42P2P-SIP - Atom\42 href\75\42http://p2p-sip.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42P2P-SIP - RSS\42 href\75\42http://p2p-sip.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42P2P-SIP - Atom\42 href\75\42http://www.blogger.com/feeds/13033340/posts/default\42 /\76\n\74link rel\75\42EditURI\42 type\75\42application/rsd+xml\42 title\75\42RSD\42 href\75\42http://www.blogger.com/rsd.g?blogID\07513033340\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42P2P-SIP - Atom\42 href\75\42http://p2p-sip.blogspot.com/feeds/958417136312176720/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var a\75window,b\75\42jstiming\42,d\75\42tick\42;var e\75function(c){this.t\75{};this.tick\75function(c,p,h){h\75void 0!\75h?h:(new Date).getTime();this.t[c]\75[h,p]};this[d](\42start\42,null,c)},f\75new e;a.jstiming\75{Timer:e,load:f};if(a.performance\46\46a.performance.timing){var g\75a.performance.timing,j\75a[b].load,k\75g.navigationStart,l\75g.responseStart;0\74k\46\46l\76\75k\46\46(j[d](\42_wtsrt\42,void 0,k),j[d](\42wtsrt_\42,\42_wtsrt\42,l),j[d](\42tbsd_\42,\42wtsrt_\42))}\ntry{var m\75null;a.chrome\46\46a.chrome.csi\46\46(m\75Math.floor(a.chrome.csi().pageT),j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.chrome.csi().startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));null\75\75m\46\46a.gtbExternal\46\46(m\75a.gtbExternal.pageT());null\75\75m\46\46a.external\46\46(m\75a.external.pageT,j\46\0460\74k\46\46(j[d](\42_tbnd\42,void 0,a.external.startE),j[d](\42tbnd_\42,\42_tbnd\42,k)));m\46\46(a[b].pt\75m)}catch(n){};a.tickAboveFold\75function(c){var i\0750;if(c.offsetParent){do i+\75c.offsetTop;while(c\75c.offsetParent)}c\75i;750\76\75c\46\46a[b].load[d](\42aft\42)};var q\75!1;function r(){q||(q\75!0,a[b].load[d](\42firstScrollTime\42))}a.addEventListener?a.addEventListener(\42scroll\42,r,!1):a.attachEvent(\42onscroll\42,r);\n })();\74/script\076', 'mobileHeadScript': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/f0193eddd4baf95a'}}, {'name': 'skin', 'data': {'vars': {'textColor': '#333333', 'linkColor': '#336699', 'borderColor': '#cccccc', 'headerTextColor': '#ffffff', 'mainBgColor': '#ffffff', 'sidebarTitleTextColor': '#333333', 'bgColor': '#efefef', 'headerCornersColor': '#528bc5', 'headerFont': 'normal normal 210% Verdana, Arial, Sans-serif;', 'sidebarTitleBgColor': '#ffd595', 'bodyFont': 'normal normal 100% Verdana, Arial, Sans-serif;', 'dateHeaderColor': '#999999', 'endSide': 'right', 'startSide': 'left', 'headerBgColor': '#336699'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '958417136312176720', 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/3542176973-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/228702327-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://p2p-sip.blogspot.se/', 'title': 'Home', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+</script>
+
+</body>
+</html>

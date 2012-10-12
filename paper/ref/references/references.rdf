@@ -1,0 +1,1335 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/">
+    <rdf:Description rdf:about="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4129879">
+        <z:itemType>conferencePaper</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Castro</foaf:surname>
+                        <foaf:givenname>M. C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kassler</foaf:surname>
+                        <foaf:givenname>A. J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_43"/>
+        <dc:title>Optimizing SIP service provisioning in Internet connected MANETs</dc:title>
+        <dc:date>2006</dc:date>
+        <dc:title>Software in Telecommunications and Computer Networks, 2006. SoftCOM 2006. International Conference on</dc:title>
+        <bib:pages>86–90</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4129879</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:48:36</dcterms:dateSubmitted>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_43">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/43/abs_all.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:48:43</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4129879</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+   <bib:Report rdf:about="#item_3"><z:itemType>report</z:itemType></bib:Report>
+    <bib:Article rdf:about="http://www.ijcaonline.org/archives/volume22/number3/2560-3515">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:09758887"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kumar Gujral</foaf:surname>
+                        <foaf:givenname>Rajneesh</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Singh</foaf:surname>
+                        <foaf:givenname>Manpreet</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_34"/>
+        <dc:title>Performance Analysis of Ad hoc Routing Protocols for Voice Communication Support over Hybrid MANETs</dc:title>
+        <bib:pages>42-48</bib:pages>
+        <dc:date>2011-05-31</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.ijcaonline.org/archives/volume22/number3/2560-3515</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:38:31</dcterms:dateSubmitted>
+        <z:libraryCatalog>CrossRef</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:09758887">
+        <dc:title>International Journal of Computer Applications</dc:title>
+        <prism:volume>22</prism:volume>
+        <prism:number>3</prism:number>
+        <dc:identifier>DOI 10.5120/2560-3515</dc:identifier>
+        <dc:identifier>ISSN 09758887</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_34">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/34/2560-3515.html"/>
+        <dc:title>IJCA - Performance Analysis of Ad hoc Routing Protocols for Voice Communication Support over Hybrid MANETs</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:38:31</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.ijcaonline.org/archives/volume22/number3/2560-3515</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="#item_4">
+        <z:itemType>conferencePaper</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stuedi</foaf:surname>
+                        <foaf:givenname>Patrick</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bihr</foaf:surname>
+                        <foaf:givenname>Marcel</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Remund</foaf:surname>
+                        <foaf:givenname>Alain</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Alonso</foaf:surname>
+                        <foaf:givenname>Gustavo</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <link:link rdf:resource="#item_5"/>
+        <dc:title>Siphoc: Efficient sip middleware for ad hoc networks</dc:title>
+        <dcterms:abstract>Abstract. Mobile Ad Hoc Networks (MANETs) offer a flexible way to connect mobile devices to build complex infrastructures. A key issue in MANETs is session set up and management since, unlike in conventional networks, there is no centralized component to provide such a service. Yet, session set up is necessary to provide any form of communication beyond unreliable, single message communication. In this paper we describe SIPHoc, a middleware infrastructure for session set up and management in MANETs. SIPHoc provides the same interface as the SIP standard but its implementation is fully decentralized. Moreover, SIP session establishment to and from the Internet is possible as soon as a single node in the MANET has Internet access. The paper presents the architecture and implementation of SIPHoc and evaluates its performance. The experiments show that SIPHoc is message efficient and provides a low dial-to-ring delay. SIPHoc allows SIP based applications to be used in MANETs without modification. In the paper, this is demonstrated by showing how SIPHoc supports VoIP conversations within a MANET and between the MANET and end-points on the Internet. 1</dcterms:abstract>
+        <dc:date>2007</dc:date>
+        <dc:title>In Proceedings of the 8th ACM/IFIP/USENIX International Middleware Conference</dc:title>
+        <z:shortTitle>Siphoc</z:shortTitle>
+        <z:libraryCatalog>CiteSeer</z:libraryCatalog>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/Stuedi et al. - 2007 - Siphoc Efficient sip middleware for ad hoc networ.pdf"/>
+        <dc:title>Citeseer - Full Text PDF</dc:title>
+        <dcterms:dateSubmitted>2012-10-10 22:52:14</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=DDF9CF91E1C7F5F062EBE064DA614B08?doi=10.1.1.188.8254&amp;rep=rep1&amp;type=pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_5">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/5/summary.html"/>
+        <dc:title>Citeseer - Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-10 22:52:14</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.188.8254</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://tools.ietf.org/html/rfc3626">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Philippe</foaf:surname>
+                        <foaf:givenname>Jacquet</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_74"/>
+        <dc:title>RFC3626 : Optimized Link State Routing Protocol (OLSR)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tools.ietf.org/html/rfc3626</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 19:53:16</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_74">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/74/rfc3626.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 19:53:16</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tools.ietf.org/html/rfc3626</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Thesis rdf:about="http://tel.archives-ouvertes.fr/tel-00712171">
+        <z:itemType>thesis</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Institut National des Télécommunications</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wongsaardsakul</foaf:surname>
+                        <foaf:givenname>Thirapon</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_28"/>
+        <link:link rdf:resource="#item_29"/>
+        <dc:title>P2P SIP over mobile ad hoc networks</dc:title>
+        <dc:date>2010/10/04</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tel.archives-ouvertes.fr/tel-00712171</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:36:03</dcterms:dateSubmitted>
+        <z:libraryCatalog>tel.archives-ouvertes.fr</z:libraryCatalog>
+    </bib:Thesis>
+    <z:Attachment rdf:about="#item_28">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/28/Wongsaardsakul - 2010 - P2P SIP over mobile ad hoc networks.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:36:03</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://tel.archives-ouvertes.fr/docs/00/71/21/71/PDF/TheseWONGSAARDSAKUL.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_29">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/29/tel-00712171.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:36:03</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://tel.archives-ouvertes.fr/tel-00712171/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=Distributed_hash_table&amp;oldid=514444985">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_76"/>
+        <dc:title>Distributed hash table</dc:title>
+        <dcterms:abstract>A distributed hash table (DHT) is a class of a decentralized distributed system that provides a lookup service similar to a hash table; (key, value) pairs are stored in a DHT, and any participating node can efficiently retrieve the value associated with a given key. Responsibility for maintaining the mapping from keys to values is distributed among the nodes, in such a way that a change in the set of participants causes a minimal amount of disruption. This allows a DHT to scale to extremely large numbers of nodes and to handle continual node arrivals, departures, and failures.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2012-10-11T00:28:44Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Distributed_hash_table&amp;oldid=514444985</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 20:32:53</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 514444985</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_76">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/76/index.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 20:32:55</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Distributed_hash_table&amp;oldid=514444985</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="#item_30">
+        <z:itemType>conferencePaper</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mohsin</foaf:surname>
+                        <foaf:givenname>M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Prakash</foaf:surname>
+                        <foaf:givenname>R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_32"/>
+        <link:link rdf:resource="#item_31"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>ad hoc networks</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>binary split</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>centralized servers</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>DHCP</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>dynamic allocation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Internet</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>IP address assignment</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>IPv6 stateless autoconfiguration mechanism</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>land mobile radio</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>MANET</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>mobile ad hoc network</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>mobile nodes</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>network merging</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>network partitioning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>network topology</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>proactive scheme</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>transport protocols</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>wireless links</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>IP address assignment in a mobile ad hoc network</dc:title>
+        <dcterms:abstract>A mobile ad hoc network (MANET) consists of a set of identical mobile nodes communicating with each other via wireless links. The network's topology may change rapidly and unpredictably. Such networks may operate in a stand-alone fashion, or may be connected to the larger Internet. In traditional networks, hosts rely on centralized servers like DHCP for configuration, but this cannot be extended to MANETs because of their distributed and dynamic nature. Many schemes have been proposed to solve this problem. Some of these approaches try to extend the IPv6 stateless autoconfiguration mechanism to MANETs, some use flooding the entire network to come up with a unique IP address, and others distribute IP addresses among nodes (using binary split) so that each node can independently configure new nodes. None of these existing solutions consider network partitioning and merging. In this paper, we propose a proactive scheme for dynamic allocation of IP addresses in MANETs. Our solution also uses the concept of binary split and takes into consideration the previously unsolved issues like partitioning and merging and abrupt departure of nodes from the system. We show that our solution is scalable and does not have the limitations of earlier approaches.</dcterms:abstract>
+        <dc:date>oct. 2002</dc:date>
+        <dc:title>MILCOM 2002. Proceedings</dc:title>
+        <bib:presentedAt>
+            <bib:Conference>
+               <dc:title>MILCOM 2002. Proceedings</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+        <prism:volume>2</prism:volume>
+        <bib:pages>856 - 861 vol.2</bib:pages>
+        <dc:identifier>DOI 10.1109/MILCOM.2002.1179586</dc:identifier>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_32">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/32/abs_all.html"/>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:37:43</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1179586&amp;tag=1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_31">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/31/Mohsin et Prakash - 2002 - IP address assignment in a mobile ad hoc network.pdf"/>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:37:35</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/ielx5/8404/26490/01179586.pdf?tp=&amp;arnumber=1179586&amp;isnumber=26490</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://tools.ietf.org/html/rfc2608">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guttman</foaf:surname>
+                        <foaf:givenname>Erik</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Veizades</foaf:surname>
+                        <foaf:givenname>John</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_23"/>
+        <dc:title>RFC2608 : Service Location Protocol, Version 2</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tools.ietf.org/html/rfc2608</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:31:39</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_23">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/23/rfc2608.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:31:39</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tools.ietf.org/html/rfc2608</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://www.ctr.kcl.ac.uk/IWWAN2005/papers/34.pdf">
+        <z:itemType>conferencePaper</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leggio</foaf:surname>
+                        <foaf:givenname>S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Manner</foaf:surname>
+                        <foaf:givenname>J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hulkkonen</foaf:surname>
+                        <foaf:givenname>A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Raatikainen</foaf:surname>
+                        <foaf:givenname>K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_45"/>
+        <dc:title>Session initiation protocol deployment in ad-hoc networks: a decentralized approach</dc:title>
+        <dc:date>2005</dc:date>
+        <dc:title>2nd International Workshop on Wireless Ad-hoc Networks (IWWAN)</dc:title>
+        <prism:volume>5</prism:volume>
+        <z:shortTitle>Session initiation protocol deployment in ad-hoc networks</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.ctr.kcl.ac.uk/IWWAN2005/papers/34.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:49:40</dcterms:dateSubmitted>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_45">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/45/Leggio et al. - 2005 - Session initiation protocol deployment in ad-hoc n.pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:49:40</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.ctr.kcl.ac.uk/IWWAN2005/papers/34.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://wiki.laptop.org/go/Mesh_Network_Details#Design_goals">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_21"/>
+        <dc:title>Mesh Network - OLPC</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wiki.laptop.org/go/Mesh_Network_Details#Design_goals</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:30:50</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_21">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/21/Mesh_Network_Details.html"/>
+        <dc:title>Mesh Network Details - OLPC</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:30:51</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wiki.laptop.org/go/Mesh_Network_Details#Design_goals</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://wiki.freifunk.net/Kategorie:English">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_58"/>
+        <dc:title>Freifunk presentation</dc:title>
+        <dcterms:abstract>Freifunk (German for Free Radio) is an initiative to support the development of tools for free mesh networks. Besides that the initiative supports communities developing know-how to set up their own networks.</dcterms:abstract>
+        <dc:title>Wiki - Freifunk</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://wiki.freifunk.net/Kategorie:English</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 13:33:23</dcterms:dateSubmitted>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_58">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/58/KategorieEnglish.html"/>
+        <dc:title>Kategorie:English – wiki.freifunk.net</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 13:33:24</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://wiki.freifunk.net/Kategorie:English</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Data rdf:about="http://www.qutecom.org/">
+        <z:itemType>computerProgram</z:itemType>
+        <link:link rdf:resource="#item_62"/>
+        <dc:title>QuteCom</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.qutecom.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 15:22:46</dcterms:dateSubmitted>
+    </bib:Data>
+    <z:Attachment rdf:about="#item_62">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/62/www.qutecom.org.html"/>
+        <dc:title>QuteCom</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 15:22:47</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.qutecom.org/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Book rdf:about="http://mirror.omadata.com/onno/library-ref-eng/WirelessU-materials/Building_a_Rural_Wireless_Mesh_Network_-_A_DIY_Guide_v0.7_65.pdf">
+        <z:itemType>book</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Johnson</foaf:surname>
+                        <foaf:givenname>D.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Matthee</foaf:surname>
+                        <foaf:givenname>K.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sokoya</foaf:surname>
+                        <foaf:givenname>D.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mboweni</foaf:surname>
+                        <foaf:givenname>L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Makan</foaf:surname>
+                        <foaf:givenname>A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kotze</foaf:surname>
+                        <foaf:givenname>H.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_48"/>
+        <dc:title>Building a Rural Wireless Mesh Network</dc:title>
+        <dcterms:abstract>A do-it-yourself guide to planning and building a Freifunk based mesh network</dcterms:abstract>
+        <dc:date>2007</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://mirror.omadata.com/onno/library-ref-eng/WirelessU-materials/Building_a_Rural_Wireless_Mesh_Network_-_A_DIY_Guide_v0.7_65.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 10:16:14</dcterms:dateSubmitted>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_48">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/48/Building_a_Rural_Wireless_Mesh_Network_-_A_DIY_Guide_v0.7_65.pdf"/>
+        <dc:title>Building_a_Rural_Wireless_Mesh_Network_-_A_DIY_Guide_v0.7_65.pdf (Objet application/pdf)</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 10:15:59</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://wirelessafrica.meraka.org.za/wiki/images/f/fe/Building_a_Rural_Wireless_Mesh_Network_-_A_DIY_Guide_v0.7_65.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+        <link:charset>25</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://www.zdnet.fr/actualites/haut-debit-en-zones-blanches-entre-avancees-technologiques-et-realites-economiques-39753628.htm">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>ZDNet</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pépin</foaf:surname>
+                        <foaf:givenname>Guénaël</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_56"/>
+        <dc:title>Haut débit en zones blanches : entre avancées technologiques et réalités économiques</dc:title>
+        <dcterms:abstract>La fermeture du FAI Wifi Mesh Numevia illustre la problématique de la couverture des zones blanches : technologies coûteuses et marché réduit obligent à la concentration des acteurs malgré les projets dans le domaine. Analyse.</dcterms:abstract>
+        <z:shortTitle>Haut débit en zones blanches</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.zdnet.fr/actualites/haut-debit-en-zones-blanches-entre-avancees-technologiques-et-realites-economiques-39753628.htm</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 12:31:59</dcterms:dateSubmitted>
+        <z:language>French</z:language>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_56">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/56/haut-debit-en-zones-blanches-entre-avancees-technologiques-et-realites-economiques-39753628.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 12:31:59</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.zdnet.fr/actualites/haut-debit-en-zones-blanches-entre-avancees-technologiques-et-realites-economiques-39753628.htm</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://en.wikipedia.org/w/index.php?title=Mesh_networking&amp;oldid=516641983">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <link:link rdf:resource="#item_54"/>
+        <dc:title>Mesh networking</dc:title>
+        <dcterms:abstract>Mesh networking (topology) is a type of networking where each node must not only capture and disseminate its own data, but also serve as a relay for other nodes, that is, it must collaborate to propagate the data in the network.</dcterms:abstract>
+        <dc:title>Wikipedia, the free encyclopedia</dc:title>
+        <dc:date>2012-10-11T00:20:46Z</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Mesh_networking&amp;oldid=516641983</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 11:47:44</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wikipedia</z:libraryCatalog>
+        <dc:rights>Creative Commons Attribution-ShareAlike License</dc:rights>
+        <dc:description>Page Version ID: 516641983</dc:description>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_54">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/54/index.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 11:47:46</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://en.wikipedia.org/w/index.php?title=Mesh_networking&amp;oldid=516641983</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://spectrum.ieee.org/telecom/internet/building-a-subversive-grassroots-network">
+        <z:itemType>newspaperArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Newspaper></bib:Newspaper>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>King</foaf:surname>
+                        <foaf:givenname>Ritchie S.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_16"/>
+        <dc:title>Building a Subversive Grassroots Network</dc:title>
+        <dcterms:abstract>How Commotion Wireless plans to enable digital communication in the face of an Internet shutdown</dcterms:abstract>
+        <prism:edition>IEEE Spectrum</prism:edition>
+        <dc:date>July 2011</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://spectrum.ieee.org/telecom/internet/building-a-subversive-grassroots-network</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:28:33</dcterms:dateSubmitted>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/16/building-a-subversive-grassroots-network.html"/>
+        <dc:title>Building a Subversive Grassroots Network - IEEE Spectrum</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:28:34</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://spectrum.ieee.org/telecom/internet/building-a-subversive-grassroots-network</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Book rdf:about="urn:isbn:9780471373131">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>John Wiley &amp; Sons</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Basagni</foaf:surname>
+                        <foaf:givenname>Stefano</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Conti</foaf:surname>
+                        <foaf:givenname>Marco</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Giordano</foaf:surname>
+                        <foaf:givenname>Silvia</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stojmenovic</foaf:surname>
+                        <foaf:givenname>Ivan</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_14"/>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Technology &amp; Engineering / Telecommunications</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Mobile Ad Hoc Networking</dc:title>
+        <dcterms:abstract>From physical issues up to applications aspects, Mobile Ad Hoc Networking comprehensively covers all areas of the technology, including protocols and models, with an emphasis on the most current research and development in the rapidly growing area of ad hoc networks. All material has been carefully screened for quality and relevance and reviewed by the most renowned and involved experts in the field.Explores the most recent research and development in the rapidly growing area of ad hoc networks.Includes coverage of ad hoc networking trends, possible architectures, and the advantages/limits for future commercial, social, and educational applications.Ad hoc networks have been an intense area of research and development but many products that fully utilize this technology are only now being widely deployed throughout the world.</dcterms:abstract>
+        <dc:date>2004-08-09</dc:date>
+        <z:numPages>479</z:numPages>
+        <z:language>en</z:language>
+        <dc:identifier>ISBN 9780471373131</dc:identifier>
+        <z:libraryCatalog>Google Books</z:libraryCatalog>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Google Books Link</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:26:32</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://books.google.se/books?id=GnkcHEsxAigC</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Data rdf:about="http://www.olsr.org/">
+        <z:itemType>computerProgram</z:itemType>
+        <link:link rdf:resource="#item_64"/>
+        <dc:title>OLSRd</dc:title>
+        <dcterms:abstract>an adhoc wireless mesh routing daemon</dcterms:abstract>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://www.olsr.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 18:17:05</dcterms:dateSubmitted>
+    </bib:Data>
+    <z:Attachment rdf:about="#item_64">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/64/www.olsr.org.html"/>
+        <dc:title>www.olsr.org | an adhoc wireless mesh routing daemon</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 18:17:06</dcterms:dateSubmitted>
+        <dc:identifier>
+           <dcterms:URI><rdf:value>http://www.olsr.org/</rdf:value></dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <rdf:Description rdf:about="#item_50">
+        <z:itemType>conferencePaper</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Matuszewski</foaf:surname>
+                        <foaf:givenname>M.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kokkonen</foaf:surname>
+                        <foaf:givenname>E.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_52"/>
+        <link:link rdf:resource="#item_51"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Internet telephony</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>mobile communities</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>mobile community members</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>mobile computing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>mobile phone</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>mobile services</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>multimedia sessions</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>multiservice P2P overlay architecture</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>NAT traversal</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>peer-to-peer computing</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>peer-to-peer SIP communication</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>protocols</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>voice calls</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>VoIP service</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Mobile P2PSIP - Peer-to-Peer SIP Communication in Mobile Communities</dc:title>
+        <dcterms:abstract>This paper presents a realization of a multi-service P2P overlay architecture that allows for establishing SIP multimedia sessions between mobile community members with little or no need for centralized servers of any kind. The overlay architecture forms a cost efficient platform for providing innovative mobile services. As an example, this paper presents an implementation of a mobile P2PSIP VoIP service. The implementation allows a mobile phone user make voice calls using resources of the P2P overlay. The mobile phone user may freely use standard call manager and contact list in a mobile phone. The paper also presents a method for locating relay servers that are used in NAT traversal.</dcterms:abstract>
+        <dc:date>jan. 2008</dc:date>
+        <dc:title>5th IEEE Consumer Communications and Networking Conference, 2008. CCNC 2008</dc:title>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>5th IEEE Consumer Communications and Networking Conference, 2008. CCNC 2008</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+        <bib:pages>1159 -1165</bib:pages>
+        <dc:identifier>DOI 10.1109/ccnc08.2007.260</dc:identifier>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_52">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/52/abs_all.html"/>
+        <dc:title>IEEE Xplore Abstract Record</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 11:30:25</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4446558&amp;tag=1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_51">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/51/Matuszewski et Kokkonen - 2008 - Mobile P2PSIP - Peer-to-Peer SIP Communication in .pdf"/>
+        <dc:title>IEEE Xplore Full Text PDF</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 11:30:17</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://ieeexplore.ieee.org/ielx5/4446297/4446298/04446558.pdf?tp=&amp;arnumber=4446558&amp;isnumber=4446298</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://persons.unik.no/paalee/referencing_publications/ref-sd-li-olsrinterop04.pdf">
+        <z:itemType>conferencePaper</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenname>L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lamont</foaf:surname>
+                        <foaf:givenname>L.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <dc:title>Service discovery for support of real-time multimedia SIP applications over OLSR MANETs</dc:title>
+        <dc:date>2004</dc:date>
+        <dc:title>Olsr interop &amp; workshop</dc:title>
+        <bib:pages>6–7</bib:pages>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://persons.unik.no/paalee/referencing_publications/ref-sd-li-olsrinterop04.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:46:45</dcterms:dateSubmitted>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/39/Li et Lamont - 2004 - Service discovery for support of real-time multime.pdf"/>
+        <dc:title>Full Text</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:46:45</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://persons.unik.no/paalee/referencing_publications/ref-sd-li-olsrinterop04.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="http://tools.ietf.org/html/draft-matuszewski-p2psip-security-requirements-06">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Matuszewski</foaf:surname>
+                        <foaf:givenname>Marcin</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yongchao</foaf:surname>
+                        <foaf:givenname>Song</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>York</foaf:surname>
+                        <foaf:givenname>Dan</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_70"/>
+        <dc:title>P2PSIP Security Overview and Risk Analysis</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://tools.ietf.org/html/draft-matuszewski-p2psip-security-requirements-06</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 18:52:58</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_70">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/70/draft-matuszewski-p2psip-security-requirements-06.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 18:52:58</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://tools.ietf.org/html/draft-matuszewski-p2psip-security-requirements-06</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://www.adv-radio-sci.net/10/113/2012/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1684-9973"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mannweiler</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lottermann</foaf:surname>
+                        <foaf:givenname>C.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Klein</foaf:surname>
+                        <foaf:givenname>A.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schneider</foaf:surname>
+                        <foaf:givenname>J.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schotten</foaf:surname>
+                        <foaf:givenname>H. D.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_18"/>
+        <link:link rdf:resource="#item_19"/>
+        <dc:title>Cyber-physical networking for wireless mesh infrastructures</dc:title>
+        <bib:pages>113-118</bib:pages>
+        <dc:date>septembre 18, 2012</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.adv-radio-sci.net/10/113/2012/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:30:20</dcterms:dateSubmitted>
+        <z:libraryCatalog>Copernicus Online Journals</z:libraryCatalog>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1684-9973">
+        <dc:title>Adv. Radio Sci.</dc:title>
+        <prism:volume>10</prism:volume>
+        <dcterms:alternative>Adv. Radio Sci.</dcterms:alternative>
+        <dc:identifier>DOI 10.5194/ars-10-113-2012</dc:identifier>
+        <dc:identifier>ISSN 1684-9973</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_18">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/18/Mannweiler et al. - 2012 - Cyber-physical networking for wireless mesh infras.pdf"/>
+        <dc:title>Adv. Radio Sci. PDF</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:30:20</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.adv-radio-sci.net/10/113/2012/ars-10-113-2012.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/19/2012.html"/>
+        <dc:title>Adv. Radio Sci. Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:30:21</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://www.adv-radio-sci.net/10/113/2012/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>25</link:charset>
+    </z:Attachment>
+    <bib:Article rdf:about="http://hal.inria.fr/hal-00654544">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Journal of Communications and Networks</dc:title>
+                <prism:volume>6</prism:volume>
+                <prism:number>4</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Adjih</foaf:surname>
+                        <foaf:givenname>Cédric</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Baccelli</foaf:surname>
+                        <foaf:givenname>Emmanuel</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Clausen</foaf:surname>
+                        <foaf:givenname>Thomas Heide</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jacquet</foaf:surname>
+                        <foaf:givenname>Philippe</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rodolakis</foaf:surname>
+                        <foaf:givenname>Georgios</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_60"/>
+        <dc:title>Fish Eye OLSR Scaling Properties</dc:title>
+        <dcterms:abstract>Scalability is one of the toughest challenges in ad hoc networking. Recent work outlines theoretical bounds on how well routing protocols could scale in this environment. However, none of the popular routing solutions really scales to large networks, by coming close enough to these bounds. In this paper, we study the case of link state routing and OLSR, one of the strongest candidate for standardization. We analyze how these bounds are not reached in this case, and we study how much the scalability is enhanced with the use of Fish Eye techniques in addition to the link state routing framework. We show that with this enhancement, the theoretical scalability bounds are reached.</dcterms:abstract>
+        <bib:pages>352-361</bib:pages>
+        <dc:date>décembre 2004</dc:date>
+        <z:language>Anglais</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://hal.inria.fr/hal-00654544</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 14:08:36</dcterms:dateSubmitted>
+        <z:libraryCatalog>HAL Archives Ouvertes</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/60/hal-00654544.html"/>
+        <dc:title>HAL Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 14:08:38</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://hal.inria.fr/hal-00654544</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html">
+        <z:itemType>blogPost</z:itemType>
+        <dcterms:isPartOf>
+            <z:Blog>
+                <dc:title>P2P-SIP / Peer-to-peer Internet telephony using SIP</dc:title>
+            </z:Blog>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Singh</foaf:surname>
+                        <foaf:givenname>Kundan</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_72"/>
+        <dc:title>P2P-SIP: Security in P2P-SIP</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_72">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/72/security-in-p2p-sip.html"/>
+        <dc:title>P2P-SIP: Security in P2P-SIP</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 18:58:57</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <bib:Document rdf:about="http://tools.ietf.org/html/rfc3224">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guttman</foaf:surname>
+                        <foaf:givenname>Erik</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_25"/>
+        <dc:title>RFC3224 : Vendor Extensions for Service Location Protocol, Version 2</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tools.ietf.org/html/rfc3224</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2012-10-12 02:32:07</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_25">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/25/rfc3224.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dcterms:dateSubmitted>2012-10-12 02:32:07</dcterms:dateSubmitted>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://tools.ietf.org/html/rfc3224</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <link:type>text/html</link:type>
+        <link:charset>1</link:charset>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_5">
+       <dc:title>Defintion</dc:title>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>MANET</dc:title>
+        <dcterms:hasPart rdf:resource="#collection_4"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:9780471373131"/>
+        <dcterms:hasPart rdf:resource="http://spectrum.ieee.org/telecom/internet/building-a-subversive-grassroots-network"/>
+        <dcterms:hasPart rdf:resource="http://www.adv-radio-sci.net/10/113/2012/"/>
+        <dcterms:hasPart rdf:resource="http://wiki.laptop.org/go/Mesh_Network_Details#Design_goals"/>
+        <dcterms:hasPart rdf:resource="#item_30"/>
+        <dcterms:hasPart rdf:resource="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4129879"/>
+        <dcterms:hasPart rdf:resource="http://hal.inria.fr/hal-00654544"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_4">
+        <dc:title>Mesh</dc:title>
+        <dcterms:hasPart rdf:resource="http://mirror.omadata.com/onno/library-ref-eng/WirelessU-materials/Building_a_Rural_Wireless_Mesh_Network_-_A_DIY_Guide_v0.7_65.pdf"/>
+        <dcterms:hasPart rdf:resource="http://en.wikipedia.org/w/index.php?title=Mesh_networking&amp;oldid=516641983"/>
+        <dcterms:hasPart rdf:resource="http://wiki.freifunk.net/Kategorie:English"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>Normes</dc:title>
+        <dcterms:hasPart rdf:resource="http://tools.ietf.org/html/rfc2608"/>
+        <dcterms:hasPart rdf:resource="http://tools.ietf.org/html/rfc3224"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_6">
+        <dc:title>P2PSIP</dc:title>
+        <dcterms:hasPart rdf:resource="#item_50"/>
+        <dcterms:hasPart rdf:resource="http://www.olsr.org/"/>
+        <dcterms:hasPart rdf:resource="http://tools.ietf.org/html/draft-matuszewski-p2psip-security-requirements-06"/>
+        <dcterms:hasPart rdf:resource="http://p2p-sip.blogspot.se/2009/10/security-in-p2p-sip.html"/>
+        <dcterms:hasPart rdf:resource="http://en.wikipedia.org/w/index.php?title=Distributed_hash_table&amp;oldid=514444985"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_7">
+        <dc:title>usages</dc:title>
+        <dcterms:hasPart rdf:resource="http://www.zdnet.fr/actualites/haut-debit-en-zones-blanches-entre-avancees-technologiques-et-realites-economiques-39753628.htm"/>
+        <dcterms:hasPart rdf:resource="http://www.qutecom.org/"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_3">
+        <dc:title>VoiP over MANETs</dc:title>
+        <dcterms:hasPart rdf:resource="#item_4"/>
+        <dcterms:hasPart rdf:resource="http://tel.archives-ouvertes.fr/tel-00712171"/>
+        <dcterms:hasPart rdf:resource="http://www.ijcaonline.org/archives/volume22/number3/2560-3515"/>
+    </z:Collection>
+</rdf:RDF>

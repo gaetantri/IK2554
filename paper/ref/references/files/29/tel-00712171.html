@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="wpd_version" content="0.2">
+<meta name="wpd_baseurl" content="http://tel.archives-ouvertes.fr/tel-00712171/">
+<meta name="wpd_url" content="http://tel.archives-ouvertes.fr/tel-00712171/">
+<meta name="wpd_date" content="2012-09-12T02:36Z">
+
+<link rel="Top" href="http://tel.archives-ouvertes.fr/">
+<link rel="Search" href="http://tel.archives-ouvertes.fr/?action_todo=search">
+<link rel="alternate" type="application/rss+xml" title="Canaux RSS" href="http://tel.archives-ouvertes.fr/rss.php">
+<title>TEL :: [tel-00712171, version 1] P2P SIP over mobile ad hoc networks</title>
+
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Pragma" content="NO-CACHE">
+<meta name="CACHE-CONTROL" content="NO-CACHE">
+<meta name="GOOGLEBOT" content="NOARCHIVE">
+<meta name="verify-v1" content="0EmNz+pEwDlI0FbW3kdS6t+Jub8lstX8ux9ufm6V67M=">
+<meta name="google-site-verification" content="0EmNz+pEwDlI0FbW3kdS6t+Jub8lstX8ux9ufm6V67M=">
+<meta name="Copyright" content="HAL/CCSD">
+<meta name="Publisher" content="TEL">
+<meta name="Generator" content="HAL">
+<meta name="Author" content="Wongsaardsakul, Thirapon">
+<meta name="Description" content="This work presents a novel Peer to Peer (P2P) framework for Session Initiation Protocol (SIP) on Mobile Ad Hoc Network (MANET). SIP is a client-server model of computing which can introduce a single point of failure problem. P2P SIP addresses this problem by using a distributed implementation based on a P2P paradigm. However, both the traditional SIP and P2P SIP architectures are not suitable for MANETs because they are initially designed for infrastructured networks whose most nodes are static. We focus on distributed P2P resource lookup mechanisms for SIP which can tolerate failures resulting from the node mobility. Our target application is SIP-based multimedia communication in a rapidly deployable disaster emergency network. To achieve our goal, we provide four contributions as follows. The first contribution is a novel P2P lookup architecture based on a concept of P2P overlay network called a Structured Mesh Overlay Network (SMON). This overlay network enables P2P applications to perform fast resource lookups in the MANET environment. SMON utilizes a cross layer design based on the Distributed Hashing Table (DHT) and has direct access to OLSR routing information. Its cross layer design allows optimizing the overlay network performance during the change of network topology. The second contribution is a distributed SIP architecture on MANET providing SIP user location discovery in a P2P manner which tolerates single-point and multiple-point of failures. Our approach extends the traditional SIP user location discovery by utilizing DHT in SMON to distribute SIP object identifiers over SMON. It offers a constant time on SIP user discovery which results in a fast call setup time between two MANET users. From simulation and experiment results, we find that SIPMON provides the lowest call setup delay when compared to the existing broadcast-based approaches. The third contribution is an extended SIPMON supporting several participating MANETs connected to Internet. This extension (SIPMON+) provides seamless mobility support allowing a SIP user to roam from an ad hoc network to an infrastructured network such as Internet without interrupting an ongoing session. We propose a novel OLSR Overlay Network (OON), a single overlay network containing MANET nodes and some nodes on the Internet. These nodes can communicate using the same OLSR routing protocol. Therefore, SIPMON can be automatically extended without modifying SIPMON internal operations. Through our test-bed experiments, we prove that SIPMON+ has better performance in terms of call setup delay and handoff delay than MANET for Network Mobility (MANEMO). The fourth contribution is a proof-of-concept and a prototype of P2P multimedia communication based on SIPMON+ for post disaster recovery missions. We evaluate our prototype and MANEMO-based approaches through experimentation in real disaster situations (Vehicle to Infrastructure scenarios). We found that our prototype outperforms MANEMO-based approaches in terms of call setup delay, packet loss, and deployment time.">
+<meta name="Keywords" content="MANET;Peer to peer;SIP;Distributed hash table;Voice over IP;Terminal mobility">
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/">
+<meta name="DC.identifier" content="tel-00712171, version 1">
+<meta name="DC.identifier" content="http://tel.archives-ouvertes.fr/tel-00712171">
+<meta name="DC.title" content="P2P SIP over mobile ad hoc networks">
+<meta name="DC.creator" content="Wongsaardsakul, Thirapon">
+<meta name="DC.description" content="This work presents a novel Peer to Peer (P2P) framework for Session Initiation Protocol (SIP) on Mobile Ad Hoc Network (MANET). SIP is a client-server model of computing which can introduce a single point of failure problem. P2P SIP addresses this problem by using a distributed implementation based on a P2P paradigm. However, both the traditional SIP and P2P SIP architectures are not suitable for MANETs because they are initially designed for infrastructured networks whose most nodes are static. We focus on distributed P2P resource lookup mechanisms for SIP which can tolerate failures resulting from the node mobility. Our target application is SIP-based multimedia communication in a rapidly deployable disaster emergency network. To achieve our goal, we provide four contributions as follows. The first contribution is a novel P2P lookup architecture based on a concept of P2P overlay network called a Structured Mesh Overlay Network (SMON). This overlay network enables P2P applications to perform fast resource lookups in the MANET environment. SMON utilizes a cross layer design based on the Distributed Hashing Table (DHT) and has direct access to OLSR routing information. Its cross layer design allows optimizing the overlay network performance during the change of network topology. The second contribution is a distributed SIP architecture on MANET providing SIP user location discovery in a P2P manner which tolerates single-point and multiple-point of failures. Our approach extends the traditional SIP user location discovery by utilizing DHT in SMON to distribute SIP object identifiers over SMON. It offers a constant time on SIP user discovery which results in a fast call setup time between two MANET users. From simulation and experiment results, we find that SIPMON provides the lowest call setup delay when compared to the existing broadcast-based approaches. The third contribution is an extended SIPMON supporting several participating MANETs connected to Internet. This extension (SIPMON+) provides seamless mobility support allowing a SIP user to roam from an ad hoc network to an infrastructured network such as Internet without interrupting an ongoing session. We propose a novel OLSR Overlay Network (OON), a single overlay network containing MANET nodes and some nodes on the Internet. These nodes can communicate using the same OLSR routing protocol. Therefore, SIPMON can be automatically extended without modifying SIPMON internal operations. Through our test-bed experiments, we prove that SIPMON+ has better performance in terms of call setup delay and handoff delay than MANET for Network Mobility (MANEMO). The fourth contribution is a proof-of-concept and a prototype of P2P multimedia communication based on SIPMON+ for post disaster recovery missions. We evaluate our prototype and MANEMO-based approaches through experimentation in real disaster situations (Vehicle to Infrastructure scenarios). We found that our prototype outperforms MANEMO-based approaches in terms of call setup delay, packet loss, and deployment time.">
+<meta name="DC.subject" content="MANET;Peer to peer;SIP;Distributed hash table;Voice over IP;Terminal mobility">
+<meta name="DC.date" content="2010-10-04">
+<meta name="DC.relation" content="http://tel.archives-ouvertes.fr/tel-00712171">
+<meta name="citation_title" content="P2P SIP over mobile ad hoc networks">
+<meta name="citation_author" content="Thirapon Wongsaardsakul">
+<meta name="citation_author_institution" content="RS2M, Département Réseaux et Services Multimédia Mobiles, , FRInstitut Mines-Télécom, Télécom SudParis">
+<meta name="citation_author_institution" content="SAMOVAR, Services répartis, Architectures, MOdélisation, Validation, Administration des Réseaux, 9 RUE CHARLES FOURIER 91011 EVRY CEDEX, FRCNRS : UMR5157, Institut Mines-Télécom, Télécom SudParis">
+<meta name="citation_publication_date" content="2010/10/04">
+<meta name="citation_online_date" content="2012/06/26">
+<meta name="citation_dissertation_institution" content="Institut National des Télécommunications">
+<meta name="citation_abstract_html_url" content="http://tel.archives-ouvertes.fr/tel-00712171">
+<meta name="citation_pdf_url" content="http://tel.archives-ouvertes.fr/docs/00/71/21/71/PDF/TheseWONGSAARDSAKUL.pdf">
+
+
+<script type="text/javascript" language="javascript" src="swfobject.js"></script>
+<script type="text/javascript" language="javascript" src="prototype.js"></script>
+<script type="text/javascript" language="javascript" src="scriptaculous.js"></script><script type="text/javascript" src="builder.js"></script><script type="text/javascript" src="effects.js"></script><script type="text/javascript" src="dragdrop.js"></script><script type="text/javascript" src="controls.js"></script><script type="text/javascript" src="slider.js"></script><script type="text/javascript" src="sound.js"></script>
+<script type="text/javascript" language="javascript" src="utile.js"></script>
+<script type="text/javascript" language="javascript" src="forms.js"></script>
+<script type="text/javascript" language="javascript" src="default_value.js"></script>
+<script type="text/javascript" language="javascript" src="boxover.js"></script>
+<script type="text/javascript" language="javascript" src="lightbox.js"></script>
+<script type="text/javascript" language="javascript" src="js.php"></script>
+
+<link rel="stylesheet" type="text/css" href="tel-00712171.css" media="all">
+</head>
+<body>
+<div id="logo" class="logo">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td style="position: absolute; left: 15px; top: 5px;" align="left" nowrap="nowrap" width="50%"><a href="http://hal.archives-ouvertes.fr/" target="_self"><img src="vide.gif" alt="HAL - hal.archives-ouvertes.fr" title="HAL - hal.archives-ouvertes.fr" border="0" height="45px" width="45px"></a></td>
+<td style="position: absolute; left: 10px; top: 110px;" align="left" nowrap="nowrap" width="50%"><a href="http://www.ccsd.cnrs.fr/" target="_self"><img src="vide.gif" alt="CCSd - Centre pour la Communication Scientifique Direct" title="CCSd - Centre pour la Communication Scientifique Direct" border="0" height="15px" width="400px"></a></td>
+</tr>
+</tbody></table>
+</div>
+<div class="onglet" id="halmenu">
+<ul class="niveau1">
+<li>
+<a class="niveau1" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=home" target="_self">Accueil</a>
+</li>
+<li>
+<a class="niveau1" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=menu&to_open=deposed" target="_self">D&eacute;poser</a>
+<ul class="niveau2">
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=login" target="_self">S'authentifier</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=register" target="_self">S'inscrire</a>
+</li>
+</ul>
+</li>
+<li class="current">
+<a class="niveau1" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=menu&to_open=browse" target="_self">Consulter</a>
+<ul class="niveau2">
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=browse&b_type=browse_domain" target="_self">Par domaine</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=browse&submit=1&b_type=browse_new" target="_self">Les 30 derni&egrave;res th&egrave;ses d&eacute;pos&eacute;es</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=browse&b_type=browse_orgthe" target="_self">Par organisme de d&eacute;livrance</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=browse&b_type=browse_date" target="_self">Par ann&eacute;e de soutenance</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=browse&b_type=browse_tampon" target="_self">Par collection</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="niveau1" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=menu&to_open=search" target="_self">Rechercher</a>
+<ul class="niveau2">
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=search&s_type=simple" target="_self">Recherche simple</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=search&s_type=advanced" target="_self">Recherche avanc&eacute;e</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=search&s_type=byid" target="_self">Acc&egrave;s par identifiant</a>
+</li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=search" target="_self">Exporter une liste de publication</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="niveau1" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=subscribe" target="_self">S'abonner</a>
+</li>
+</ul>
+<div class="fulltext">
+<form action="http://tel.archives-ouvertes.fr/index.php" method="post" name="search_full_form" id="search_full_form" target="_self" enctype="application/x-www-form-urlencoded">
+<input name="action_todo" id="action_todo" value="search" type="hidden">
+<input name="s_type" id="s_type" value="simple" type="hidden">
+<input name="f[]" id="f" value="@*" type="hidden">
+<input name="submit" id="submit" value="1" type="hidden">
+<input name="halsid" id="halsid" value="ajp1hv742svavg1seosp5fseo4" type="hidden">
+<input name="v[]" id="v" class="formulaire" value="" size="15" maxlength="255" type="text">
+<input src="search.gif" title="Rechercher" align="absmiddle" type="image">
+</form>
+</div>
+<div id="halhelp">
+<ul class="help">
+<li>
+<a class="niveau1" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=menu&to_open=help" target="_self"><img alt="aide" title="aide" src="help.png" border="0"></a>
+<ul class="niveau2">
+<li><a href="http://www.ccsd.cnrs.fr/spip.php?rubrique8" target="_top">Manuel</a></li>
+<li>
+<a href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=apropos" target="_self">&Agrave; propos</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="connected">
+<a accesskey="C" href="http://tel.archives-ouvertes.fr/index.php?action_todo=login&halsid=ajp1hv742svavg1seosp5fseo4"><img alt="s'authentifier" title="s'authentifier" src="connect.png" border="0"></a>
+</div>
+</div>
+<div class="lien">
+<img src="fr.png" alt="version française" title="version française" align="absmiddle" border="0">
+<select name="language" id="language" class="langue" style="Array" onchange="self.location.href='http://tel.archives-ouvertes.fr/index.php?langue='+$F(this)+'&halsid=ajp1hv742svavg1seosp5fseo4';">
+<option value="fr" style="background-image: url('fr_002.png');" selected="">version fran&ccedil;aise</option>
+<option value="en" style="background-image: url('en.png');">english version</option>
+</select>
+<a class="rss" href="http://tel.archives-ouvertes.fr/index.php?halsid=ajp1hv742svavg1seosp5fseo4&action_todo=rss"><img alt="rss feed" src="rss.gif" align="absmiddle" border="0"></a>
+</div>
+<div class="corps">
+
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="left"><a href="http://tel.archives-ouvertes.fr/index.php?view_this_doc=tel-00712171&extended_view=1&version=1&halsid=ajp1hv742svavg1seosp5fseo4" class="lien_vue" target="_self">Fiche d&eacute;taill&eacute;e</a></td>
+<td align="right">Th&egrave;ses</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td class="meta_refBiblio">Institut National des T&eacute;l&eacute;communications (04/10/2010), No&euml;l Crespi (Dir.)</td>
+</tr>
+</tbody></table>
+<div id="tampons_article" style="float: right; top: -33px; position: relative;">
+<ul>
+<li style="list-style-type: none;"><img title="STAR - Dépôt national des thèses électroniques" alt="STAR - Dépôt national des thèses électroniques" src="tampon_star.png" align="absmiddle" border="0"></li>
+</ul></div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="10" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="nom_meta">Liste des fichiers attach&eacute;s &agrave; ce document&nbsp;:&nbsp;</td>
+</tr>
+<tr>
+<td><img alt="" src="vide.gif" border="0" height="6" width="1"></td>
+</tr>
+<tr>
+<td class="meta"><table border="0" cellpadding="5" cellspacing="0">
+<tbody><tr>
+<td>
+<img alt="" src="vide.gif" border="0" height="1" width="0"><img alt="" src="folderopen.gif" border="0"></td>
+<td><span class="repertoire">PDF</span></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td><img alt="" src="vide.gif" border="0" height="1" width="25"></td>
+<td><a href="http://tel.archives-ouvertes.fr/docs/00/71/21/71/PDF/TheseWONGSAARDSAKUL.pdf" onclick="jsRequestMajCptConsult(712171);" target="_top"><img alt="" src="pdf.png" border="0"></a></td>
+<td><a href="http://tel.archives-ouvertes.fr/docs/00/71/21/71/PDF/TheseWONGSAARDSAKUL.pdf" onclick="jsRequestMajCptConsult(712171);" target="_top" class="file_link">TheseWONGSAARDSAKUL.pdf</a><img alt="" src="vide.gif" border="0" height="1" width="5"><span class="help">(5.3 MB)</span></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="10" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="meta_title" align="center">P2P SIP over mobile ad hoc networks</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="meta_auteur" align="center"><a class="meta_auteur" href="http://tel.archives-ouvertes.fr/index.php?action_todo=search&s_type=advanced&submit=1&search_without_file=YES&f_0=LASTNAME&p_0=is_exactly&f_1=FIRSTNAME&p_1=is_exactly&l_0=and&halsid=ajp1hv742svavg1seosp5fseo4&v_0=Wongsaardsakul&v_1=Thirapon">Thirapon&nbsp;Wongsaardsakul</a><sup class="labo_id">1, 2</sup></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><hr color="#f9f4e8" noshade="noshade" size="1px" width="60"></td>
+</tr>
+<tr>
+<td><img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+<tr>
+<td class="meta_abstract">This work presents a novel Peer to Peer (P2P) framework for Session Initiation Protocol (SIP) on Mobile Ad Hoc Network (MANET). SIP is a client-server model of computing which can introduce a single point of failure problem. P2P SIP addresses this problem by using a distributed implementation based on a P2P paradigm. However, both the traditional SIP and P2P SIP architectures are not suitable for MANETs because they are initially designed for infrastructured networks whose most nodes are static. We focus on distributed P2P resource lookup mechanisms for SIP which can tolerate failures resulting from the node mobility. Our target application is SIP-based multimedia communication in a rapidly deployable disaster emergency network. To achieve our goal, we provide four contributions as follows. The first contribution is a novel P2P lookup architecture based on a concept of P2P overlay network called a Structured Mesh Overlay Network (SMON). This overlay network enables P2P applications to perform fast resource lookups in the MANET environment. SMON utilizes a cross layer design based on the Distributed Hashing Table (DHT) and has direct access to OLSR routing information. Its cross layer design allows optimizing the overlay network performance during the change of network topology. The second contribution is a distributed SIP architecture on MANET providing SIP user location discovery in a P2P manner which tolerates single-point and multiple-point of failures. Our approach extends the traditional SIP user location discovery by utilizing DHT in SMON to distribute SIP object identifiers over SMON. It offers a constant time on SIP user discovery which results in a fast call setup time between two MANET users. From simulation and experiment results, we find that SIPMON provides the lowest call setup delay when compared to the existing broadcast-based approaches. The third contribution is an extended SIPMON supporting several participating MANETs connected to Internet. This extension (SIPMON+) provides seamless mobility support allowing a SIP user to roam from an ad hoc network to an infrastructured network such as Internet without interrupting an ongoing session. We propose a novel OLSR Overlay Network (OON), a single overlay network containing MANET nodes and some nodes on the Internet. These nodes can communicate using the same OLSR routing protocol. Therefore, SIPMON can be automatically extended without modifying SIPMON internal operations. Through our test-bed experiments, we prove that SIPMON+ has better performance in terms of call setup delay and handoff delay than MANET for Network Mobility (MANEMO). The fourth contribution is a proof-of-concept and a prototype of P2P multimedia communication based on SIPMON+ for post disaster recovery missions. We evaluate our prototype and MANEMO-based approaches through experimentation in real disaster situations (Vehicle to Infrastructure scenarios). We found that our prototype outperforms MANEMO-based approaches in terms of call setup delay, packet loss, and deployment time.</td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="1" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100">
+<tbody><tr>
+<td style="font-size: 1px;" align="center" bgcolor="#f9f4e8" height="1"><img alt="" src="vide.gif" border="0" height="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="1" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td nowrap="nowrap" width="20"><span class="labo_id">1&nbsp;:&nbsp;</span></td>
+<td class="meta_labo"><a class="meta_labo" href="http://tel.archives-ouvertes.fr/index.php?action_todo=search&s_type=advanced&submit=1&p_0=is_exactly&f_0=LABID&halsid=ajp1hv742svavg1seosp5fseo4&v_0=95599">RS2M&nbsp;-&nbsp;D&eacute;partement R&eacute;seaux et Services Multim&eacute;dia Mobiles</a></td>
+</tr>
+<tr>
+<td colspan="2"><img alt="" src="vide.gif" border="0" height="5" width="1"></td>
+</tr>
+<tr>
+<td nowrap="nowrap" width="20"><span class="labo_id">2&nbsp;:&nbsp;</span></td>
+<td class="meta_labo"><a class="meta_labo" href="http://tel.archives-ouvertes.fr/index.php?action_todo=search&s_type=advanced&submit=1&p_0=is_exactly&f_0=LABID&halsid=ajp1hv742svavg1seosp5fseo4&v_0=638">SAMOVAR&nbsp;-&nbsp;Services r&eacute;partis, Architectures, MOd&eacute;lisation, Validation, Administration des R&eacute;seaux</a></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="1" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100">
+<tbody><tr>
+<td style="font-size: 1px;" align="center" bgcolor="#f9f4e8" height="1"><img alt="" src="vide.gif" border="0" height="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="1" width="1"></td>
+</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="font-size: 1px;">
+<img alt="" src="vide.gif" border="0" height="10" width="1"></td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="5" cellspacing="0">
+<tbody><tr>
+<td class="meta"><span class="small_metadata" style="vertical-align: top;">mots-cl&eacute;s&nbsp;:&nbsp;</span>MANET &ndash; Peer to peer &ndash; SIP &ndash; Distributed hash table &ndash; Voice over IP &ndash; Terminal mobility</td>
+</tr>
+<tr>
+<td><hr color="#f9f4e8" noshade="noshade" size="1px" width="100%"></td>
+</tr>
+<tr>
+<td class="meta_title">[SIP P2P pour les r&eacute;seaux mobiles ad hoc]</td>
+</tr>
+<tr>
+<td class="meta_abstract">Cette th&egrave;se propose une nouvelle architecture Peer-to-Peer pour l'&eacute;tablissement de sessions SIP (Session Initiation Protocol) sur les r&eacute;seaux ad hoc. SIP est un protocole con&cedil;cu &agrave; l'origine sur un mod&egrave;le centralis&eacute; est n'est pas nativement adapt&eacute; aux r&eacute;seaux mobiles ad hoc (MANET) en raison de leurs caract&eacute;ristiques inh&eacute;rentes de mobilit&eacute;. Nous avons cibl&eacute; nos &eacute;tudes sur un m&eacute;canisme de lookup distribu&eacute; Peer-to-Peer (P2P) tol&eacute;rant aux fautes, m&ecirc;me en cas de mobilit&eacute; des noeuds du r&eacute;seau. Cette th&egrave;se s'articule autour de quatre principales contributions: Nous introduisons le concept de Structured Mesh Overlay Network (SMON) : un overlay P2P sur MANET permettant d'effectuer des lookups de ressources rapides dans un environnement ad hoc. SMON utilise une architecture cross layer design bas&eacute;e sur une Distributed Hash Table (DHT) utilisant directement les informations de routage OLSR. Cette architecture cross layer permet d'optimiser les performances du r&eacute;seau overlay lors d'un changement de topologie du r&eacute;seau. La seconde contribution, SIPMON, est un overlay SIP sur r&eacute;seau SMON. Sa particularit&eacute; est d'utiliser un DHT pour distribuer les identifiants d'objet SIP dans le r&eacute;seau overlay SMON. Les exp&eacute;rimentations men&eacute;es prouvent que cette approche garantit une dur&eacute;e de d&eacute;couverte SIP constante et permet un &eacute;tablissement de session plus rapide entre deux usagers sur r&eacute;seau ad hoc. SIPMON ne s'applique cependant qu'&agrave; un r&eacute;seau MANET isol&eacute;. Notre troisi&egrave;me contribution SIPMON+ permet un interfonctionnement de plusieurs overlays SIPMON connect&eacute;s &agrave; Internet. SIPMON+ unifie donc les overlays de r&eacute;seau et permet de joindre un client SIP qu'il soit localis&eacute; sur un r&eacute;seau ad hoc ou sur l'internet. De plus, SIPMON+ permet une continuit&eacute; de service sans couture lors du passage entre un r&eacute;seau MANET et un r&eacute;seau d'infrastructure. Notre prototype a d&eacute;montr&eacute; que les performances de temps d'&eacute;tablissement d'appel SIPMON+ &eacute;taient meilleures que pour l'approche concurrente MANEMO (MANET for Network Mobility). Le sc&eacute;nario d'usage principal est la fourniture de services de communication multim&eacute;dia d'urgence rapidement d&eacute;ployables en cas de catastrophe majeure. Nous avons d&eacute;velopp&eacute; un prototype SIPMON+ totalement fonctionnel de service de communication P2P multim&eacute;dia. Ce prototype a &eacute;t&eacute; exp&eacute;riment&eacute; en situation r&eacute;elle de catastrophe. Notre prototype sans infrastructure a donn&eacute; de biens meilleurs r&eacute;sultats que MANEMO en termes de temps de d&eacute;ploiement, de taux de perte de paquets et de temps d'&eacute;tablissement d'appel.</td>
+</tr>
+<tr>
+<td class="meta"><span class="small_metadata" style="vertical-align: top;">mots-cl&eacute;s en anglais&nbsp;:&nbsp;</span>MANET &ndash; Peer to peer &ndash; SIP &ndash; Distributed hash table &ndash; Voice over IP &ndash; Mobilit&eacute; du terminal</td>
+</tr>
+</tbody></table>
+
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center"><hr color="#f9f4e8" noshade="noshade" size="1px" width="100%"></td>
+</tr>
+<tr>
+<td class="small_metadata" align="left">tel-00712171, version 1</td>
+</tr>
+<tr>
+<td class="small_metadata" align="left"><a class="small_metadata" href="http://tel.archives-ouvertes.fr/tel-00712171">http://tel.archives-ouvertes.fr/tel-00712171</a></td>
+</tr>
+<tr>
+<td class="small_metadata" align="left">oai:tel.archives-ouvertes.fr:tel-00712171</td>
+</tr>
+<tr>
+<td colspan="2" class="small_metadata" align="left">Contributeur&nbsp;:&nbsp;<a href="http://tel.archives-ouvertes.fr/action/user_view.php?uid=star_abes&halsid=ajp1hv742svavg1seosp5fseo4" class="small_metadata">ABES STAR</a><span class="small_metadata">&nbsp;&lt;</span><script type="text/javascript" language="javascript">str_unrot('<a class="small_metadata" href="', 'HvDGOJ:OCzGzxsvwzNtAM', '">');</script><a class="small_metadata" href="mailto:thelec@abes.fr"><script type="text/javascript" language="javascript">str_unrot('','HvszsqlopsGmtF','');</script>thelec@abes.fr</a><span class="small_metadata">&gt;</span></td>
+</tr>
+<tr>
+<td colspan="2" class="small_metadata" align="left">Soumis le&nbsp;:&nbsp;Mardi 26 Juin 2012, 15:47:16</td>
+</tr>
+<tr>
+<td colspan="2" class="small_metadata" align="left">Derni&egrave;re modification le&nbsp;:&nbsp;Mardi 26 Juin 2012, 15:55:22</td>
+</tr>
+</tbody></table>
+</div>
+
+<div style="display: none;"><a href="http://tel.archives-ouvertes.fr/robot/article_tel_1.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://tel.archives-ouvertes.fr/robot/article_tel_2.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://tel.archives-ouvertes.fr/robot/article_tel_3.html">tous les articles de la base du CCSd...</a></div>
+
+<div style="display: none;"><a href="http://tel.archives-ouvertes.fr/robot/article_tel_4.html">tous les articles de la base du CCSd...</a></div>
+<script type="text/javascript">
+
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik-hal.ccsd.cnrs.fr/" : "http://piwik-hal.ccsd.cnrs.fr/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="piwik.js" type="text/javascript"></script><script type="text/javascript">
+
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 21);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 92);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik-hal.ccsd.cnrs.fr/piwik.php?idsite=21" style="border:0" alt="" /></p></noscript>
+
+
+<div style="display: none;" id="overlay"></div><div style="display: none;" id="lightbox"><div style="width: 250px; height: 250px;" id="outerImageContainer"><div id="imageContainer"><img id="lightboxImage"><div id="hoverNav"><a id="prevLink" href="#"></a><a id="nextLink" href="#"></a></div><div id="loading"><a id="loadingLink" href="#"><img src="lb_loading.gif"></a></div></div></div><div id="imageDataContainer"><div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><a id="bottomNavClose" href="#"><img src="lb_close.gif"></a></div></div></div></div><div style="position: absolute; z-index: 1000; visibility: hidden;"><div></div><div></div></div></body>
+</html>

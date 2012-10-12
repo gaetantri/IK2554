@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      Erreur : Not Found – QuteCom
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if IE]><script type="text/javascript">window.location.hash = window.location.hash;</script><![endif]-->
+        <link rel="search" href="/search" />
+        <link rel="help" href="/wiki/TracGuide" />
+        <link rel="start" href="/wiki" />
+        <link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/search/opensearch" title="Rechercher dans QuteCom" />
+    <script type="text/javascript" src="/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/chrome/common/js/babel.js"></script><script type="text/javascript" src="/chrome/common/js/messages/fr.js"></script><script type="text/javascript" src="/chrome/common/js/trac.js"></script><script type="text/javascript" src="/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/chrome/common/css/code.css" />
+    <script type="text/javascript">/*<![CDATA[*/
+      jQuery(document).ready(function($) {
+        $("form.newticket textarea").each(function() {
+          $(this).text($(this).text()
+                         .replace(/#USER_AGENT#/m, navigator.userAgent)
+                         .replace(/#JQUERY#/m, $().jquery));
+        });
+      });
+    /*]]>*/</script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.qutecom.org"><img src="/chrome/site/logo.png" alt="" height="72" width="243" /></a>
+      </div>
+      <form id="search" action="/search" method="get">
+        <div>
+          <label for="proj-search">Recherche :</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Recherche" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="/login">Connexion</a></li><li><a href="/prefs">Préférences</a></li><li><a href="/wiki/TracGuide">Aide / Guide</a></li><li><a href="/about">À propos de Trac</a></li><li class="last"><a href="/register">S'inscrire</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="/wiki">Wiki</a></li><li><a href="/timeline">Activité</a></li><li><a href="/roadmap">Feuille de route</a></li><li><a href="/browser">Explorateur de source</a></li><li><a href="/report">Voir les tickets</a></li><li class="last"><a href="/search">Recherche</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Navigation contextuelle</h2>
+        <hr />
+      </div>
+    <div id="content" class="error">
+          <h1>Erreur : Not Found</h1>
+            <p class="message">No handler matched request to /favicon.ico</p>
+      <p>
+        <a href="/wiki/TracGuide">TracGuide</a> - Manuel d'utilisation et d'administration de Trac
+      </p>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Animé par <a href="/about"><strong>Trac 0.12.3</strong></a><br />
+        produit par <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">En savoir plus sur le projet Trac :<br /> <a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>
